@@ -1,0 +1,195 @@
+[
+  {
+    "slug": "building-with-ml-intern",
+    "title": "The model that didn't exist, so you made it yourself",
+    "authors": [
+      "ysharma",
+      "abidlabs"
+    ],
+    "published": "2026-10-08T00:00:00.751Z",
+    "url": "https://huggingface.co/blog/building-with-ml-intern",
+    "upvotes": 6,
+    "thumbnail": "/blog/assets/building-with-ml-intern/thumbnail.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "open-d1",
+    "title": "Multimodal open d1 decision models for the edge",
+    "authors": [
+      "LiquidAI"
+    ],
+    "published": "2026-10-07T16:54:33.022Z",
+    "url": "https://huggingface.co/blog/open-d1",
+    "upvotes": 27,
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/hLsllw4zhC04cVGiV69v0.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "falcon-asr",
+    "title": "Introducing Falcon ASR",
+    "authors": [
+      "tiiuae"
+    ],
+    "published": "2026-10-07T13:21:03.409Z",
+    "url": "https://huggingface.co/blog/falcon-asr",
+    "upvotes": 1,
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/671a3e44cf97dc64441e170a/bJ2aGPIX6WLWagE10j5y3.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "nemotron-ioi-and-imo-2026",
+    "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+    "authors": [
+      "nvidia"
+    ],
+    "published": "2026-10-07T12:45:31.208Z",
+    "url": "https://huggingface.co/blog/nemotron-ioi-and-imo-2026",
+    "upvotes": 12,
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/67b8b0096c3182e96bf6cea1/zB6BNaB-3tiCCsnOo7gik.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "thinkingbox",
+    "title": "The Agent Said It Was Done. The Database Disagreed.",
+    "authors": [
+      "microsoft"
+    ],
+    "published": "2026-10-03T22:56:48.455Z",
+    "url": "https://huggingface.co/blog/thinkingbox",
+    "upvotes": 61,
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/64b8491203124195cd795cad/NStwJm1AafDELVsU4KGwS.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "astabrief",
+    "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+    "authors": [
+      "allenai"
+    ],
+    "published": "2026-10-02T15:19:50.340Z",
+    "url": "https://huggingface.co/blog/astabrief",
+    "upvotes": 28,
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/AdqLEBgtQnaDXKLdylC3l.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "autosynthdata",
+    "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+    "authors": [
+      "ServiceNow-AI"
+    ],
+    "published": "2026-10-02T04:01:31.290Z",
+    "url": "https://huggingface.co/blog/autosynthdata",
+    "upvotes": 46,
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/68642da9885da181fde1ad70/8kSzlHLOdu5hchCtPnK8D.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "open-tts-leaderboard",
+    "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+    "authors": [
+      "bezzam",
+      "Steveeeeeeen",
+      "eustlb",
+      "mrfakename"
+    ],
+    "published": "2026-09-30T00:00:00.750Z",
+    "url": "https://huggingface.co/blog/open-tts-leaderboard",
+    "upvotes": 55,
+    "thumbnail": "/blog/assets/open-tts-leaderboard/thumbnail.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "getting-the-source-right-not-just-the-fact-source",
+    "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+    "authors": [
+      "MultiverseComputingCAI"
+    ],
+    "published": "2026-09-29T13:07:00.886Z",
+    "url": "https://huggingface.co/blog/getting-the-source-right-not-just-the-fact-source",
+    "upvotes": 21,
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/phhhj_BLOJbvnTFhVaZ5y.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "holo4",
+    "title": "Holo4: powering generalist computer-use agents",
+    "authors": [
+      "Hcompany"
+    ],
+    "published": "2026-09-28T09:44:05.300Z",
+    "url": "https://huggingface.co/blog/holo4",
+    "upvotes": 85,
+    "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/69fc7e49052f11ab9931b672/yzjxvlmlZKtjASwAYu6bN.jpeg",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "rl-environments",
+    "title": "Welcome RL Environments to the hub",
+    "authors": [
+      "burtenshaw",
+      "AdithyaSK",
+      "sergiopaniego",
+      "xeophon",
+      "ryanmarten",
+      "merve",
+      "lhoestq",
+      "julien-c"
+    ],
+    "published": "2026-09-28T00:00:00.749Z",
+    "url": "https://huggingface.co/blog/rl-environments",
+    "upvotes": 31,
+    "thumbnail": "/blog/assets/datasets-filters/thumbnail.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "evaleval-aisi",
+    "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+    "authors": [
+      "evijit",
+      "j-chim",
+      "deeplumiere",
+      "srishtiy",
+      "wmmkennedy",
+      "irenesolaiman",
+      "mcfadyen-aisi",
+      "lynn-aisi",
+      "coz-aisi"
+    ],
+    "published": "2026-09-22T00:00:00.748Z",
+    "url": "https://huggingface.co/blog/evaleval-aisi",
+    "upvotes": 28,
+    "thumbnail": "/blog/assets/evaleval-aisi/thumbnail.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "transformers-llama-cpp-quants",
+    "title": "Transformers now runs llama.cpp quants",
+    "authors": [
+      "marcsun13",
+      "ArthurZ",
+      "lysandre"
+    ],
+    "published": "2026-09-22T00:00:00.747Z",
+    "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+    "upvotes": 102,
+    "thumbnail": "/blog/assets/transformers_llama_cpp_quants/thumbnail.png",
+    "source": "Hugging Face Blog"
+  },
+  {
+    "slug": "omlx",
+    "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+    "authors": [
+      "pcuenq",
+      "lysandre",
+      "victor",
+      "julien-c",
+      "Jundot"
+    ],
+    "published": "2026-09-22T00:00:00.746Z",
+    "url": "https://huggingface.co/blog/omlx",
+    "upvotes": 88,
+    "thumbnail": "/blog/assets/omlx/omlx-hf.jpg",
+    "source": "Hugging Face Blog"
+  }
+]
