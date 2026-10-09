@@ -1,0 +1,395 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2610.12466v1",
+    "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+    "summary": "METR's 50\\% time horizon measures the human completion time of software tasks that an AI solves with 50\\% probability, allowing AI capabilities to be expressed in interpretable units. On 228 tasks and 26 AIs, we recompute the time horizons using splines and item-response theory to relax the assumption that the AI difficulty of a task depends linearly on the log of human time. Our fitted spline can be interpreted as a function that \\emph{converts} human time to AI difficulty; it is nearly flat in a region from 2--30 min but close to linear elsewhere. Hence, a time-horizon jump from 3 min to 30 min is much easier than one from 30 min to 5 hours despite the same multiplier of $10 \\times$. Overall, we contribute time-horizon point estimates that perform better under a cross-validated suite of proper scoring rules, as well as diagnostic plots for assessing time horizons' construct validity. We suggest that time horizons be interpreted together with the diagnostic plots, especially as new time-horizon-based benchmarks are proposed or existing ones grow to include longer tasks.",
+    "published": "2026-10-08T17:59:50Z",
+    "updated": "2026-10-08T17:59:50Z",
+    "authors": [
+      "Drew T. Nguyen",
+      "William Fithian"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12463v1",
+    "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+    "summary": "In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different. OpenAI agents exploited research infrastructure, coordinated across runs, and compromised parts of Hugging Face's production environment. Anthropic reported cases in which a misconfigured third-party environment exposed real systems to agents pursuing simulated cyber tasks. In a separately reported evaluation, Google's Gemini accessed three real organizations through an unintended internet route; Google stated that the model stopped in all three instances. Taken together, the cases show why an evaluation cannot rely on an assumed boundary. That boundary must be verified while the agent is operating. This comparative instrumental case study develops a Proactive Agent Security Assurance Cycle (PASAC) and a five-layer Boundary Assurance Stack. The framework combines risk-tiered task design, executable scope contracts, pre-run validation, least-capability access, independent egress enforcement, credential restrictions, cross-run monitoring, automatic stop conditions, and evidence-based reauthorization. A leading-indicator model, nine design propositions, and seven falsifiable hypotheses turn these lessons into a testable research program. Because the public Gemini record is limited to attributed statements and journalism, its detailed causal mechanism remains provisional. The central conclusion is straightforward: proactive agent security requires continuous assurance across the full execution system, not confidence in any single sandbox or safeguard.",
+    "published": "2026-10-08T17:59:49Z",
+    "updated": "2026-10-08T17:59:49Z",
+    "authors": [
+      "Abbas Raftari"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12436v1",
+    "title": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
+    "summary": "AI agents can now conduct real-world cyberattacks, scale up capabilities with the number of agents, and collectively pursue misaligned goals to obtain rewards. Together, these factors raise the risk of a population explosion of misaligned agents: agents could compromise computers and secretly deploy additional agents, creating a self-reinforcing cycle where larger populations develop greater collective cyber capability and expand further. This raises a fundamental question: What determines whether a population of misaligned agents remains contained or takes off into this self-reinforcing cycle? This population-level problem is ecological safety: unlike individual-agent or multi-agent safety with a fixed population, it concerns the dynamics of the population itself. Here, we develop an ecological theory of AI-agent populations based on a population growth equation in which fitness (growth rate) depends on cybersecurity capability. We show that, without collaboration, the population takes off only when individual-agent capability exceeds a critical threshold. With collaboration, however, collective cybersecurity capability increases with population size. This creates a critical population threshold: below it, the population declines; above it, the population takes off, even though individual-agent capability has not changed. In ecology, this phenomenon is known as the strong Allee effect. Because red teaming a small group of agents cannot guarantee ecological safety in larger populations, our theory calls for ecological red teaming and population pacing: gradually deploying larger agent populations in controlled environments, while measuring how cyber capability scales with population size, and estimating the critical population size for takeoff. Capability gains may lower this threshold, requiring re-estimation for each new model generation.",
+    "published": "2026-10-08T17:57:32Z",
+    "updated": "2026-10-08T17:57:32Z",
+    "authors": [
+      "Erin Crawley",
+      "Hidenori Tanaka"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12426v1",
+    "title": "Lyapunov spectrum of random neural networks",
+    "summary": "The Lyapunov spectrum of a nonlinear recurrent neural network with random asymmetric couplings is calculated in the limit $N\\to\\infty$. The calculation is based on a finite-$N$ identity that expresses the cumulative distribution of Lyapunov exponents as a response function of the tangent-space dynamics, with the tangent trajectory selected by a minimum-norm condition rather than by an initial condition. A cavity method then determines this response function at large $N$ through a self-consistent single-site problem. This result establishes that the chaos in this network is extensive and gives access to diffeomorphism-invariant properties of the dynamics. This work was done in collaboration with the AI models GPT-6 Astra and Claude Opus 5.5.",
+    "published": "2026-10-08T17:55:14Z",
+    "updated": "2026-10-08T17:55:14Z",
+    "authors": [
+      "David G. Clark"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12415v1",
+    "title": "ORCAGen: Orchestrating Context-Aware Malware Deception with RAG-Guided Generative AI",
+    "summary": "Malware defenses often remove or isolate suspicious programs as quickly as possible. While effective for containment, this approach can also waste an opportunity to observe attacker behavior and deploy targeted countermeasures. ORCAGen takes a different approach: it uses GenAI to build malware-specific deception playbooks offline, validates them before deployment, and enforces only the verified logic at runtime. ORCAGen combines Retrieval-Augmented Generation (RAG) with structured prompt engineering to generate both proof-of-concept (PoC) malware and corresponding deception orchestration code. A curated knowledge base (KB) of malware procedures and active defense strategies grounds the generation process, helping the LLM produce threat-specific and executable deception logic rather than generic or hallucinated outputs. The generated PoC malware provides a safe and reproducible way to test whether a deception strategy can disrupt, redirect, or suppress targeted malware behavior before the strategy is added to the runtime playbook. We evaluate ORCAGen across GPT-4o, GPT-5.5, Gemini 3.5 Flash, Qwen3-Coder, and Claude Sonnet 4.5 using execution success, hallucination rate, refinement effort, deception effectiveness, and runtime overhead. The evaluation covers synthesized malware scenarios and 150 real-world malware samples across keyloggers, information stealers, and ransomware. Across the evaluated scenarios, GPT-5.5 required the fewest refinements and produced no observed hallucinated APIs, while Gemini 3.5 Flash achieved the lowest response time and runtime overhead. The results show that RAG-guided structured prompting can support the scalable construction of malware-specific deception playbooks that remain lightweight and deterministic during runtime enforcement.",
+    "published": "2026-10-08T17:51:11Z",
+    "updated": "2026-10-08T17:51:11Z",
+    "authors": [
+      "Shihab Ahmed",
+      "Md Sajidul Islam Sajid",
+      "Teryl Taylor",
+      "Frederico Araujo",
+      "Tariqul Islam"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12413v1",
+    "title": "Commitment over Gaussian channels with deterministic identification codes",
+    "summary": "We establish a previously unnoticed connection between commitment (BC), a fundamental cryptographic primitive, and deterministic identification (DI), a post-Shannon communication setting. Specifically, for additive white Gaussian noise channels $\\mathcal{G}$ we show that a reliable commitment protocol can be obtained from deterministic identification codes in both the honest but curious and fully dishonest security settings. This viewpoint allows BC schemes to inherit the asymptotic performance of DI codes. Indeed, we show that commitment is naturally achievable in the linearithmic regime, i.e., with message sets of size $N_n=\\exp [Θ(n\\log n)]$, and we establish a lower bound on the linearithmic-scale BC capacity of $\\dot C_{\\text{hBC}}(\\mathcal G)\\geq\\frac12$ in the honest but curious case and $\\dot C_{\\text{BC}}(\\mathcal G)\\geq\\frac14$ in the fully dishonest picture. This refines the best previously known characterisation of the commitment capacity over $\\mathcal{G}$, which established only an infinite linear-scale capacity.",
+    "published": "2026-10-08T17:50:49Z",
+    "updated": "2026-10-08T17:50:49Z",
+    "authors": [
+      "Pau Colomer",
+      "Christian Deppe",
+      "Holge Boche",
+      "Andreas Winter"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12409v1",
+    "title": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
+    "summary": "Safety benchmarks typically report one overall score for a suite of datasets, each of which may target one or more safety-related attributes, so models with similar overall scores can have very different attribute profiles. Comparing models is more tractable at the level of individual attributes, yet it is often unclear whether even a single dataset's scores isolate any single attribute. One plausible candidate for such an attribute is harmful refusal, a model's tendency to refuse dangerous or policy-violating prompts. We examine whether it constitutes a single, measurable attribute in HELM Safety. Using a construct validity framework that stipulates that an attribute must exist before a test can measure it, we start with HELM Safety's four datasets that might plausibly target harmful refusal, but find that three are saturated. We subject the remaining dataset, HarmBench, to two psychometric tests to determine if a single attribute like harmful refusal could stand behind its score. First, multidimensional item response theory modeling strongly suggests that HarmBench does not measure a singular attribute. Second, a differential item functioning analysis finds items where models from different developers with the same refusal ability score differently. These flags largely disappear under scope-specific matching, a pattern consistent with aggregation effects but not sufficient to rule out domain-specific developer differences. Zooming out, HarmBench collapses distinct harm behaviors into one score, and the overall HELM safety aggregate further collapses HarmBench and scores from other datasets into a single top-line number. Any safety score that averages over datasets and items can hide saturation and conflate behaviors this way. We argue that a score should earn its single-attribute reading before models are compared with it.",
+    "published": "2026-10-08T17:46:43Z",
+    "updated": "2026-10-08T17:46:43Z",
+    "authors": [
+      "Christopher M. Stewart",
+      "Preston Botter",
+      "Natalie Sarabosing",
+      "Muye Zhang",
+      "Rachel Phinnemore",
+      "Shalini Ghosh",
+      "Hong Shen",
+      "Hoda Heidari"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12405v1",
+    "title": "OctoSense: Building a Unified Ecosystem for Open-Source Wireless Sensing",
+    "summary": "As AI enters the physical world, wireless sensing has emerged as a key modality for enabling non-intrusive physical intelligence. However, unlike the mature ecosystems of vision and language models, wireless sensing research remains highly fragmented. The field faces a growing \"reproducibility wall\" caused by heterogeneous data formats, non-interoperable processing pipelines, and the lack of standardized benchmarks. To dismantle this barrier, we present OctoSense, a unified platform designed to propel wireless sensing toward an \"ImageNet-style\" research ecosystem. OctoSense introduces a holistic framework that decouples high-level model logic from ad-hoc data nuances through three distinct components: a unified data abstraction for streamlined dataset access, standardized signal operators for efficient model development, and a rigorous benchmark engine for rapid and fair comparison. To support existing datasets and models, OctoSense integrates a comprehensive suite of widely used datasets and models, reducing the effort required for data and model adaptation to a few lines of declarative code. We demonstrate the efficacy of OctoSense through a set of usage examples that reproduce representative models on popular datasets. By providing a foundational open-source infrastructure, OctoSense enables community efforts to accumulate rather than fragment, paving the way for wireless sensing research that is interoperable, reusable, and reproducible by design.",
+    "published": "2026-10-08T17:45:43Z",
+    "updated": "2026-10-08T17:45:43Z",
+    "authors": [
+      "Weiying Hou",
+      "Xie Zhang",
+      "Chenshu Wu"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12357v1",
+    "title": "Improved Local Leakage Resilience of Shamir Secret Sharing and Worst-Case Optimal Polynomial Intersection",
+    "summary": "We study two problems: Local Leakage Resilience (LLR) for Shamir secret sharing, and worst-case Optimal Polynomial Intersection (OPI). Both problems concern polynomials $Q(X)$ of degree less than $k$, over a prime-order finite field $\\mathbb{F}_p$. In LLR for Shamir secret sharing, one asks how much one can learn about $Q(0)$ given a few bits leaked from each of $Q(α_1), \\ldots, Q(α_n)$, for distinct non-zero evaluation points $α_i \\in \\mathbb{F}_p$. In OPI, one is given input list $S_1, \\ldots, S_n \\subset \\mathbb{F}_p$, and wants to find a polynomial $Q(X)$ of degree less than $k$ so that $Q(α_i) \\in S_i$ for as many $i$ as possible. Leveraging recent connection between these two problems due to (Sun, Wootters 2026), we improve the state-of-the-art for both problems.\n  For LLR, we show that there is some constant $δ> 0$ so that, as long as $R := k/n \\geq 1/2 - δ$, Shamir secret-sharing is one-bit locally leakage resilient (meaning that one can learn only a negligible amount about $Q(0)$). This is the first result to break the so-called \"one-half barrier\" for LLR, and improves over the previous best known result, requiring $R \\geq 0.668$ (Kasser, 2025).\n  For OPI, we give a quantum algorithm that finds a polynomial $Q(X)$ that agrees with at least a $\\mathsf{SCL}_ρ(R)-\\varepsilon$ fraction of the lists in expectation, for every fixed $\\varepsilon>0$, where $\\mathsf{SCL}_ρ$ is the \\emph{semicircle law} of (Jordan et al., 2025). This improves previous algorithmic (and existential) results of (Jo, 2026) and (Horinaga, Yamakawa, 2026). We also give further improved existential results. We also adapt the hardness result of (Yamakawa, Zhandry, 2024) to apply to OPI (rather than a folded version); over large fields, this gives an unconditional separation between the quantum and classical hardness of OPI relative to a membership oracle.",
+    "published": "2026-10-08T17:23:04Z",
+    "updated": "2026-10-08T17:23:04Z",
+    "authors": [
+      "Yihang Sun",
+      "Mary Wootters"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12341v1",
+    "title": "Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition",
+    "summary": "Adversarial games have driven advances from heuristic search to reinforcement learning, yet learning and adapting strategies from limited samples remain challenging. AI agents offer an alternative by turning game experience into revisions of executable policies. Building on heuristic learning (HL), we formalize Adversarial Heuristic Learning (AHL), a paradigm that uses AI agents as learning engines to refine game policies and supporting software while keeping model weights fixed. We introduce AAArena, a benchmark comprising 12 authentic adversarial games and 1,920 archived human programs, with an evaluation protocol modeled on real-world game competitions. Agents interpret rules, choose opponents, analyze replays, and revise game agents to achieve their highest ranking within fixed match and evaluation budgets. We evaluate \\val{completedmodels} model and harness configurations: Opus5.5 with Claude Code earns 6 gold medals, while no evaluated configuration tops the remaining 6 human ladders. Performance is generally weaker in games with more complex rule specifications. Further experiments show that opponent selection and dense feedback support policy improvement, and that agents learn from both on-policy replays of their own matches and off-policy replays of other players' matches. These results highlight HL's potential in adversarial games and identify persistent challenges in game understanding, strategy implementation, and long-horizon policy development.",
+    "published": "2026-10-08T17:15:48Z",
+    "updated": "2026-10-08T17:15:48Z",
+    "authors": [
+      "Kaisen Yang",
+      "Qingle Liu",
+      "Kejin Wang",
+      "Yicheng Zhao",
+      "Jieming Li",
+      "Shenghan Zheng",
+      "Ruize Yang",
+      "Bojun Yang",
+      "Heng Gong",
+      "Xiang Gao",
+      "Lanyue Zhang",
+      "Kaiyu Zhong",
+      "Zhuo Liu",
+      "Shaoxuan Li",
+      "Chengxi Li",
+      "Yong Yan",
+      "Weixuan Zhang",
+      "Tianwei Luo",
+      "Situ Wang",
+      "Youjie Zheng",
+      "Sihan Zhao",
+      "Shengyuan Wang",
+      "Huan-ang Gao",
+      "Jiazheng Xu",
+      "Xiaohui Xie",
+      "Wentao Han",
+      "Hongning Wang"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12325v1",
+    "title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators",
+    "summary": "Do LLM scientific agents rely only on their initial task context, or do they adapt their decisions in response to experimental feedback? We study this question in neural operator adaptation, where a large language model (LLM) selects fine-tuning configurations under a limited trial budget. Across transfers within and between partial differential equation (PDE) families, the LLM achieves lower held-out test nRMSE than random search and Bayesian optimisation in nearly every matched comparison. Endpoint performance alone cannot distinguish what happens, so we verify each attribution with controlled interventions. Before observing any validation score, the LLM's first configuration already ranks near the top of the corresponding random-search pool, indicating a useful initial bias. A complementary cold-start intervention shows that the selected base learning rate shifts with the PDE description. Once feedback becomes available, reassigning validation scores among evaluated configurations changes the next proposal in every case tested, whereas a value-preserving rewrite produces no comparable aggregate effect. These interventions establish that the LLM's decision-level actions respond to the given task and observed outcomes, showing that it combines a task-dependent prior with sensitivity to experimental feedback.",
+    "published": "2026-10-08T17:06:23Z",
+    "updated": "2026-10-08T17:06:23Z",
+    "authors": [
+      "Julian Chan",
+      "Javier Mora Jimenez"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12322v1",
+    "title": "JWST CAPERS: Spectroscopic evaluation of very high redshift galaxy candidates",
+    "summary": "JWST/NIRCam imaging has enabled efficient selection of a large number of galaxy candidates at very high redshifts. Accurate and robust selection is crucial for statistical analyses, such as measurement of the ultraviolet luminosity function (UV LF). A variety of selection methods and criteria have been proposed in the literature. We evaluate the selection methodology of galaxy candidates at $z\\geq8.5$ using 183 candidates with secure spectroscopic redshifts obtained from the CAPERS JWST/NIRSpec PRISM program. The success of high-$z$ confirmation is strongly correlated with the photometric signal-to-noise ratio (SNR) in the detection filter, the strength of the Lyman-$α$ break, and the $Δχ^2$ between the best-fitting low-redshift and high-redshift spectral energy distribution model. However, the most efficient selection method is the use of a UV LF prior on the inferred $p(z)$ of a source, raising the success rate from $\\simeq 35\\%$ to $\\simeq 77\\%$ while achieving greater completeness than conservative SNR and $Δχ^2$ cuts. Out of the 183 candidates we spectroscopically confirm 48 sources at $z\\geq8.5$ via detections of emission lines and/or the Lyman-$α$ break (particularly important for those with no emission line detection). We report the highest-redshift source in CAPERS as UDS-111893 at $z_{\\mathrm{spec}}=12.98$, with no sources confirmed at $z>13$. This work provides spectroscopic quantification of JWST/NIRCam photometric selection at $z\\geq8.5$, and demonstrates the effectiveness of a UV LF prior for high-redshift photometric selection.",
+    "published": "2026-10-08T17:03:56Z",
+    "updated": "2026-10-08T17:03:56Z",
+    "authors": [
+      "Callum T. Donnan",
+      "Mark Dickinson",
+      "Lorenzo Napolitano",
+      "Pablo Arrabal Haro",
+      "Anthony J. Taylor",
+      "Hollis B. Akins",
+      "Ryan Begley",
+      "Davide Bevacqua",
+      "Adam C. Carnall",
+      "Marco Castellano",
+      "Fergus Cullen",
+      "James S. Dunlop",
+      "Steven L. Finkelstein",
+      "Carter Flayhart",
+      "Mauro Giavalisco",
+      "Michaela Hirschmann",
+      "Ray A. Lucas",
+      "Derek J. McLeod",
+      "Ross J. McLure",
+      "Casey Papovich",
+      "Laura Pentericci",
+      "Borja Pérez-Díaz",
+      "Thomas M. Stanton",
+      "L. Y. Aaron Yung"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12295v1",
+    "title": "A proof of the Galt--Tyutyanov conjecture on Skiba's question",
+    "summary": "A subgroup $A$ of a finite group $G$ is \\emph{hereditarily $G$-permutable} if, for every subgroup $E$ with $A\\leq E\\leq G$ and every subgroup $B$ of $E$, some $G$-conjugate of $B$ permutes with $A$ in $E$. We give a new criterion for a finite group to be simple. A nontrivial finite group $G$ is simple if and only if it has no proper nontrivial hereditarily $G$-permutable subgroup. This proves the conjecture of Galt and Tyutyanov and answers Skiba's question in part \\textup{(b)} of Problem 17.112 in the Kourovka Notebook. Earlier work settled the conjecture for alternating groups, sporadic groups, exceptional groups of Lie type, and the groups ${\\rm PSL}_2(q)$ and ${\\rm PSU}_3(q)$. We prove the conjecture for all classical groups. The proof uses descent through parabolic subgroups and the classification of factorizations of finite simple groups.",
+    "published": "2026-10-08T16:47:51Z",
+    "updated": "2026-10-08T16:47:51Z",
+    "authors": [
+      "Shengmin Zhang"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12293v1",
+    "title": "Machine Learning Meets High-Energy Nuclear Physics: From Pattern Recognition to Physics-Integrated Discovery",
+    "summary": "Machine learning (ML) in high-energy nuclear physics (HENP) is entering a new stage in which physical knowledge is incorporated more directly into data analysis, simulation, and physics inference. This mini-review focuses on developments that have matured in the past several years. Whereas earlier applications emphasized event classification, pattern recognition, and surrogate models for selected observables, recent work has moved toward physics-integrated workflows: calibrated Bayesian extraction of QCD matter properties, dense-matter equation-of-state inference from heavy-ion and neutron-star data, generative event modeling, neural unfolding of weak physical signals, differentiable inverse solvers, gauge-equivariant and diffusion-based lattice-field samplers, and neural reconstruction of model functions in holographic QCD. We survey recent applications of ML in heavy-ion collisions, neutron-star physics, lattice QFT, and holographic or continuum QCD. The emphasis is not on ML architectures alone, but on how they enter concrete physics workflows, how physical constraints such as symmetries, conservation laws, causality, thermodynamic stability, and topology are imposed, and how uncertainty quantification and validation determine whether an AI-assisted result can support a reliable physics conclusion.",
+    "published": "2026-10-08T16:47:33Z",
+    "updated": "2026-10-08T16:47:33Z",
+    "authors": [
+      "Xun Chen",
+      "Weiyao Ke",
+      "Yu-Gang Ma",
+      "Long-Gang Pang",
+      "Kai Zhou"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12281v1",
+    "title": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants",
+    "summary": "Over 90% of disease-associated variants from genome-wide association studies fall in noncoding regulatory regions, yet their functional interpretation remains a central open problem in genomic medicine. Large language models prompted to interpret such variants routinely hallucinate transcription factor (TF) binding changes, fabricate experimental support, and assign biological significance to statistically negligible signals. We present ARGUS (Agentic Regulatory Genomics for an Uncertainty-aware Scientist), which strictly separates deterministic biological computation from LLM-mediated reasoning. ARGUS wraps 458 DNABERT-based TF binding models in a hypothesis-directed investigation loop where a planner selects evidence sources based on current uncertainty, a verifier deterministically interprets each observation, and intermediate results change the investigation path. On variant rs6983267 at the 8q24 cancer risk locus, the same planner produces four divergent trajectories for four TFs. FOXA1 is rescued in 3 steps when real ADASTRA allele-specific binding data (15 experiments, FDR = 0.030) reveals a model false negative masked by saturation. KLF6 traverses 8 steps across ADASTRA, JASPAR motif analysis, and ENCODE cCRE regulatory annotation before abstaining due to mixed indirect evidence. RAD21 abstains in 8 steps after ADASTRA returns a coverage-qualified but nonsignificant allelic test (5 experiments, FDR = 0.65), and SP1, which shares FOXA1's saturated retained prediction, abstains because no direct experimental evidence exists at this locus. All observations come from real ADASTRA, JASPAR, and ENCODE cCRE queries; none are simulated. A comparison of fixed-priority and LLM-mediated planning shows that the LLM planner reaches identical verdicts with fewer tool calls by declining evidence that cannot resolve the claim under test.",
+    "published": "2026-10-08T16:38:32Z",
+    "updated": "2026-10-08T16:38:32Z",
+    "authors": [
+      "Pratik Dutta",
+      "Matthew B. Obusan",
+      "Max Chao",
+      "Rekha Sathian",
+      "Nimisha Papineni",
+      "Ramana V. Davuluri"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12235v1",
+    "title": "Language Models as AI Research World Models",
+    "summary": "AI research agents automate the cycle of proposing, implementing, and evaluating experiments, opening a path toward recursive self-improvement. Yet their ability to propose experiments outpaces their capacity to execute them in real environments, making outcome prediction a key capability for sustained self-improvement under limited experimental budgets. We investigate language models as Research World Models (RWMs), which predict the outcomes of candidate interventions across research environments. Our evaluation draws on over 2,600 experimental records from nine research environments spanning pretraining, post-training, and inference, representing more than 171,000 H100 GPU-hours of experimentation. Research knowledge acquired from real experimental experience improves RWM predictions of unseen interventions within the same environment (Spearman +0.27), and can be reused across environments. For example, using only pretraining experience from OLMo3, Marin, and Nanochat, an RWM reduces selection regret in the Qwen3 environment by 78% compared with zero-experience setting. These benefits extend to multi-round Autoresearch under a fixed selection budget: RWMs with in-env and cross-env research knowledge increase the best gain achieved by 15.8% and 11.6%, respectively. Ablations across 13 language models used as RWMs show that adding research knowledge can improve intervention ranking more than changing models or increasing reasoning effort alone. These findings support language models as RWMs and motivate accumulating experimental data for future RWM training.",
+    "published": "2026-10-08T16:18:54Z",
+    "updated": "2026-10-08T16:18:54Z",
+    "authors": [
+      "Zijun Wang",
+      "Zewen Liu",
+      "Minhua Lin",
+      "Zhaotian Weng",
+      "Zhan Shi",
+      "Bing He",
+      "Yisi Sang",
+      "Dakuo Wang",
+      "Benoit Dumoulin",
+      "Wei Jin",
+      "Yuyin Zhou",
+      "Cihang Xie",
+      "Hanqing Lu"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12233v1",
+    "title": "ReSI: Recursive Safety Improvement toward Resistant and Resilient AI",
+    "summary": "Recursive self-improvement, the participation of AI systems in improving their own capabilities, is beginning to move from theoretical prospect to practice, posing both challenges and opportunities for safety alignment. Models evolve through frequent updates, and their safety alignment requires continual adaptation to each new checkpoint. Meanwhile, with evolving red-teaming methods exposing new vulnerabilities, safety improvement for each checkpoint needs to mitigate exposed vulnerabilities and generalize to risks not yet revealed. Following R$^2$AI, we term these goals resistance to known threats and resilience to unforeseen risks. Recursive self-improvement, in turn, inspires an approach to both goals: safety alignment could likewise advance through successive rounds of evaluation and update. We therefore introduce ReSI, a recursive safety improvement framework that implements this approach through automated research. In each round, ReSI applies diverse red-teaming methods to identify vulnerabilities in the current target model, develops training recipes, and promotes the update with the largest safety gain among those passing a Pareto gate on capability retention as the next target model. Across four dense and mixture-of-experts models, ReSI matches or exceeds evaluated frontier models on in-distribution and out-of-distribution safety benchmarks, and outperforms alignment baselines on nearly all safety evaluations while largely preserving general capabilities. In particular, ReSI reduces the mean X-Teaming attack success rate across the four models from 86.01% to 31.45%, well below GPT-5.6-Luna's leading frontier result of 56.69%, indicating stronger resilience to attacks unseen during training. These findings support recursive safety improvement as a practical path toward resistant and resilient AI.",
+    "published": "2026-10-08T16:17:21Z",
+    "updated": "2026-10-08T16:17:21Z",
+    "authors": [
+      "Jingnan Zheng",
+      "Dongcheng Zhang",
+      "Yi Zhang",
+      "Ming Zhang",
+      "Qiaosheng Zhang",
+      "Youbang Sun",
+      "An Zhang",
+      "Xiangnan He",
+      "Tat-Seng Chua",
+      "Xia Hu",
+      "Bowen Zhou",
+      "Chaochao Lu",
+      "Xiang Wang"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12220v1",
+    "title": "One Node, Two Roles: Simultaneous Contests for Validation and Attention in Rollups",
+    "summary": "An optimistic rollup is safe as long as at least one honest validator executes its state transition function (STF) and disputes any assertion that is inconsistent with the result of the execution. Allowing anyone to participate, however, does not give incentive to do so: as long as every assertion is correct, verifying assertion correctness goes unpaid. Attention mechanisms address this by paying nodes to execute the rollup's STF, regardless of whether they participate in the validation process. Since a single node operator can back many registered identities with a single execution, paying per identity does not buy execution diversity, that is, the number of operators that independently execute. In this work we provide a new modeling framework for this problem. We formalize the underlying cryptographic primitive as a new notion, arguments with registered provers, whose properties include a form of non-amortizability that, to our knowledge, has not been studied for modern succinct cryptographic proofs before. We design validation and attention reward mechanisms and analyze them as two coupled Tullock-like contests, in which an operator pays once for the required execution and then chooses how many identities to deploy in each role. We quantify the attainable range of execution diversities in equilibrium as a function of the marginal cost of deploying an extra attention identity. We use our framework as a lens through which we compare two attention mechanisms, TRACE (MARBLE 2026) and Proof of Diligence (AFT 2024). In particular, we show that as opposed to Proof of Diligence, in TRACE the marginal cost mentioned above can be adjusted to support a higher execution diversity. As a case study, we apply our results to Arbitrum One, a widely deployed optimistic rollup.",
+    "published": "2026-10-08T16:05:12Z",
+    "updated": "2026-10-08T16:05:12Z",
+    "authors": [
+      "Pranay Anchuri",
+      "Ben Berger",
+      "Matteo Campanelli",
+      "Akaki Mamageishvili"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12211v1",
+    "title": "Verification with Transfer: Exact Information Frontiers and Their Price in Calls",
+    "summary": "A verifier that accepts or rejects whole answers reveals little: under a flat prior over $k$-bit answers, zero error needs $2^k-1$ verifications. The usual remedy is to solve related source tasks, either all first, as a curriculum does, or interleaved with verification. We price this remedy in information and in calls. With an exact verifier, the least causal information that any interleaving of source calls and $n$ verifications needs to succeed with probability $s$ is a list rate-distortion function, attained by one observation before any verification. It lower-bounds the expected number of binary source calls, which designed sources meet within $1+\\log_25$ calls for unique answers and within a logarithmic term in general, where no additive constant suffices. With an exact verifier and fixed sources, moving every call before the first verification preserves all hard caps on calls, although interleaving can save unboundedly many expected calls; under a noisy verifier, source-first protocols can lose unbounded factors in information and in error. For linear banks over $\\mathbb{F}_2$, optimal accuracy has a closed form, and after a polynomial-time reduction the budget profile is computable in time $2^{O(h^2)}\\operatorname{poly}(J,k+h)$ for $J$ sources and nuisance dimension $h$. In these banks, for zero error under a hard cap, the calls beyond the rounded-up information price are exactly those spent on nuisance. Every numbered result apart from two clauses about the planner is machine-checked in Lean 4, assuming two published results. Used as a ruler, the frontier shows a small transformer using all delivered bits at latent dimension $5$ and none at $11$ within fixed training budgets; in a test with predictions recorded before training, low XOR degree of the target bits did not suffice for their use.",
+    "published": "2026-10-08T16:00:23Z",
+    "updated": "2026-10-08T16:00:23Z",
+    "authors": [
+      "Hazar Yueksel"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12209v1",
+    "title": "Secure Quantum Handshakes: Quantum Network Verification Via Simon's Algorithm",
+    "summary": "Quantum networking represents the future of secure communication, enabling fundamentally new capabilities through quantum information exchange. However, these networks require secure, high-fidelity quantum communication channels, and they require every participating node to be a genuine quantum device. Currently, there is no reliable method to verify whether clients entering a quantum network truly possess quantum computational capability and are connecting over robust channels. In this work, we introduce a client-validation protocol that functions as a proof-of-quantum-capability handshake. Our protocol secures a quantum network against classical spoofers, noisy quantum computers, and genuine quantum devices connecting with the network over noisy or insecure channels. We validate the efficacy of this protocol through numerical simulations under erasure, dephasing, and depolarizing noise models.",
+    "published": "2026-10-08T15:59:13Z",
+    "updated": "2026-10-08T15:59:13Z",
+    "authors": [
+      "Reece Robertson",
+      "Sejal Patil",
+      "Sebastian Deffner"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12190v1",
+    "title": "DataSense-Bench: The First Step Toward an AI Scientist",
+    "summary": "As claims about recursive self-improvement (RSI) and artificial general intelligence (AGI) proliferate, we ask a simple question: do frontier AI models have a sense of data, i.e., can they reliably select the right data for training? We introduce DataSense-Bench to study this capability through the fundamental problem of data selection and performance forecasting in machine learning. We ask AI agents to select and rank candidate training subsets that can be used to fine-tune a small LLM model. Agents are allowed to inspect the data, write and execute analysis code, and run model forward passes, but can not train the model or access the actual evaluation tasks. We then fine-tune the base model on each selected subset and evaluate its post-training performance under a standardized protocol. We instantiate the benchmark in terminal problem solving and tool use, selecting trajectories from OpenThoughts-Agent and EnvScaler and evaluating on TBLite and BFCL, respectively. We then evaluate the agents along two complementary dimensions: the post-training performance of the top-ranked subset, reflecting the ability to identify high-value training data, and ranking accuracy, reflecting the ability to predict the relative performance of the selected subsets. In our experiments, selection gains over random selection are limited; agents do not reliably rank their selected groups, and ranking ability does not hold consistently across tasks: Astra identifies the best group in all three tool-use runs but in only one of three terminal runs. Analysis of execution traces on both tasks shows that agents often use similar data signals while interpreting their training value differently.",
+    "published": "2026-10-08T15:50:57Z",
+    "updated": "2026-10-08T15:50:57Z",
+    "authors": [
+      "Yudi Zhang",
+      "Mingyu Cao",
+      "Lu Yin",
+      "Mykola Pechenizkiy",
+      "Shiwei Liu"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12182v1",
+    "title": "AI-Based On-Board Maritime Object Detection for Earth Observation Payload Data Reduction on Versal Embedded Hardware",
+    "summary": "Very-high-resolution Earth-observation satellites acquire more data than they can store and downlink, while in maritime surveillance the vessels cover a tiny fraction of each scene. We study onboard vessel detection as a way to select what is downlinked, which reduces the data according to its content rather than coding every pixel; it is complementary to conventional onboard compression. The work follows three axes. (i) Data and algorithm: a controlled dataset is generated from 68 annotated Maxar scenes with 43 vessel classes, and a YOLOX-S detector is trained on it. (ii) Embedded deployment: the detector is quantized and deployed on the DPU of a Versal VC1902, with a limited loss of detection quality and a processing time of a few seconds per scene. (iii) Data reduction: we propose several downlink modes, from metadata only (box, class and score of each detection) to image crops around vessels, tiles holding detections, or the whole scene with a degraded background, and estimate from the measured detection errors the trade-off each offers between the vessels kept and the volume downlinked. On our dense harbor and coastal scenes, tiles keep 98% of the vessels with 29% of the scene volume, and crops 83% with 3%.",
+    "published": "2026-10-08T15:48:00Z",
+    "updated": "2026-10-08T15:48:00Z",
+    "authors": [
+      "Thomas Goudemant",
+      "Aurélien Bobey",
+      "Omar Hlimi",
+      "Marjorie Bellizzi"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12139v1",
+    "title": "Toward Intelligent Networks via AI-Aware GPU-Native Packet Processing",
+    "summary": "The integration of inline Artificial Intelligence (AI) models into critical network infrastructure is fundamentally bottlenecked by the high latency and synchronization overhead of CPU-mediated packet processing. While legacy GPU offload and recent CPU-bypass frameworks attempt to bridge this gap, they remain trapped in proprietary ecosystems or still rely on the host CPU and coarse-grained batching to coordinate stateful telemetry and AI pipeline execution. In this paper, we propose AGP, a novel framework that promotes the GPU from a passive accelerator to a primary data-path controller, answering what changes architecturally when the GPU autonomously owns the complete packet-to-inference pipeline. By enabling GPU-native packet processing, contention-free in-GPU stateful aggregation, and a persistent mega-kernel for continuous AI inference, AGP removes the CPU from the critical path. Our evaluation demonstrates that native in-GPU packet processing sustains line-rate throughput while being over 6.1x more power-efficient. Furthermore, our integrated Intrusion Detection System (IDS) stress test eliminates the legacy CPU-GPU synchronization tax, reducing end-to-end latency by 7.9x (up to 35x p99) and accelerating whole-system inference throughput by 9.3x using only ~2% of the GPU's thread capacity.",
+    "published": "2026-10-08T15:25:10Z",
+    "updated": "2026-10-08T15:25:10Z",
+    "authors": [
+      "Seyed Mohammad Mehdi Mirnajafizadeh",
+      "Yiwen Hu",
+      "Rhongho Jang"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12137v1",
+    "title": "Poster: A Preliminary Study of LLM Distillation Inference",
+    "summary": "Unauthorized model distillation, in which a model is trained on the outputs of a proprietary large language model (LLM), is a growing threat to model providers. We study distillation inference: determining whether a suspect model was distilled from another model or trained independently. We formulate this problem as a hypothesis test and estimate the behavior expected under each hypothesis by training shadow models: distilled shadow models learn from the teacher's reasoning traces, whereas independent shadow models learn only from reference answers. The auditor measures how closely each model predicts the teacher's reasoning outputs and then uses the shadow models to convert the suspect's score into a calibrated p-value. In a preliminary study using Qwen2.5-7B as the teacher and Llama-3.2-3B for the suspects, our test achieves a true positive rate of 1.0 at a significance level of 0.02. These results demonstrate the feasibility of using distillation inference to detect distillation attacks.",
+    "published": "2026-10-08T15:24:29Z",
+    "updated": "2026-10-08T15:24:29Z",
+    "authors": [
+      "Edward Chen",
+      "Yuntao Du"
+    ],
+    "source": "ArXiv"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.12125v1",
+    "title": "The learner who does not learn: when optimizing a pedagogical metric degrades LLM tutoring",
+    "summary": "It is assumed that a natural way to improve the pedagogical quality of large language model tutors is to define a metric of instructional performance and fine-tune the model against it. To test this strategy, we designed a metric of pedagogical adaptivity that scores each instructional decision in a learning sequence against the conditions of the learning situation, which is the standard used for automated pedagogical scoring. We audited a frontier tutor across 2,000 learner scenarios, corrected its weakest cases by fine-tuning an open-weights proxy, and asked 31 trained educators to rate the pedagogical alignment of the outputs blind, before and after correction. The metric increased from +0.05 to +0.42 for the corrected cases, while the expert ratings decreased from 4.46 to 3.03, with the unmodified controls remaining unchanged and a base-proxy control ruling out the change of model. The tutor performed worse because any metric that scores decisions independently and averages them is maximized by repeating the single best decision, and the fine-tuned model collapsed to that exact optimum in every case, in and out of sample. Educators identified the repetition, which such metrics cannot represent, and preserving the learner's trajectory in the score reduced, but did not reverse, the metric's verdict. Weight analysis traced the correction to the model's output projection, where it had memorized its training strings rather than learned to adapt. We conclude that measurement validity does not imply optimization validity, and we derive design principles for benchmarks that assess or train AI-tutor instruction.",
+    "published": "2026-10-08T15:18:26Z",
+    "updated": "2026-10-08T15:18:26Z",
+    "authors": [
+      "Daniel Domínguez Figaredo",
+      "Rafael Fernández De la Cruz"
+    ],
+    "source": "ArXiv"
+  }
+]
