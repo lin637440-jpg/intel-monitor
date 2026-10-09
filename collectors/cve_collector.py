@@ -28,21 +28,29 @@ def fetch_cves(days=30, results_per_page=50):
     if NVD_API_KEY:
         headers["apiKey"] = NVD_API_KEY
 
-    for attempt in range(3):
-        resp = requests.get(NVD_URL, params=params, headers=headers, timeout=30)
+    last_err = None
+    for attempt in range(2):
+        try:
+            resp = requests.get(NVD_URL, params=params, headers=headers, timeout=20)
 
-        if resp.status_code == 200:
-            return resp.json()
+            if resp.status_code == 200:
+                return resp.json()
 
-        if resp.status_code in (403, 429):
-            wait = 6 if not NVD_API_KEY else 1
-            print(f"NVD 限流/拒绝，{wait}s 后重试，status={resp.status_code}")
-            time.sleep(wait)
-            continue
+            if resp.status_code in (403, 429):
+                wait = 6 if not NVD_API_KEY else 1
+                print(f"NVD 限流/拒绝，{wait}s 后重试，status={resp.status_code}")
+                time.sleep(wait)
+                continue
 
-        resp.raise_for_status()
+            resp.raise_for_status()
+        except Exception as e:
+            last_err = e
+            print(f"NVD 请求异常（第 {attempt + 1} 次）：{type(e).__name__}: {e}")
+            time.sleep(1)
 
-    resp.raise_for_status()
+    if last_err:
+        raise last_err
+    raise RuntimeError("NVD 请求失败")
 
 
 def _pick_cvss(metrics):
@@ -53,8 +61,7 @@ def _pick_cvss(metrics):
             return {
                 "version": data.get("version"),
                 "baseScore": data.get("baseScore"),
-                "baseSeverity": data.get("baseSeverity")
-                or arr[0].get("baseSeverity"),
+                "baseSeverity": data.get("baseSeverity") or arr[0].get("baseSeverity"),
                 "vectorString": data.get("vectorString"),
             }
     return None
@@ -112,15 +119,29 @@ def parse_cve(item):
     }
 
 
+def load_cached():
+    """API 挂了就读本地缓存"""
+    p = Path("data/cve_latest.json")
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
+    return []
+
+
 if __name__ == "__main__":
-    raw = fetch_cves(days=30, results_per_page=50)
-    items = [parse_cve(v) for v in raw.get("vulnerabilities", [])]
+    try:
+        raw = fetch_cves(days=30, results_per_page=50)
+        items = [parse_cve(v) for v in raw.get("vulnerabilities", [])]
 
-    Path("data").mkdir(exist_ok=True)
-    out = Path("data/cve_latest.json")
-    out.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
+        Path("data").mkdir(exist_ok=True)
+        out = Path("data/cve_latest.json")
+        out.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"采集 {len(items)} 条，保存到 {out}")
+        print(f"采集 {len(items)} 条，保存到 {out}")
+    except Exception as e:
+        print(f"NVD API 失败，使用本地缓存：{type(e).__name__}: {e}")
+        items = load_cached()
+        print(f"缓存条数：{len(items)}")
+
     for it in items[:3]:
         print(f"[{it['id']}] {it['title']}")
         print(f"  published={it['published']}")
