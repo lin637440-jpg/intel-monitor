@@ -63,13 +63,7 @@ def build_graph():
         uid = r["uid"]
         title = (r.get("title") or "")[:60]
         cvss = _extract_cvss(r.get("raw_json"))
-        G.add_node(
-            uid,
-            type="cve",
-            label=title,
-            source=r["source"],
-            cvss=cvss,
-        )
+        G.add_node(uid, type="cve", label=title, source=r["source"], cvss=cvss)
 
         for cwe in _extract_cwe(r.get("raw_json")):
             cwe_node = f"CWE::{cwe}"
@@ -81,14 +75,20 @@ def build_graph():
             G.add_node(asset_node, type="asset", label=asset)
             G.add_edge(uid, asset_node, relation="affects")
 
+    # 用 spring layout 计算坐标
+    pos = nx.spring_layout(G, k=0.5, iterations=50, seed=42)
+
     nodes = []
     for n, data in G.nodes(data=True):
+        x, y = pos[n]
         nodes.append({
             "id": n,
             "type": data.get("type"),
             "label": data.get("label", n),
             "source": data.get("source"),
             "cvss": data.get("cvss"),
+            "x": float(x),
+            "y": float(y),
         })
 
     edges = []

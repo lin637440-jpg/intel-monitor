@@ -171,26 +171,30 @@ if GRAPH_PATH.exists():
 
     nodes = g.get("nodes", [])
     edges = g.get("edges", [])
-    cwe_nodes = [n for n in nodes if n["type"] == "cwe"]
-    cve_nodes = [n for n in nodes if n["type"] == "cve"]
-    asset_nodes = [n for n in nodes if n["type"] == "asset"]
 
-    # 环形布局
-    pos = {}
-    for i, n in enumerate(cwe_nodes):
-        angle = 2 * math.pi * i / max(len(cwe_nodes), 1)
-        pos[n["id"]] = (math.cos(angle), math.sin(angle))
-    for i, n in enumerate(cve_nodes):
-        angle = 2 * math.pi * i / max(len(cve_nodes), 1)
-        r = 2.5
-        pos[n["id"]] = (r * math.cos(angle), r * math.sin(angle))
-    for i, n in enumerate(asset_nodes):
-        angle = 2 * math.pi * i / max(len(asset_nodes), 1)
-        r = 1.7
-        pos[n["id"]] = (r * math.cos(angle), r * math.sin(angle))
+    # 筛选控件
+    only_high = st.checkbox("只看高危（CVSS ≥ 7）", value=False)
+    show_cve_labels = st.checkbox("显示 CVE 标签（图会变乱）", value=False)
+
+    # 节点坐标 map
+    pos = {n["id"]: (n.get("x", 0), n.get("y", 0)) for n in nodes}
+
+    # 过滤
+    if only_high:
+        keep_ids = {
+            n["id"] for n in nodes
+            if n["type"] != "cve" or (n.get("cvss") or 0) >= 7
+        }
+    else:
+        keep_ids = {n["id"] for n in nodes}
+
+    filtered_edges = [
+        e for e in edges
+        if e["source"] in keep_ids and e["target"] in keep_ids
+    ]
 
     edge_x, edge_y = [], []
-    for e in edges:
+    for e in filtered_edges:
         if e["source"] in pos and e["target"] in pos:
             x0, y0 = pos[e["source"]]
             x1, y1 = pos[e["target"]]
@@ -200,35 +204,49 @@ if GRAPH_PATH.exists():
     fig = go.Figure()
     fig.add_trace(go.Scatter(
         x=edge_x, y=edge_y, mode="lines",
-        line=dict(width=0.5, color="#aaa"),
-        hoverinfo="none",
+        line=dict(width=0.3, color="#ccc"),
+        hoverinfo="none", showlegend=False,
     ))
 
     for ntype, color, size in [
-        ("cwe", "#EF553B", 12),
-        ("asset", "#00CC96", 10),
-        ("cve", "#636EFA", 4),
+        ("cwe", "#EF553B", 14),
+        ("asset", "#00CC96", 12),
+        ("cve", "#636EFA", 5),
     ]:
-        subset = [n for n in nodes if n["type"] == ntype and n["id"] in pos]
+        subset = [
+            n for n in nodes
+            if n["type"] == ntype and n["id"] in keep_ids and n["id"] in pos
+        ]
         if not subset:
             continue
+
+        if ntype == "cve" and not show_cve_labels:
+            text = ["" for _ in subset]
+        else:
+            text = [n["label"][:20] for n in subset]
+
         fig.add_trace(go.Scatter(
             x=[pos[n["id"]][0] for n in subset],
             y=[pos[n["id"]][1] for n in subset],
-            mode="markers+text",
-            text=[n["label"][:20] for n in subset],
+            mode="markers+text" if any(text) else "markers",
+            text=text,
             textposition="top center",
+            textfont=dict(size=10),
             marker=dict(size=size, color=color),
             name=ntype,
-            hovertext=[n["label"] for n in subset],
+            hovertext=[
+                f"{n['label']}<br>CVSS: {n.get('cvss') or 'N/A'}"
+                for n in subset
+            ],
             hoverinfo="text",
         ))
 
     fig.update_layout(
         showlegend=True,
-        height=600,
+        height=700,
         xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
         yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+        plot_bgcolor="white",
     )
     st.plotly_chart(fig, use_container_width=True)
 else:
