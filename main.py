@@ -5,9 +5,13 @@ from collectors import (
     anquanke_collector,
     arxiv_collector,
     osv_collector,
+    seebug_collector,
+    exploitdb_collector,
+    hn_collector,
 )
 from storage.db import insert_items
 from storage.sync_state import update_sync, record_error
+
 
 def normalize(source, items):
     out = []
@@ -24,6 +28,12 @@ def normalize(source, items):
             uid = f"ARX:{it.get('id')}"
         elif source == "OSV.dev":
             uid = f"OSV:{it.get('id')}"
+        elif source == "Seebug Paper":
+            uid = f"SB:{it.get('url') or it.get('title')}"
+        elif source == "Exploit-DB":
+            uid = f"EDB:{it.get('url') or it.get('title')}"
+        elif source == "Hacker News":
+            uid = f"HN:{it.get('url') or it.get('title')}"
         else:
             uid = f"{source}:{it.get('url') or it.get('title')}"
         it["uid"] = uid
@@ -68,6 +78,18 @@ def collect_osv():
     return osv_collector.parse(osv_collector.fetch("requests", "PyPI"))
 
 
+def collect_seebug():
+    return seebug_collector.parse(seebug_collector.fetch())
+
+
+def collect_exploitdb():
+    return exploitdb_collector.parse(exploitdb_collector.fetch())
+
+
+def collect_hn():
+    return hn_collector.parse(hn_collector.fetch())
+
+
 COLLECTORS = {
     "NVD": collect_nvd,
     "GitHub Advisories": collect_github,
@@ -75,6 +97,9 @@ COLLECTORS = {
     "安全客": collect_anquanke,
     "ArXiv": collect_arxiv,
     "OSV.dev": collect_osv,
+    "Seebug Paper": collect_seebug,
+    "Exploit-DB": collect_exploitdb,
+    "Hacker News": collect_hn,
 }
 
 
