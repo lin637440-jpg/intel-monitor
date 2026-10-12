@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-10-12T07:11:52.503582+00:00",
+  "sources": {
+    "ArXiv": {
+      "last_sync_at": "2026-10-12T07:09:43.650037+00:00",
+      "total_runs": 1,
+      "error_count": 1,
+      "success_rate": 0.0,
+      "last_inserted": 25,
+      "items_in_db": 50,
+      "status": "WARN"
+    },
+    "Exploit-DB": {
+      "last_sync_at": "2026-10-12T07:09:49.640795+00:00",
+      "total_runs": 1,
+      "error_count": 0,
+      "success_rate": 1.0,
+      "last_inserted": 50,
+      "items_in_db": 50,
+      "status": "OK"
+    },
+    "GitHub Advisories": {
+      "last_sync_at": "2026-10-12T07:09:23.745345+00:00",
+      "total_runs": 2,
+      "error_count": 0,
+      "success_rate": 1.0,
+      "last_inserted": 0,
+      "items_in_db": 40,
+      "status": "OK"
+    },
+    "Hacker News": {
+      "last_sync_at": "2026-10-12T07:09:52.462933+00:00",
+      "total_runs": 1,
+      "error_count": 0,
+      "success_rate": 1.0,
+      "last_inserted": 20,
+      "items_in_db": 20,
+      "status": "OK"
+    },
+    "Hugging Face Blog": {
+      "last_sync_at": "2026-10-12T07:09:24.544306+00:00",
+      "total_runs": 2,
+      "error_count": 0,
+      "success_rate": 1.0,
+      "last_inserted": 0,
+      "items_in_db": 15,
+      "status": "OK"
+    },
+    "NVD": {
+      "last_sync_at": "2026-10-12T07:09:22.163562+00:00",
+      "total_runs": 2,
+      "error_count": 0,
+      "success_rate": 1.0,
+      "last_inserted": 20,
+      "items_in_db": 90,
+      "status": "OK"
+    },
+    "OSV.dev": {
+      "last_sync_at": "2026-10-12T07:09:46.305449+00:00",
+      "total_runs": 2,
+      "error_count": 0,
+      "success_rate": 1.0,
+      "last_inserted": 0,
+      "items_in_db": 16,
+      "status": "OK"
+    },
+    "Seebug Paper": {
+      "last_sync_at": "2026-10-12T07:09:48.157631+00:00",
+      "total_runs": 1,
+      "error_count": 0,
+      "success_rate": 1.0,
+      "last_inserted": 15,
+      "items_in_db": 15,
+      "status": "OK"
+    },
+    "安全客": {
+      "last_sync_at": "2026-10-12T07:09:26.361269+00:00",
+      "total_runs": 2,
+      "error_count": 0,
+      "success_rate": 1.0,
+      "last_inserted": 0,
+      "items_in_db": 23,
+      "status": "OK"
+    }
+  }
+}
