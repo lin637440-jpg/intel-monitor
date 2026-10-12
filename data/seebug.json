@@ -1,0 +1,122 @@
+[
+  {
+    "title": "TWINGUARD-LITE：面向生成式患者数字孪生的基于规则的状态准入网关",
+    "url": "https://paper.seebug.org/3524",
+    "published": "Thu, 08 Oct 2026 16:23:17 +0800",
+    "description": "作者：Wenhui Chu 与 Sheikh Rabiul Islam 原文链接：https://arxiv.org/pdf/2610.09012v1 摘要 未来的生成式患者数字孪生可能将纵向健康档案与语言模型智能体相结合，并跨会话保存信息。一项拟议更新的措辞并不能揭示它是否来自被允许的来源、是否与患者的记录相冲突，或者是否属于他人。我们提出 TWINGUARD-LITE，一个基于规则的网关，只有...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "多源 LLM 智能体输入中分段级投毒的检测与定位",
+    "url": "https://paper.seebug.org/3523",
+    "published": "Thu, 24 Sep 2026 17:52:50 +0800",
+    "description": "作者：Xue Tan, Changhui Wang, Sanrui Yang, Hao Luan, Zhuyang Yu, Jin Wei, Ping Chen, Xiaoyan Sun†, Jun Dai 原文链接：https://arxiv.org/html/2609.14723v1 摘要 现代大语言模型（LLM）智能体越来越多地通过聚合外部数据分段来构造提示词（prompt），这些分段包括检...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "面向安全漏洞的自动化程序修复智能体的对抗性测试",
+    "url": "https://paper.seebug.org/3522",
+    "published": "Mon, 21 Sep 2026 16:30:51 +0800",
+    "description": "作者：Fares Trad, Simin Chen, Hung Viet Pham, Gias Uddin, Baishakhi Ray 原文链接：https://arxiv.org/pdf/2609.15963v1 摘要 基于大语言模型（LLM）的软件智能体被设计用于自动化程序修复（Automated Program Repair, APR）任务，这使得在不久的将来，APR 智能体有望在无需太多...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "大模型中转站研究与测评报告（2026）",
+    "url": "https://paper.seebug.org/3521",
+    "published": "Sun, 20 Sep 2026 10:40:03 +0800",
+    "description": "作者：知道创宇积极防御实验室 前言 随着大语言模型在编码、Agent（智能体）等场景中的深入应用，开发者对多模型、低成本、开箱即用的模型 API 需求持续增长，大模型中转站逐渐成为连接开发者与模型服务的重要基础设施。中转站对外提供与主流模型 API 兼容的统一接口，将不同模型厂商的服务进行聚合，调用者通常只需修改模型名称即可完成切换。 与直接调用模型厂商官方 API 不同，开发者在使用中转站时，实...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "当世界说谎：面向下游控制的潜在世界模型后门攻击",
+    "url": "https://paper.seebug.org/3520",
+    "published": "Thu, 17 Sep 2026 16:19:18 +0800",
+    "description": "作者：Roberto Riaño, Gorka Abad, Stjepan Picek, Aitor Urbieta 原文链接：https://arxiv.org/pdf/2609.15781 摘要 预训练世界模型——一种学习得到的模拟器，它将观测编码为潜在状态并预测该状态在动作作用下如何演化——正开始像如今的预训练编码器和语言模型那样，被作为现成的动力学骨干网络复用于控制任务。我们表明，这种复用...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "融合谱特征与激活聚类用于医疗影像模型后门检测：方法、实现与评估",
+    "url": "https://paper.seebug.org/3519",
+    "published": "Tue, 15 Sep 2026 16:31:35 +0800",
+    "description": "作者：Suresh Tamang 原文链接：https://arxiv.org/pdf/2609.14290v1 摘要 机器学习模型正越来越多地部署于医疗影像流程中，用于辅助诊断，而针对这些模型的训练期攻击已成为一个被明确点名的行业级关切：医疗行业指南将模型投毒与对抗攻击列为需要专门防御措施的威胁，而联邦政策则指示将扩展的人工智能漏洞检测工具提供给农村医院等关键基础设施运营方。谱特征分析（spec...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "POLYFLOW：一种用于静态跨语言信息流分析的神经符号框架",
+    "url": "https://paper.seebug.org/3518",
+    "published": "Wed, 09 Sep 2026 16:50:57 +0800",
+    "description": "作者：Haoran Yang、Zhixuan Zhong、Jiawei Guo、Haipeng Cai 原文链接：https://arxiv.org/pdf/2608.29808v1 摘要 现代软件系统通常由多种相互交互的编程语言构建而成。这种构建方式导致了额外的、往往隐蔽的漏洞，这些漏洞深藏于因语言交互而产生的复杂信息流之中。现有的静态分析器受到不同语言异构语义的阻碍，而动态方法则受限于（可用和...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "UiAs：基于多模态无线信号的用户无关3D人脸反欺骗",
+    "url": "https://paper.seebug.org/3517",
+    "published": "Fri, 04 Sep 2026 17:55:45 +0800",
+    "description": "作者：Zhiwei Chen，Lebin Lyu，Yimo Zhang，Dingyu Zhong等 原文链接：https://arxiv.org/pdf/2608.29084v1 摘要 人脸认证已广泛应用于安全敏感的应用中，而日益逼真的3D欺骗攻击正构成越来越大的威胁。高保真3D面具可以再现人脸外观和几何结构，但无法复制活体组织的固有物理响应，而无线信号可以主动探测这些响应。然而，由无线信号捕获的...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "SIR：面向计算机使用智能体的自我改进型红队测试",
+    "url": "https://paper.seebug.org/3516",
+    "published": "Wed, 02 Sep 2026 16:13:41 +0800",
+    "description": "作者：Chen Xiong, Zhiyuan He, Pin-Yu Chen, Stjepan Picek, Tsung-Yi Ho 原文链接：https://arxiv.org/html/2608.30207v1 摘要 计算机使用智能体（Computer Use Agents, CUA）是一类视觉语言模型，它们感知屏幕，并通过鼠标、键盘和终端在真实操作系统上执行操作，如今正被日益广泛地部署用来自...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "Drishti：面向 5G 核心网的AI主导、人工导向的漏洞审计",
+    "url": "https://paper.seebug.org/3515",
+    "published": "Tue, 01 Sep 2026 17:03:50 +0800",
+    "description": "作者：Sriram Ramachandran、Levente Csikor、Dinil Mon Divakaran 原文链接：https://arxiv.org/html/2608.30112v1 摘要 开源漏洞的候选生成已不再是稀缺资源。AI辅助代码审查如今能廉价地产生缺陷候选，而行业项目则将其与专家人工分诊相结合。真正稀缺的在于验证与影响评估，而这一差距在5G核心网等关键基础设施软件中最为突出...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "通过基于搜索的优化从工业网络流量中恢复过程变量",
+    "url": "https://paper.seebug.org/3514",
+    "published": "Fri, 28 Aug 2026 18:01:45 +0800",
+    "description": "作者：Chuan Sheng, Shan Jiang, Xiaogang Zhu, Wanlun Ma, Jianming Zhao, Yu Yao, Sheng Wen, Yang Xiang 原文链接：https://arxiv.org/pdf/2608.16403v1 摘要 过程变量（PV）为工业信息物理系统（CPS）中面向过程的安全监控提供了过程证据。然而，现有的监控基础设施仅暴露了由历史...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "基于结构化风险指标的零样本威胁检测大语言模型框架",
+    "url": "https://paper.seebug.org/3513",
+    "published": "Tue, 25 Aug 2026 18:00:55 +0800",
+    "description": "作者：Abdullah Alghamdi, Siamak Layeghy, Marius Portmann 原文链接：https://arxiv.org/pdf/2608.16508v1 关键词：入侵检测、内部威胁检测、高级持续性威胁、大语言模型、零样本学习、检索增强生成、异常检测 摘要 我们提出了一种两阶段大语言模型（LLM）框架，用于从异构安全日志中零样本检测内部威胁和高级持续性威胁（APT）...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "TwinGridShield：面向 LLM 电网智能体动作的后果感知运行时授权",
+    "url": "https://paper.seebug.org/3512",
+    "published": "Thu, 20 Aug 2026 16:49:44 +0800",
+    "description": "作者：Md Fazley Rafy 原文链接：https://arxiv.org/html/2608.15391v1 摘要 大语言模型（LLM）辅助的能源管理工具可以将自然语言上下文转换为结构化的电网指令，但语法有效性并不等同于物理可接受性。本文提出TwinGridShield——一个与模型无关的运行时授权层，它在释放任何拟议动作之前，先在确定性网络孪生（network twin）中对其进行评估。...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "面向部署的资源高效神经符号框架：用于运营技术网络中可解释的DDoS检测",
+    "url": "https://paper.seebug.org/3511",
+    "published": "Wed, 19 Aug 2026 16:29:42 +0800",
+    "description": "作者：Mikiyas Alemayehu, Mohamed Chahine Ghanem, Hamza Kheddar, Aohan Li, and J. J. Garcia-Luna-Aceves 原文链接：https://arxiv.org/html/2608.16769v1 摘要 运营技术（OT）环境、可编程逻辑控制器（PLC）、工业控制系统（ICS）以及监控与数据采集（SCADA）系统正日...",
+    "author": "",
+    "source": "Seebug Paper"
+  },
+  {
+    "title": "MIRAGE：通过用户生成内容对移动 GUI 智能体进行上下文感知的提示注入",
+    "url": "https://paper.seebug.org/3510",
+    "published": "Wed, 05 Aug 2026 17:41:50 +0800",
+    "description": "作者：Ruoqi Guo, Yi Liu, Gelei Deng, Yiheng Xiong, Yuekang Li, Ying Zhang, Leo Yu Zhang, Lida Zhao, Ji Jie, Yuxiao Lu 原文链接：http://arxiv.org/html/2605.28116v1 摘要 由视觉-语言模型（VLM）驱动的移动图形用户界面（GUI）智能体将屏幕视为渲染后的像...",
+    "author": "",
+    "source": "Seebug Paper"
+  }
+]
