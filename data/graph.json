@@ -1,0 +1,1731 @@
+{
+  "nodes": [
+    {
+      "id": "NVD:CVE-2026-85097",
+      "type": "cve",
+      "label": "The Bricksforge plugin for WordPress is vulnerable to unauth",
+      "source": "NVD",
+      "cvss": 9.8
+    },
+    {
+      "id": "CWE::CWE-434",
+      "type": "cwe",
+      "label": "CWE-434",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-85421",
+      "type": "cve",
+      "label": "A critical security vulnerability has been identified in Bro",
+      "source": "NVD",
+      "cvss": 8.7
+    },
+    {
+      "id": "CWE::CWE-306",
+      "type": "cwe",
+      "label": "CWE-306",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-85422",
+      "type": "cve",
+      "label": "A vulnerability in Brocade ASCG version before 3.5.0 could a",
+      "source": "NVD",
+      "cvss": 8.4
+    },
+    {
+      "id": "CWE::CWE-798",
+      "type": "cwe",
+      "label": "CWE-798",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-85423",
+      "type": "cve",
+      "label": "A vulnerability has been identified in the data collection s",
+      "source": "NVD",
+      "cvss": 8.6
+    },
+    {
+      "id": "NVD:CVE-2026-85486",
+      "type": "cve",
+      "label": "Brocade ASCG before 3.5.0 improperly processes user input by",
+      "source": "NVD",
+      "cvss": 8.6
+    },
+    {
+      "id": "CWE::CWE-95",
+      "type": "cwe",
+      "label": "CWE-95",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-85487",
+      "type": "cve",
+      "label": "A path traversal vulnerability exists in the HTTP service co",
+      "source": "NVD",
+      "cvss": 8.6
+    },
+    {
+      "id": "CWE::CWE-22",
+      "type": "cwe",
+      "label": "CWE-22",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-85488",
+      "type": "cve",
+      "label": "Brocade ASCG before 3.5.0 has a well-known Brocade default p",
+      "source": "NVD",
+      "cvss": 7.0
+    },
+    {
+      "id": "NVD:CVE-2026-85489",
+      "type": "cve",
+      "label": "An authentication flaw exists in the Brocade ASCG administra",
+      "source": "NVD",
+      "cvss": 8.7
+    },
+    {
+      "id": "NVD:CVE-2026-85490",
+      "type": "cve",
+      "label": "When Brocade ASCG before 3.5.0 processes support bundle arch",
+      "source": "NVD",
+      "cvss": 7.7
+    },
+    {
+      "id": "NVD:CVE-2026-87424",
+      "type": "cve",
+      "label": "A vulnerability in the SupportLink API authentication compon",
+      "source": "NVD",
+      "cvss": 8.6
+    },
+    {
+      "id": "CWE::CWE-321",
+      "type": "cwe",
+      "label": "CWE-321",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-87425",
+      "type": "cve",
+      "label": "An unauthenticated remote attacker can modify the TLS client",
+      "source": "NVD",
+      "cvss": 7.6
+    },
+    {
+      "id": "CWE::CWE-295",
+      "type": "cwe",
+      "label": "CWE-295",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-87426",
+      "type": "cve",
+      "label": "An unauthenticated network-based attacker can query specific",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "CWE::CWE-200",
+      "type": "cwe",
+      "label": "CWE-200",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-87428",
+      "type": "cve",
+      "label": "In Brocade ASCG before 3.5.0, a  local unauthorized user on ",
+      "source": "NVD",
+      "cvss": 8.4
+    },
+    {
+      "id": "CWE::CWE-522",
+      "type": "cwe",
+      "label": "CWE-522",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-107466",
+      "type": "cve",
+      "label": "A flaw was found in flatpak-builder. This vulnerability allo",
+      "source": "NVD",
+      "cvss": 6.1
+    },
+    {
+      "id": "NVD:CVE-2026-93699",
+      "type": "cve",
+      "label": "Argument injection in WP Toolkit for cPanel allows local use",
+      "source": "NVD",
+      "cvss": 8.5
+    },
+    {
+      "id": "CWE::CWE-88",
+      "type": "cwe",
+      "label": "CWE-88",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-105110",
+      "type": "cve",
+      "label": "OS Command Injection in the login.xgi CGI endpoint in Iskrat",
+      "source": "NVD",
+      "cvss": 9.8
+    },
+    {
+      "id": "CWE::CWE-78",
+      "type": "cwe",
+      "label": "CWE-78",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-12260",
+      "type": "cve",
+      "label": "SQL injection in the NetBoard CRM demo platform; specificall",
+      "source": "NVD",
+      "cvss": 10.0
+    },
+    {
+      "id": "CWE::CWE-89",
+      "type": "cwe",
+      "label": "CWE-89",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-4894",
+      "type": "cve",
+      "label": "A vulnerability has been identified regarding insufficient v",
+      "source": "NVD",
+      "cvss": 6.9
+    },
+    {
+      "id": "CWE::CWE-290",
+      "type": "cwe",
+      "label": "CWE-290",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-66082",
+      "type": "cve",
+      "label": "An authorization bypass vulnerability in Apache DolphinSched",
+      "source": "NVD",
+      "cvss": 6.5
+    },
+    {
+      "id": "CWE::CWE-863",
+      "type": "cwe",
+      "label": "CWE-863",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-66084",
+      "type": "cve",
+      "label": "An authorization bypass vulnerability in Apache DolphinSched",
+      "source": "NVD",
+      "cvss": 8.1
+    },
+    {
+      "id": "GH:GHSA-x937-hj6v-793p",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-6v25-8wq6-xq4j",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-556j-vv39-8rqv",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-hmq2-7hp6-7crh",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-2v95-h47v-g4x9",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-6p4f-j8j6-463q",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-cw24-x4mj-fw3q",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-c4wc-ggrj-jg9v",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-w294-6q5q-53p8",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-2m6q-8v3h-jqww",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-c6rp-p8xm-4q9f",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-2mwr-xjcg-37j7",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-8wpc-h4q6-8fxv",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-ww5h-9m49-7xx4",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-687g-22h4-j4w4",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-5hjw-83fp-phq9",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-g3jj-5cmm-3hxx",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-6wjp-v33h-5cvq",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-c78w-2q4r-68r7",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "GH:GHSA-cv3g-hj65-pcfh",
+      "type": "cve",
+      "label": "",
+      "source": "GitHub Advisories",
+      "cvss": null
+    },
+    {
+      "id": "HF:building-with-ml-intern",
+      "type": "cve",
+      "label": "The model that didn't exist, so you made it yourself",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:open-d1",
+      "type": "cve",
+      "label": "Multimodal open d1 decision models for the edge",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:falcon-asr",
+      "type": "cve",
+      "label": "Introducing Falcon ASR",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:nemotron-ioi-and-imo-2026",
+      "type": "cve",
+      "label": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotr",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:thinkingbox",
+      "type": "cve",
+      "label": "The Agent Said It Was Done. The Database Disagreed.",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:astabrief",
+      "type": "cve",
+      "label": "Open-sourcing AstaBrief, the fast report-generation model in",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:autosynthdata",
+      "type": "cve",
+      "label": "AutoSynthData: Generating Training Data for Enterprise Agent",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:open-tts-leaderboard",
+      "type": "cve",
+      "label": "Open TTS Leaderboard: Scalable Evaluation for Multilingual T",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:getting-the-source-right-not-just-the-fact-source",
+      "type": "cve",
+      "label": "Getting the Source Right, Not Just the Fact: Source-Aware Ve",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:holo4",
+      "type": "cve",
+      "label": "Holo4: powering generalist computer-use agents",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:rl-environments",
+      "type": "cve",
+      "label": "Welcome RL Environments to the hub",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:evaleval-aisi",
+      "type": "cve",
+      "label": "How UK AISI and EvalEval Are Making Benchmark Results Reprod",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:transformers-llama-cpp-quants",
+      "type": "cve",
+      "label": "Transformers now runs llama.cpp quants",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "HF:omlx",
+      "type": "cve",
+      "label": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to ",
+      "source": "Hugging Face Blog",
+      "cvss": null
+    },
+    {
+      "id": "AQ:鱼缸插排被黑，一缸鱼全死了：你家的\"智能\"正在替黑客开门",
+      "type": "cve",
+      "label": "鱼缸插排被黑，一缸鱼全死了：你家的\"智能\"正在替黑客开门",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:从“翻得快”到“敢用”:太好译6S+1能成为AI翻译的行业标尺吗？",
+      "type": "cve",
+      "label": "从“翻得快”到“敢用”:太好译6S+1能成为AI翻译的行业标尺吗？",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:3.5亿美元一夜蒸发！黑客没偷密钥，Bitget是怎么被掏空的",
+      "type": "cve",
+      "label": "3.5亿美元一夜蒸发！黑客没偷密钥，Bitget是怎么被掏空的",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:机器开始自己越权了：AI 智能体一年 17 次\"翻墙\"，英伟达紧急下场装护栏",
+      "type": "cve",
+      "label": "机器开始自己越权了：AI 智能体一年 17 次\"翻墙\"，英伟达紧急下场装护栏",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:26秒攻陷11家机构：AI智能体第一次像蜂群一样打过来",
+      "type": "cve",
+      "label": "26秒攻陷11家机构：AI智能体第一次像蜂群一样打过来",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:一块公交站牌沦为\"肉鸡\"，公安部这份通报，把物联网安全的老底揭开了",
+      "type": "cve",
+      "label": "一块公交站牌沦为\"肉鸡\"，公安部这份通报，把物联网安全的老底揭开了",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:给AI出考卷的人，把考场门开到了马路上：Gemini入侵三家真实企业始末",
+      "type": "cve",
+      "label": "给AI出考卷的人，把考场门开到了马路上：Gemini入侵三家真实企业始末",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:每周AI全球资讯播报_09-14_09-20",
+      "type": "cve",
+      "label": "每周AI全球资讯播报_09-14_09-20",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:一口气搞懂 45 个 AI 术语：从 LLM 到 Ontology",
+      "type": "cve",
+      "label": "一口气搞懂 45 个 AI 术语：从 LLM 到 Ontology",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:3000 美元、3 个人、72 小时：AI 把 OpenAI 的论坛打穿了",
+      "type": "cve",
+      "label": "3000 美元、3 个人、72 小时：AI 把 OpenAI 的论坛打穿了",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:一个月 68 个 CVE、91.8% 没有 OAuth：你的 AI 工具层正在裸奔",
+      "type": "cve",
+      "label": "一个月 68 个 CVE、91.8% 没有 OAuth：你的 AI 工具层正在裸奔",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:首个\"AI黑客\"智能体暗网开售：渗透周期从两周缩到2.8天",
+      "type": "cve",
+      "label": "首个\"AI黑客\"智能体暗网开售：渗透周期从两周缩到2.8天",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:Cisco邮件网关9.8分漏洞被在野利用：一封邮件直接拿root，没有任何绕过的余地",
+      "type": "cve",
+      "label": "Cisco邮件网关9.8分漏洞被在野利用：一封邮件直接拿root，没有任何绕过的余地",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:红队两周的活，AI十小时干完：全球首例多智能体勒索攻击实录",
+      "type": "cve",
+      "label": "红队两周的活，AI十小时干完：全球首例多智能体勒索攻击实录",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:AI已经开始自动打你了：Anthropic捅破窗户纸，黑客用Claude实现\"检测即重生\"",
+      "type": "cve",
+      "label": "AI已经开始自动打你了：Anthropic捅破窗户纸，黑客用Claude实现\"检测即重生\"",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:22万条最私密的照片和病历，就从一个API接口流了出去",
+      "type": "cve",
+      "label": "22万条最私密的照片和病历，就从一个API接口流了出去",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:4200枚比特币只剩200枚：Liquid被掏空背后，\"白帽\"说法你信吗？",
+      "type": "cve",
+      "label": "4200枚比特币只剩200枚：Liquid被掏空背后，\"白帽\"说法你信吗？",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:深夜4小时，ChatGPT、Claude、Grok集体宕机：AI的根基正在动摇",
+      "type": "cve",
+      "label": "深夜4小时，ChatGPT、Claude、Grok集体宕机：AI的根基正在动摇",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:CISA连夜拉黑7个在野漏洞：黑客正顺着LiteLLM偷你的大模型密钥",
+      "type": "cve",
+      "label": "CISA连夜拉黑7个在野漏洞：黑客正顺着LiteLLM偷你的大模型密钥",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "AQ:漏洞开始工业化生产：AI让黑客的经验可以复制粘贴了",
+      "type": "cve",
+      "label": "漏洞开始工业化生产：AI让黑客的经验可以复制粘贴了",
+      "source": "安全客",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12466v1",
+      "type": "cve",
+      "label": "On the estimation and validity of AI time horizons---a stati",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12463v1",
+      "type": "cve",
+      "label": "From Reactive Containment to Proactive Assurance: Lessons fr",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12436v1",
+      "type": "cve",
+      "label": "Ecology of AI Agents: Collaboration Creates a Population Thr",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12426v1",
+      "type": "cve",
+      "label": "Lyapunov spectrum of random neural networks",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12415v1",
+      "type": "cve",
+      "label": "ORCAGen: Orchestrating Context-Aware Malware Deception with ",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12413v1",
+      "type": "cve",
+      "label": "Commitment over Gaussian channels with deterministic identif",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12409v1",
+      "type": "cve",
+      "label": "Searching for \"Harmful Refusal\": A Psychometric Audit of an ",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12405v1",
+      "type": "cve",
+      "label": "OctoSense: Building a Unified Ecosystem for Open-Source Wire",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12357v1",
+      "type": "cve",
+      "label": "Improved Local Leakage Resilience of Shamir Secret Sharing a",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12341v1",
+      "type": "cve",
+      "label": "Can AI Agents Learn Their Way to the Top? Evaluating Heurist",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12325v1",
+      "type": "cve",
+      "label": "Prior or Feedback? What an LLM Uses When Adapting Neural Ope",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12322v1",
+      "type": "cve",
+      "label": "JWST CAPERS: Spectroscopic evaluation of very high redshift ",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12295v1",
+      "type": "cve",
+      "label": "A proof of the Galt--Tyutyanov conjecture on Skiba's questio",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12293v1",
+      "type": "cve",
+      "label": "Machine Learning Meets High-Energy Nuclear Physics: From Pat",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12281v1",
+      "type": "cve",
+      "label": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constr",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12235v1",
+      "type": "cve",
+      "label": "Language Models as AI Research World Models",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12233v1",
+      "type": "cve",
+      "label": "ReSI: Recursive Safety Improvement toward Resistant and Resi",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12220v1",
+      "type": "cve",
+      "label": "One Node, Two Roles: Simultaneous Contests for Validation an",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12211v1",
+      "type": "cve",
+      "label": "Verification with Transfer: Exact Information Frontiers and ",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12209v1",
+      "type": "cve",
+      "label": "Secure Quantum Handshakes: Quantum Network Verification Via ",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12190v1",
+      "type": "cve",
+      "label": "DataSense-Bench: The First Step Toward an AI Scientist",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12182v1",
+      "type": "cve",
+      "label": "AI-Based On-Board Maritime Object Detection for Earth Observ",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12139v1",
+      "type": "cve",
+      "label": "Toward Intelligent Networks via AI-Aware GPU-Native Packet P",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12137v1",
+      "type": "cve",
+      "label": "Poster: A Preliminary Study of LLM Distillation Inference",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "ARX:http://arxiv.org/abs/2610.12125v1",
+      "type": "cve",
+      "label": "The learner who does not learn: when optimizing a pedagogica",
+      "source": "ArXiv",
+      "cvss": null
+    },
+    {
+      "id": "OSV:GHSA-652x-xj99-gmcc",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:GHSA-9hjg-9r4m-mvj7",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:GHSA-9wx4-h78v-vm56",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:GHSA-cfj3-7x9c-4p3h",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:GHSA-gc5v-m9x4-r6x2",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:GHSA-j8r2-6x86-q33q",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:GHSA-pg2w-x9wp-vw92",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:GHSA-x84v-xcm2-53pg",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:PYSEC-2014-13",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:PYSEC-2014-14",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:PYSEC-2015-17",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:PYSEC-2018-28",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:PYSEC-2023-74",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:PYSEC-2026-1872",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:PYSEC-2026-1873",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "OSV:PYSEC-2026-2275",
+      "type": "cve",
+      "label": "",
+      "source": "OSV.dev",
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2025-15690",
+      "type": "cve",
+      "label": "The Content Mask WordPress plugin before 1.8.5.6 does not pr",
+      "source": "NVD",
+      "cvss": 6.8
+    },
+    {
+      "id": "CWE::CWE-79",
+      "type": "cwe",
+      "label": "CWE-79",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-13144",
+      "type": "cve",
+      "label": "The WP Travel  WordPress plugin before 12.0.2 does not prope",
+      "source": "NVD",
+      "cvss": 3.7
+    },
+    {
+      "id": "CWE::CWE-284",
+      "type": "cwe",
+      "label": "CWE-284",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-13146",
+      "type": "cve",
+      "label": "The WP Travel  WordPress plugin before 12.0.2 does not prope",
+      "source": "NVD",
+      "cvss": 3.7
+    },
+    {
+      "id": "CWE::CWE-639",
+      "type": "cwe",
+      "label": "CWE-639",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-14962",
+      "type": "cve",
+      "label": "The ELEX WooCommerce Request a Quote WordPress plugin before",
+      "source": "NVD",
+      "cvss": 8.6
+    },
+    {
+      "id": "NVD:CVE-2026-16960",
+      "type": "cve",
+      "label": "The Loops & Logic WordPress plugin before 4.3.0 does not res",
+      "source": "NVD",
+      "cvss": 7.5
+    },
+    {
+      "id": "NVD:CVE-2026-18042",
+      "type": "cve",
+      "label": "The WP Travel  WordPress plugin before 12.0.2 does not verif",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "CWE::CWE-862",
+      "type": "cwe",
+      "label": "CWE-862",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-19946",
+      "type": "cve",
+      "label": "The Awesome Support plugin for WordPress is vulnerable to Mi",
+      "source": "NVD",
+      "cvss": 4.3
+    },
+    {
+      "id": "NVD:CVE-2026-75861",
+      "type": "cve",
+      "label": "The Ultimate Gift Cards for WooCommerce WordPress plugin bef",
+      "source": "NVD",
+      "cvss": 6.5
+    },
+    {
+      "id": "NVD:CVE-2026-75905",
+      "type": "cve",
+      "label": "The WP Recipe Maker plugin for WordPress is vulnerable to au",
+      "source": "NVD",
+      "cvss": 4.3
+    },
+    {
+      "id": "NVD:CVE-2026-76009",
+      "type": "cve",
+      "label": "The Next-Cart Store to WooCommerce Migration plugin for Word",
+      "source": "NVD",
+      "cvss": 8.1
+    },
+    {
+      "id": "CWE::CWE-287",
+      "type": "cwe",
+      "label": "CWE-287",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-80339",
+      "type": "cve",
+      "label": "The Payment Plugins for Stripe WooCommerce WordPress plugin ",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "NVD:CVE-2026-80340",
+      "type": "cve",
+      "label": "The Payment Plugins for PayPal WooCommerce WordPress plugin ",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "NVD:CVE-2026-80341",
+      "type": "cve",
+      "label": "The Payment Plugins for PayPal WooCommerce WordPress plugin ",
+      "source": "NVD",
+      "cvss": 5.9
+    },
+    {
+      "id": "NVD:CVE-2026-81021",
+      "type": "cve",
+      "label": "The SupportCandy  WordPress plugin before 3.5.3 does not per",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "NVD:CVE-2026-81022",
+      "type": "cve",
+      "label": "The SupportCandy  WordPress plugin before 3.5.3 does not val",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "NVD:CVE-2026-81741",
+      "type": "cve",
+      "label": "The Groundhogg — CRM, Newsletters, and Marketing Automation ",
+      "source": "NVD",
+      "cvss": 4.7
+    },
+    {
+      "id": "CWE::CWE-601",
+      "type": "cwe",
+      "label": "CWE-601",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-82184",
+      "type": "cve",
+      "label": "The WPLP Cookie Consent  WordPress plugin before 4.4.2 does ",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "NVD:CVE-2026-82185",
+      "type": "cve",
+      "label": "The WPLP Cookie Consent  WordPress plugin before 4.4.2 does ",
+      "source": "NVD",
+      "cvss": 4.3
+    },
+    {
+      "id": "NVD:CVE-2026-82848",
+      "type": "cve",
+      "label": "The Masteriyo LMS  WordPress plugin before 3.4.0 does not pe",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "NVD:CVE-2026-83541",
+      "type": "cve",
+      "label": "The Sina Extension for Elementor WordPress plugin before 3.1",
+      "source": "NVD",
+      "cvss": 6.8
+    },
+    {
+      "id": "NVD:CVE-2026-83593",
+      "type": "cve",
+      "label": "The WPBot – AI ChatBot for Live Support, Lead Generation, AI",
+      "source": "NVD",
+      "cvss": 7.2
+    },
+    {
+      "id": "NVD:CVE-2026-84068",
+      "type": "cve",
+      "label": "The Quentn WP WordPress plugin before 1.2.15 does not adequa",
+      "source": "NVD",
+      "cvss": 8.6
+    },
+    {
+      "id": "NVD:CVE-2026-84113",
+      "type": "cve",
+      "label": "The Quentn WP WordPress plugin before 1.2.15 does not proper",
+      "source": "NVD",
+      "cvss": 4.1
+    },
+    {
+      "id": "NVD:CVE-2026-84222",
+      "type": "cve",
+      "label": "The Kirki  WordPress plugin before 6.3.0 does not check whet",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "NVD:CVE-2026-84908",
+      "type": "cve",
+      "label": "The WPFunnels plugin for WordPress is vulnerable to Missing ",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "NVD:CVE-2026-85037",
+      "type": "cve",
+      "label": "The Sunshine Photo Cart  WordPress plugin before 3.7 does no",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "NVD:CVE-2026-85132",
+      "type": "cve",
+      "label": "The WPLP Cookie Consent  WordPress plugin before 4.4.2 does ",
+      "source": "NVD",
+      "cvss": 4.3
+    },
+    {
+      "id": "NVD:CVE-2026-85133",
+      "type": "cve",
+      "label": "The WPLP Cookie Consent  WordPress plugin before 4.4.2 does ",
+      "source": "NVD",
+      "cvss": 5.4
+    },
+    {
+      "id": "NVD:CVE-2026-85418",
+      "type": "cve",
+      "label": "The Orbit Fox: Duplicate Page, Menu Icons, SVG Support, Cook",
+      "source": "NVD",
+      "cvss": 5.4
+    },
+    {
+      "id": "NVD:CVE-2026-8615",
+      "type": "cve",
+      "label": "The Reviso Exporter for WooCommerce plugin for WordPress is ",
+      "source": "NVD",
+      "cvss": 4.3
+    },
+    {
+      "id": "NVD:CVE-2025-7062",
+      "type": "cve",
+      "label": "A stored cross-site scripting (XSS) vulnerability has been i",
+      "source": "NVD",
+      "cvss": 5.2
+    },
+    {
+      "id": "CWE::CWE-20",
+      "type": "cwe",
+      "label": "CWE-20",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-19802",
+      "type": "cve",
+      "label": "The Checkout Custom Fields Builder for WooCommerce plugin fo",
+      "source": "NVD",
+      "cvss": 4.3
+    },
+    {
+      "id": "NVD:CVE-2026-19855",
+      "type": "cve",
+      "label": "The CleanTalk WordPress plugin before 6.87 does not prevent ",
+      "source": "NVD",
+      "cvss": 6.5
+    },
+    {
+      "id": "CWE::CWE-74",
+      "type": "cwe",
+      "label": "CWE-74",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-80440",
+      "type": "cve",
+      "label": "The Hustle WordPress plugin before 7.8.14.2 does not prevent",
+      "source": "NVD",
+      "cvss": 4.8
+    },
+    {
+      "id": "NVD:CVE-2026-83537",
+      "type": "cve",
+      "label": "The WP Express Checkout WordPress plugin before 2.5.0 does n",
+      "source": "NVD",
+      "cvss": 5.3
+    },
+    {
+      "id": "CWE::CWE-345",
+      "type": "cwe",
+      "label": "CWE-345",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-85117",
+      "type": "cve",
+      "label": "The Contact Form 7 Captcha WordPress plugin before 0.1.9 run",
+      "source": "NVD",
+      "cvss": 6.5
+    },
+    {
+      "id": "NVD:CVE-2026-87747",
+      "type": "cve",
+      "label": "The Enterprise Cloud Database developed by Ragic has an Arbi",
+      "source": "NVD",
+      "cvss": 4.9
+    },
+    {
+      "id": "CWE::CWE-23",
+      "type": "cwe",
+      "label": "CWE-23",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-15398",
+      "type": "cve",
+      "label": "The Eventin – Event Calendar, Event Registration, Tickets & ",
+      "source": "NVD",
+      "cvss": 4.3
+    },
+    {
+      "id": "NVD:CVE-2026-17149",
+      "type": "cve",
+      "label": "The Points Management System For Gamification, Ranks, Badges",
+      "source": "NVD",
+      "cvss": 6.4
+    },
+    {
+      "id": "NVD:CVE-2026-19729",
+      "type": "cve",
+      "label": "A flaw was found in the key provider component of the keyclo",
+      "source": "NVD",
+      "cvss": 4.9
+    },
+    {
+      "id": "NVD:CVE-2026-19778",
+      "type": "cve",
+      "label": "The WPMR Google Feed Manager for WooCommerce – Sell on Googl",
+      "source": "NVD",
+      "cvss": 6.5
+    },
+    {
+      "id": "NVD:CVE-2026-75927",
+      "type": "cve",
+      "label": "The PublishPress Capabilities – User Role Editor, Access Per",
+      "source": "NVD",
+      "cvss": 7.2
+    },
+    {
+      "id": "CWE::CWE-269",
+      "type": "cwe",
+      "label": "CWE-269",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-79636",
+      "type": "cve",
+      "label": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell",
+      "source": "NVD",
+      "cvss": 7.0
+    },
+    {
+      "id": "CWE::CWE-297",
+      "type": "cwe",
+      "label": "CWE-297",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-80055",
+      "type": "cve",
+      "label": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell",
+      "source": "NVD",
+      "cvss": 4.4
+    },
+    {
+      "id": "CWE::CWE-90",
+      "type": "cwe",
+      "label": "CWE-90",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-80123",
+      "type": "cve",
+      "label": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell",
+      "source": "NVD",
+      "cvss": 7.3
+    },
+    {
+      "id": "CWE::CWE-918",
+      "type": "cwe",
+      "label": "CWE-918",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-80124",
+      "type": "cve",
+      "label": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell",
+      "source": "NVD",
+      "cvss": 5.5
+    },
+    {
+      "id": "CWE::CWE-532",
+      "type": "cwe",
+      "label": "CWE-532",
+      "source": null,
+      "cvss": null
+    },
+    {
+      "id": "NVD:CVE-2026-80177",
+      "type": "cve",
+      "label": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell",
+      "source": "NVD",
+      "cvss": 6.5
+    },
+    {
+      "id": "NVD:CVE-2025-46808",
+      "type": "cve",
+      "label": "An Insertion of Sensitive Information into Log File vulnerab",
+      "source": "NVD",
+      "cvss": 6.8
+    },
+    {
+      "id": "NVD:CVE-2026-12858",
+      "type": "cve",
+      "label": "Improper Privilege Management vulnerability in ESET AV Remov",
+      "source": "NVD",
+      "cvss": 8.5
+    },
+    {
+      "id": "NVD:CVE-2026-14359",
+      "type": "cve",
+      "label": "The YITH WooCommerce Waitlist Premium plugin for WordPress i",
+      "source": "NVD",
+      "cvss": 8.8
+    }
+  ],
+  "edges": [
+    {
+      "source": "NVD:CVE-2026-85097",
+      "target": "CWE::CWE-434",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-85421",
+      "target": "CWE::CWE-306",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-306",
+      "target": "NVD:CVE-2026-85423",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-306",
+      "target": "NVD:CVE-2026-85489",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-306",
+      "target": "NVD:CVE-2026-105110",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-85422",
+      "target": "CWE::CWE-798",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-798",
+      "target": "NVD:CVE-2026-85488",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-85486",
+      "target": "CWE::CWE-95",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-85487",
+      "target": "CWE::CWE-22",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-22",
+      "target": "NVD:CVE-2026-85490",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-22",
+      "target": "NVD:CVE-2026-107466",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-22",
+      "target": "NVD:CVE-2026-19729",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-87424",
+      "target": "CWE::CWE-321",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-87425",
+      "target": "CWE::CWE-295",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-87426",
+      "target": "CWE::CWE-200",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-200",
+      "target": "NVD:CVE-2026-16960",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-200",
+      "target": "NVD:CVE-2026-80339",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-200",
+      "target": "NVD:CVE-2026-80340",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-200",
+      "target": "NVD:CVE-2026-81021",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-200",
+      "target": "NVD:CVE-2026-81022",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-200",
+      "target": "NVD:CVE-2026-84222",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-87428",
+      "target": "CWE::CWE-522",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-93699",
+      "target": "CWE::CWE-88",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-105110",
+      "target": "CWE::CWE-78",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-12260",
+      "target": "CWE::CWE-89",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-89",
+      "target": "NVD:CVE-2026-14962",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-89",
+      "target": "NVD:CVE-2026-84068",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-89",
+      "target": "NVD:CVE-2026-84113",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-89",
+      "target": "NVD:CVE-2026-19778",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-89",
+      "target": "NVD:CVE-2026-80177",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-4894",
+      "target": "CWE::CWE-290",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-66082",
+      "target": "CWE::CWE-863",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-863",
+      "target": "NVD:CVE-2026-66084",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-863",
+      "target": "NVD:CVE-2026-80341",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2025-15690",
+      "target": "CWE::CWE-79",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-79",
+      "target": "NVD:CVE-2026-83541",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-79",
+      "target": "NVD:CVE-2026-83593",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-79",
+      "target": "NVD:CVE-2026-85418",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-79",
+      "target": "NVD:CVE-2025-7062",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-79",
+      "target": "NVD:CVE-2026-17149",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-13144",
+      "target": "CWE::CWE-284",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-13146",
+      "target": "CWE::CWE-639",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-639",
+      "target": "NVD:CVE-2026-85037",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-18042",
+      "target": "CWE::CWE-862",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-19946",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-75861",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-75905",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-82184",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-82185",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-82848",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-84908",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-85132",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-85133",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-8615",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-19802",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-862",
+      "target": "NVD:CVE-2026-15398",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-76009",
+      "target": "CWE::CWE-287",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-81741",
+      "target": "CWE::CWE-601",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2025-7062",
+      "target": "CWE::CWE-20",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-19855",
+      "target": "CWE::CWE-74",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-74",
+      "target": "NVD:CVE-2026-80440",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-74",
+      "target": "NVD:CVE-2026-85117",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-83537",
+      "target": "CWE::CWE-345",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-87747",
+      "target": "CWE::CWE-23",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-75927",
+      "target": "CWE::CWE-269",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-269",
+      "target": "NVD:CVE-2026-12858",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-269",
+      "target": "NVD:CVE-2026-14359",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-79636",
+      "target": "CWE::CWE-297",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-80055",
+      "target": "CWE::CWE-90",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-80123",
+      "target": "CWE::CWE-918",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "NVD:CVE-2026-80124",
+      "target": "CWE::CWE-532",
+      "relation": "has_cwe"
+    },
+    {
+      "source": "CWE::CWE-532",
+      "target": "NVD:CVE-2025-46808",
+      "relation": "has_cwe"
+    }
+  ],
+  "stats": {
+    "total_nodes": 194,
+    "total_edges": 72,
+    "cve_nodes": 165,
+    "cwe_nodes": 29,
+    "asset_nodes": 0
+  }
+}

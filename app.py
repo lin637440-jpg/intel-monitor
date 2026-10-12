@@ -1,9 +1,11 @@
 import json
+import math
 import sqlite3
 from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import streamlit as st
 
 DB_PATH = Path("data/intel.db")
@@ -92,33 +94,49 @@ st.divider()
 # ============ 时间趋势 ============
 st.subheader("📈 采集时间趋势")
 df["date"] = pd.to_datetime(df["created_at"]).dt.date
-trend = df.groupby(["date", "source"]).size().reset_index(name="count")
-fig = px.line(trend, x="date", y="count", color="source", markers=True)
+trend_df = df.groupby(["date", "source"]).size().reset_index(name="count")
+fig = px.line(trend_df, x="date", y="count", color="source", markers=True)
 st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
 
-# ============ 多源交叉验证 ============
-st.subheader("🎯 多源交叉验证")
+# ============ CWE 主题分布 ============
+st.subheader("🎯 CWE 漏洞类型分布")
 CONF_PATH = Path("data/confidence.json")
 if CONF_PATH.exists():
     conf = json.loads(CONF_PATH.read_text(encoding="utf-8"))
-    multi = {k: v for k, v in conf.items() if v["source_count"] > 1}
-    st.write(f"共 {len(conf)} 个 CVE，多源命中 {len(multi)} 个")
-    if multi:
+    c1, c2, c3 = st.columns(3)
+    c1.metric("总 CVE", conf.get("total_cve", 0))
+    c2.metric("多源命中", conf.get("multi_source_cve", 0))
+    c3.metric("漏洞类型数", conf.get("total_cwe", 0))
+
+    cwe_stats = conf.get("cwe_stats", [])
+    if cwe_stats:
         cdf = pd.DataFrame([
-            {"cve": k, "confidence": v["confidence"], "sources": ", ".join(v["sources"])}
-            for k, v in multi.items()
+            {"CWE": e["cwe"], "数量": e["count"],
+             "平均 CVSS": e["avg_cvss"], "最高 CVSS": e["max_cvss"],
+             "涉及源": ", ".join(e["sources"])}
+            for e in cwe_stats[:20]
         ])
         st.dataframe(cdf, use_container_width=True)
+
+        # 加个柱状图更直观
+        top10 = cwe_stats[:10]
+        fig = px.bar(
+            pd.DataFrame(top10), x="cwe", y="count",
+            labels={"cwe": "CWE 类型", "count": "数量"},
+            color="avg_cvss", color_continuous_scale="Reds",
+        )
+        st.plotly_chart(fig, use_container_width=True)
     else:
-        st.info("暂无双源命中的 CVE（需等下次采集）")
+        st.info("暂无 CWE 数据")
 else:
     st.info("先跑 python -m enrichment.cross_validate")
 
-# ============ 趋势分析 ============
 st.divider()
-st.subheader("📊 趋势分析（CVSS 高危占比）")
+
+# ============ 趋势分析 ============
+st.subheader("📊 高危漏洞占比")
 TREND_PATH = Path("data/trend.json")
 if TREND_PATH.exists():
     trend = json.loads(TREND_PATH.read_text(encoding="utf-8"))
@@ -127,7 +145,7 @@ if TREND_PATH.exists():
     c2.metric("高危数（CVSS≥7）", trend["high_count"])
     c3.metric("高危占比", f"{trend['high_ratio'] * 100:.1f}%")
 
-    if trend["series"]:
+    if trend.get("series"):
         sdf = pd.DataFrame(trend["series"])
         fig = px.bar(
             sdf, x="date", y="count", color="source",
@@ -136,9 +154,89 @@ if TREND_PATH.exists():
         st.plotly_chart(fig, use_container_width=True)
 else:
     st.info("先跑 python -m analytics.trend")
+
 st.divider()
 
-# ============ 富化结果 ============
+# ============ CVE 关联图 ============
+st.subheader("🕸️ CVE 关联图（CWE / 资产）")
+GRAPH_PATH = Path("data/graph.json")
+if GRAPH_PATH.exists():
+    g = json.loads(GRAPH_PATH.read_text(encoding="utf-8"))
+    stats = g.get("stats", {})
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("节点总数", stats.get("total_nodes", 0))
+    c2.metric("CVE 节点", stats.get("cve_nodes", 0))
+    c3.metric("CWE 节点", stats.get("cwe_nodes", 0))
+    c4.metric("资产节点", stats.get("asset_nodes", 0))
+
+    nodes = g.get("nodes", [])
+    edges = g.get("edges", [])
+    cwe_nodes = [n for n in nodes if n["type"] == "cwe"]
+    cve_nodes = [n for n in nodes if n["type"] == "cve"]
+    asset_nodes = [n for n in nodes if n["type"] == "asset"]
+
+    # 环形布局
+    pos = {}
+    for i, n in enumerate(cwe_nodes):
+        angle = 2 * math.pi * i / max(len(cwe_nodes), 1)
+        pos[n["id"]] = (math.cos(angle), math.sin(angle))
+    for i, n in enumerate(cve_nodes):
+        angle = 2 * math.pi * i / max(len(cve_nodes), 1)
+        r = 2.5
+        pos[n["id"]] = (r * math.cos(angle), r * math.sin(angle))
+    for i, n in enumerate(asset_nodes):
+        angle = 2 * math.pi * i / max(len(asset_nodes), 1)
+        r = 1.7
+        pos[n["id"]] = (r * math.cos(angle), r * math.sin(angle))
+
+    edge_x, edge_y = [], []
+    for e in edges:
+        if e["source"] in pos and e["target"] in pos:
+            x0, y0 = pos[e["source"]]
+            x1, y1 = pos[e["target"]]
+            edge_x += [x0, x1, None]
+            edge_y += [y0, y1, None]
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=edge_x, y=edge_y, mode="lines",
+        line=dict(width=0.5, color="#aaa"),
+        hoverinfo="none",
+    ))
+
+    for ntype, color, size in [
+        ("cwe", "#EF553B", 12),
+        ("asset", "#00CC96", 10),
+        ("cve", "#636EFA", 4),
+    ]:
+        subset = [n for n in nodes if n["type"] == ntype and n["id"] in pos]
+        if not subset:
+            continue
+        fig.add_trace(go.Scatter(
+            x=[pos[n["id"]][0] for n in subset],
+            y=[pos[n["id"]][1] for n in subset],
+            mode="markers+text",
+            text=[n["label"][:20] for n in subset],
+            textposition="top center",
+            marker=dict(size=size, color=color),
+            name=ntype,
+            hovertext=[n["label"] for n in subset],
+            hoverinfo="text",
+        ))
+
+    fig.update_layout(
+        showlegend=True,
+        height=600,
+        xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+    )
+    st.plotly_chart(fig, use_container_width=True)
+else:
+    st.info("先跑 python -m analytics.graph")
+
+st.divider()
+
+# ============ 富化样本 ============
 st.subheader("🔬 富化样本（最近 20 条）")
 ENRICHED_PATH = Path("data/enriched_sample.json")
 if ENRICHED_PATH.exists():
