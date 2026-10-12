@@ -7,7 +7,7 @@ from collectors import (
     osv_collector,
 )
 from storage.db import insert_items
-
+from storage.sync_state import update_sync, record_error
 
 def normalize(source, items):
     out = []
@@ -88,9 +88,11 @@ def collect_source(source):
         items = fn()
         items = normalize(source, items)
         inserted, total = insert_items(items)
+        update_sync(source, len(items), inserted)
         print(f"[{source}] 抓到 {len(items)} 条，新入库 {inserted} 条，累计 {total}")
         return inserted, total
     except Exception as e:
+        record_error(source)
         print(f"[{source}] 失败：{type(e).__name__}: {e}")
         return 0, 0
 

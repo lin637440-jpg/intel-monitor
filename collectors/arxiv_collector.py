@@ -9,6 +9,7 @@ NS = {"a": "http://www.w3.org/2005/Atom"}
 
 
 def fetch(query="all:AI security", max_results=25):
+    import time
     params = {
         "search_query": query,
         "start": 0,
@@ -16,9 +17,19 @@ def fetch(query="all:AI security", max_results=25):
         "sortBy": "submittedDate",
         "sortOrder": "descending",
     }
-    resp = requests.get(API, params=params, timeout=30)
+    headers = {"User-Agent": "intel-monitor/0.1 (contact: intel@example.com)"}
+
+    for attempt in range(3):
+        resp = requests.get(API, params=params, headers=headers, timeout=30)
+        if resp.status_code == 200:
+            return resp.text
+        if resp.status_code == 429:
+            wait = 5 * (attempt + 1)
+            print(f"ArXiv 429 限流，{wait}s 后重试...")
+            time.sleep(wait)
+            continue
+        resp.raise_for_status()
     resp.raise_for_status()
-    return resp.text
 
 
 def parse(xml_text):
