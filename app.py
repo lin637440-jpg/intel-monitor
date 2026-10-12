@@ -98,6 +98,46 @@ st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
 
+# ============ 多源交叉验证 ============
+st.subheader("🎯 多源交叉验证")
+CONF_PATH = Path("data/confidence.json")
+if CONF_PATH.exists():
+    conf = json.loads(CONF_PATH.read_text(encoding="utf-8"))
+    multi = {k: v for k, v in conf.items() if v["source_count"] > 1}
+    st.write(f"共 {len(conf)} 个 CVE，多源命中 {len(multi)} 个")
+    if multi:
+        cdf = pd.DataFrame([
+            {"cve": k, "confidence": v["confidence"], "sources": ", ".join(v["sources"])}
+            for k, v in multi.items()
+        ])
+        st.dataframe(cdf, use_container_width=True)
+    else:
+        st.info("暂无双源命中的 CVE（需等下次采集）")
+else:
+    st.info("先跑 python -m enrichment.cross_validate")
+
+# ============ 趋势分析 ============
+st.divider()
+st.subheader("📊 趋势分析（CVSS 高危占比）")
+TREND_PATH = Path("data/trend.json")
+if TREND_PATH.exists():
+    trend = json.loads(TREND_PATH.read_text(encoding="utf-8"))
+    c1, c2, c3 = st.columns(3)
+    c1.metric("总情报", trend["total"])
+    c2.metric("高危数（CVSS≥7）", trend["high_count"])
+    c3.metric("高危占比", f"{trend['high_ratio'] * 100:.1f}%")
+
+    if trend["series"]:
+        sdf = pd.DataFrame(trend["series"])
+        fig = px.bar(
+            sdf, x="date", y="count", color="source",
+            labels={"count": "数量", "date": "日期"},
+        )
+        st.plotly_chart(fig, use_container_width=True)
+else:
+    st.info("先跑 python -m analytics.trend")
+st.divider()
+
 # ============ 富化结果 ============
 st.subheader("🔬 富化样本（最近 20 条）")
 ENRICHED_PATH = Path("data/enriched_sample.json")

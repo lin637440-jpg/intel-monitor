@@ -1,0 +1,169 @@
+{
+  "generated_at": "2026-10-12T06:35:06.308294",
+  "total": 75,
+  "high_count": 0,
+  "high_ratio": 0.0,
+  "series": [
+    {
+      "date": "2014-10-15",
+      "source": "OSV.dev",
+      "count": 2,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2015-03-18",
+      "source": "OSV.dev",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2018-10-09",
+      "source": "OSV.dev",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2018-10-29",
+      "source": "OSV.dev",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2022-05-13",
+      "source": "OSV.dev",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2022-05-14",
+      "source": "OSV.dev",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2022-05-17",
+      "source": "OSV.dev",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2023-05-22",
+      "source": "OSV.dev",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2023-05-26",
+      "source": "OSV.dev",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2024-05-20",
+      "source": "OSV.dev",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2025-06-09",
+      "source": "OSV.dev",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-03-25",
+      "source": "OSV.dev",
+      "count": 2,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-07-07",
+      "source": "OSV.dev",
+      "count": 2,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-22",
+      "source": "Hugging Face Blog",
+      "count": 3,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-28",
+      "source": "Hugging Face Blog",
+      "count": 2,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-29",
+      "source": "Hugging Face Blog",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-30",
+      "source": "Hugging Face Blog",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-10-02",
+      "source": "Hugging Face Blog",
+      "count": 2,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-10-03",
+      "source": "Hugging Face Blog",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-10-07",
+      "source": "Hugging Face Blog",
+      "count": 3,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-10-08",
+      "source": "ArXiv",
+      "count": 25,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-10-08",
+      "source": "GitHub Advisories",
+      "count": 20,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-10-08",
+      "source": "Hugging Face Blog",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    }
+  ]
+}

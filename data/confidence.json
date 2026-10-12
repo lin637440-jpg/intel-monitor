@@ -1,0 +1,884 @@
+{
+  "CVE-2026-85097": {
+    "cve_id": "CVE-2026-85097",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85421": {
+    "cve_id": "CVE-2026-85421",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85422": {
+    "cve_id": "CVE-2026-85422",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85423": {
+    "cve_id": "CVE-2026-85423",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85486": {
+    "cve_id": "CVE-2026-85486",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85487": {
+    "cve_id": "CVE-2026-85487",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85488": {
+    "cve_id": "CVE-2026-85488",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85489": {
+    "cve_id": "CVE-2026-85489",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85490": {
+    "cve_id": "CVE-2026-85490",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-87424": {
+    "cve_id": "CVE-2026-87424",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-87425": {
+    "cve_id": "CVE-2026-87425",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-87426": {
+    "cve_id": "CVE-2026-87426",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-87428": {
+    "cve_id": "CVE-2026-87428",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-107466": {
+    "cve_id": "CVE-2026-107466",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-93699": {
+    "cve_id": "CVE-2026-93699",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-105110": {
+    "cve_id": "CVE-2026-105110",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-12260": {
+    "cve_id": "CVE-2026-12260",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-4894": {
+    "cve_id": "CVE-2026-4894",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-66082": {
+    "cve_id": "CVE-2026-66082",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-66084": {
+    "cve_id": "CVE-2026-66084",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-107719": {
+    "cve_id": "CVE-2026-107719",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107726": {
+    "cve_id": "CVE-2026-107726",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107716": {
+    "cve_id": "CVE-2026-107716",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107717": {
+    "cve_id": "CVE-2026-107717",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-25738": {
+    "cve_id": "CVE-2026-25738",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107395": {
+    "cve_id": "CVE-2026-107395",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107397": {
+    "cve_id": "CVE-2026-107397",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107396": {
+    "cve_id": "CVE-2026-107396",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107725": {
+    "cve_id": "CVE-2026-107725",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107718": {
+    "cve_id": "CVE-2026-107718",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107399": {
+    "cve_id": "CVE-2026-107399",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107715": {
+    "cve_id": "CVE-2026-107715",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107720": {
+    "cve_id": "CVE-2026-107720",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-34950": {
+    "cve_id": "CVE-2026-34950",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107721": {
+    "cve_id": "CVE-2026-107721",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2025-30144": {
+    "cve_id": "CVE-2025-30144",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-107724": {
+    "cve_id": "CVE-2026-107724",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-44338": {
+    "cve_id": "CVE-2026-44338",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-61442": {
+    "cve_id": "CVE-2026-61442",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2026-61434": {
+    "cve_id": "CVE-2026-61434",
+    "sources": [
+      "GitHub Advisories"
+    ],
+    "source_count": 1,
+    "confidence": 0.9,
+    "items_count": 1
+  },
+  "CVE-2014-1830": {
+    "cve_id": "CVE-2014-1830",
+    "sources": [
+      "OSV.dev"
+    ],
+    "source_count": 1,
+    "confidence": 0.8,
+    "items_count": 2
+  },
+  "CVE-2024-47081": {
+    "cve_id": "CVE-2024-47081",
+    "sources": [
+      "OSV.dev"
+    ],
+    "source_count": 1,
+    "confidence": 0.8,
+    "items_count": 2
+  },
+  "CVE-2024-35195": {
+    "cve_id": "CVE-2024-35195",
+    "sources": [
+      "OSV.dev"
+    ],
+    "source_count": 1,
+    "confidence": 0.8,
+    "items_count": 2
+  },
+  "CVE-2014-1829": {
+    "cve_id": "CVE-2014-1829",
+    "sources": [
+      "OSV.dev"
+    ],
+    "source_count": 1,
+    "confidence": 0.8,
+    "items_count": 2
+  },
+  "CVE-2026-25645": {
+    "cve_id": "CVE-2026-25645",
+    "sources": [
+      "OSV.dev"
+    ],
+    "source_count": 1,
+    "confidence": 0.8,
+    "items_count": 2
+  },
+  "CVE-2023-32681": {
+    "cve_id": "CVE-2023-32681",
+    "sources": [
+      "OSV.dev"
+    ],
+    "source_count": 1,
+    "confidence": 0.8,
+    "items_count": 2
+  },
+  "CVE-2015-2296": {
+    "cve_id": "CVE-2015-2296",
+    "sources": [
+      "OSV.dev"
+    ],
+    "source_count": 1,
+    "confidence": 0.8,
+    "items_count": 2
+  },
+  "CVE-2018-18074": {
+    "cve_id": "CVE-2018-18074",
+    "sources": [
+      "OSV.dev"
+    ],
+    "source_count": 1,
+    "confidence": 0.8,
+    "items_count": 2
+  },
+  "CVE-2025-15690": {
+    "cve_id": "CVE-2025-15690",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-13144": {
+    "cve_id": "CVE-2026-13144",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-13146": {
+    "cve_id": "CVE-2026-13146",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-14962": {
+    "cve_id": "CVE-2026-14962",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-16960": {
+    "cve_id": "CVE-2026-16960",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-18042": {
+    "cve_id": "CVE-2026-18042",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-19946": {
+    "cve_id": "CVE-2026-19946",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-75861": {
+    "cve_id": "CVE-2026-75861",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-75905": {
+    "cve_id": "CVE-2026-75905",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-76009": {
+    "cve_id": "CVE-2026-76009",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-80339": {
+    "cve_id": "CVE-2026-80339",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-80340": {
+    "cve_id": "CVE-2026-80340",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-80341": {
+    "cve_id": "CVE-2026-80341",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-81021": {
+    "cve_id": "CVE-2026-81021",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-81022": {
+    "cve_id": "CVE-2026-81022",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-81741": {
+    "cve_id": "CVE-2026-81741",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-82184": {
+    "cve_id": "CVE-2026-82184",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-82185": {
+    "cve_id": "CVE-2026-82185",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-82848": {
+    "cve_id": "CVE-2026-82848",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-83541": {
+    "cve_id": "CVE-2026-83541",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-83593": {
+    "cve_id": "CVE-2026-83593",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-84068": {
+    "cve_id": "CVE-2026-84068",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-84113": {
+    "cve_id": "CVE-2026-84113",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-84222": {
+    "cve_id": "CVE-2026-84222",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-84908": {
+    "cve_id": "CVE-2026-84908",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85037": {
+    "cve_id": "CVE-2026-85037",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85132": {
+    "cve_id": "CVE-2026-85132",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85133": {
+    "cve_id": "CVE-2026-85133",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85418": {
+    "cve_id": "CVE-2026-85418",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-8615": {
+    "cve_id": "CVE-2026-8615",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2025-7062": {
+    "cve_id": "CVE-2025-7062",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-19802": {
+    "cve_id": "CVE-2026-19802",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-19855": {
+    "cve_id": "CVE-2026-19855",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-80440": {
+    "cve_id": "CVE-2026-80440",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-83537": {
+    "cve_id": "CVE-2026-83537",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-85117": {
+    "cve_id": "CVE-2026-85117",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-87747": {
+    "cve_id": "CVE-2026-87747",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-15398": {
+    "cve_id": "CVE-2026-15398",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-17149": {
+    "cve_id": "CVE-2026-17149",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-19729": {
+    "cve_id": "CVE-2026-19729",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-19778": {
+    "cve_id": "CVE-2026-19778",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-75927": {
+    "cve_id": "CVE-2026-75927",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-79636": {
+    "cve_id": "CVE-2026-79636",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-80055": {
+    "cve_id": "CVE-2026-80055",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-80123": {
+    "cve_id": "CVE-2026-80123",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-80124": {
+    "cve_id": "CVE-2026-80124",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-80177": {
+    "cve_id": "CVE-2026-80177",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2025-46808": {
+    "cve_id": "CVE-2025-46808",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-12858": {
+    "cve_id": "CVE-2026-12858",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  },
+  "CVE-2026-14359": {
+    "cve_id": "CVE-2026-14359",
+    "sources": [
+      "NVD"
+    ],
+    "source_count": 1,
+    "confidence": 1.0,
+    "items_count": 1
+  }
+}
