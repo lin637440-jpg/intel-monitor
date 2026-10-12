@@ -1,0 +1,956 @@
+{
+  "CVE-2026-85097": {
+    "cve_id": "CVE-2026-85097",
+    "primary_source": "NVD",
+    "primary_title": "The Bricksforge plugin for WordPress is vulnerable to unauthenticated arbitrary file upload in versions up to, and inclu",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85421": {
+    "cve_id": "CVE-2026-85421",
+    "primary_source": "NVD",
+    "primary_title": "A critical security vulnerability has been identified in Brocade ASCG versions before 3.5.0. The HTTPS service fails to ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85422": {
+    "cve_id": "CVE-2026-85422",
+    "primary_source": "NVD",
+    "primary_title": "A vulnerability in Brocade ASCG version before 3.5.0 could allow an attacker to obtain a static cryptographic key hardco",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85423": {
+    "cve_id": "CVE-2026-85423",
+    "primary_source": "NVD",
+    "primary_title": "A vulnerability has been identified in the data collection service of Brocade ASCG versions before 3.5.0. An API endpoin",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85486": {
+    "cve_id": "CVE-2026-85486",
+    "primary_source": "NVD",
+    "primary_title": "Brocade ASCG before 3.5.0 improperly processes user input by evaluating form data prior to validation. When an authentic",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85487": {
+    "cve_id": "CVE-2026-85487",
+    "primary_source": "NVD",
+    "primary_title": "A path traversal vulnerability exists in the HTTP service component of Brocade ASCG versions before 3.5.0. An unauthenti",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85488": {
+    "cve_id": "CVE-2026-85488",
+    "primary_source": "NVD",
+    "primary_title": "Brocade ASCG before 3.5.0 has a well-known Brocade default password embedded in a script distributed to every customer. ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85489": {
+    "cve_id": "CVE-2026-85489",
+    "primary_source": "NVD",
+    "primary_title": "An authentication flaw exists in the Brocade ASCG administrative management service component. An unauthenticated networ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85490": {
+    "cve_id": "CVE-2026-85490",
+    "primary_source": "NVD",
+    "primary_title": "When Brocade ASCG before 3.5.0 processes support bundle archives ingested from remote compromised endpoints, the applica",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-87424": {
+    "cve_id": "CVE-2026-87424",
+    "primary_source": "NVD",
+    "primary_title": "A vulnerability in the SupportLink API authentication component of Brocade ASCG versions prior to 3.5.0 allows an attack",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-87425": {
+    "cve_id": "CVE-2026-87425",
+    "primary_source": "NVD",
+    "primary_title": "An unauthenticated remote attacker can modify the TLS client trust store in Brocade ASCG versions before 3.5.0. By suppl",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-87426": {
+    "cve_id": "CVE-2026-87426",
+    "primary_source": "NVD",
+    "primary_title": "An unauthenticated network-based attacker can query specific internal management endpoints on Brocade ASCG versions befo",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-87428": {
+    "cve_id": "CVE-2026-87428",
+    "primary_source": "NVD",
+    "primary_title": "In Brocade ASCG before 3.5.0, a  local unauthorized user on the ASCG VM who can issue a request to the SANnav host netwo",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107466": {
+    "cve_id": "CVE-2026-107466",
+    "primary_source": "NVD",
+    "primary_title": "A flaw was found in flatpak-builder. This vulnerability allows an attacker to cause information disclosure by convincing",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-93699": {
+    "cve_id": "CVE-2026-93699",
+    "primary_source": "NVD",
+    "primary_title": "Argument injection in WP Toolkit for cPanel allows local users to execute arbitrary code as other accounts on the same s",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-105110": {
+    "cve_id": "CVE-2026-105110",
+    "primary_source": "NVD",
+    "primary_title": "OS Command Injection in the login.xgi CGI endpoint in Iskratel Innbox GPON ONT devices allows an unauthenticated remote ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-12260": {
+    "cve_id": "CVE-2026-12260",
+    "primary_source": "NVD",
+    "primary_title": "SQL injection in the NetBoard CRM demo platform; specifically, the vulnerable component is the ‘user-name’ POST paramete",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-4894": {
+    "cve_id": "CVE-2026-4894",
+    "primary_source": "NVD",
+    "primary_title": "A vulnerability has been identified regarding insufficient validation in the Frappe Cloud/ERPNext authentication process",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-66082": {
+    "cve_id": "CVE-2026-66082",
+    "primary_source": "NVD",
+    "primary_title": "An authorization bypass vulnerability in Apache DolphinScheduler allows authenticated users to perform unauthorized oper",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-66084": {
+    "cve_id": "CVE-2026-66084",
+    "primary_source": "NVD",
+    "primary_title": "An authorization bypass vulnerability in Apache DolphinScheduler allows authenticated users to modify task definitions i",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107719": {
+    "cve_id": "CVE-2026-107719",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-x937-hj6v-793p",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107726": {
+    "cve_id": "CVE-2026-107726",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-6v25-8wq6-xq4j",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107716": {
+    "cve_id": "CVE-2026-107716",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-556j-vv39-8rqv",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107717": {
+    "cve_id": "CVE-2026-107717",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-hmq2-7hp6-7crh",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-25738": {
+    "cve_id": "CVE-2026-25738",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-2v95-h47v-g4x9",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107395": {
+    "cve_id": "CVE-2026-107395",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-6p4f-j8j6-463q",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107397": {
+    "cve_id": "CVE-2026-107397",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-cw24-x4mj-fw3q",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107396": {
+    "cve_id": "CVE-2026-107396",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-c4wc-ggrj-jg9v",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107725": {
+    "cve_id": "CVE-2026-107725",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-w294-6q5q-53p8",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107718": {
+    "cve_id": "CVE-2026-107718",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-2m6q-8v3h-jqww",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107399": {
+    "cve_id": "CVE-2026-107399",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-c6rp-p8xm-4q9f",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107715": {
+    "cve_id": "CVE-2026-107715",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-2mwr-xjcg-37j7",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107720": {
+    "cve_id": "CVE-2026-107720",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-8wpc-h4q6-8fxv",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-34950": {
+    "cve_id": "CVE-2026-34950",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-ww5h-9m49-7xx4",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107721": {
+    "cve_id": "CVE-2026-107721",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-687g-22h4-j4w4",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2025-30144": {
+    "cve_id": "CVE-2025-30144",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-5hjw-83fp-phq9",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-107724": {
+    "cve_id": "CVE-2026-107724",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-g3jj-5cmm-3hxx",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-44338": {
+    "cve_id": "CVE-2026-44338",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-6wjp-v33h-5cvq",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-61442": {
+    "cve_id": "CVE-2026-61442",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-c78w-2q4r-68r7",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-61434": {
+    "cve_id": "CVE-2026-61434",
+    "primary_source": "GitHub Advisories",
+    "primary_title": null,
+    "primary_url": "https://github.com/advisories/GHSA-cv3g-hj65-pcfh",
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2014-1830": {
+    "cve_id": "CVE-2014-1830",
+    "primary_source": "OSV.dev",
+    "primary_title": null,
+    "primary_url": null,
+    "cross_refs": [
+      {
+        "source": "OSV.dev",
+        "title": null,
+        "url": null
+      }
+    ],
+    "source_count": 1,
+    "items_count": 2,
+    "sources": [
+      "OSV.dev"
+    ]
+  },
+  "CVE-2024-47081": {
+    "cve_id": "CVE-2024-47081",
+    "primary_source": "OSV.dev",
+    "primary_title": null,
+    "primary_url": null,
+    "cross_refs": [
+      {
+        "source": "OSV.dev",
+        "title": null,
+        "url": null
+      }
+    ],
+    "source_count": 1,
+    "items_count": 2,
+    "sources": [
+      "OSV.dev"
+    ]
+  },
+  "CVE-2024-35195": {
+    "cve_id": "CVE-2024-35195",
+    "primary_source": "OSV.dev",
+    "primary_title": null,
+    "primary_url": null,
+    "cross_refs": [
+      {
+        "source": "OSV.dev",
+        "title": null,
+        "url": null
+      }
+    ],
+    "source_count": 1,
+    "items_count": 2,
+    "sources": [
+      "OSV.dev"
+    ]
+  },
+  "CVE-2014-1829": {
+    "cve_id": "CVE-2014-1829",
+    "primary_source": "OSV.dev",
+    "primary_title": null,
+    "primary_url": null,
+    "cross_refs": [
+      {
+        "source": "OSV.dev",
+        "title": null,
+        "url": null
+      }
+    ],
+    "source_count": 1,
+    "items_count": 2,
+    "sources": [
+      "OSV.dev"
+    ]
+  },
+  "CVE-2026-25645": {
+    "cve_id": "CVE-2026-25645",
+    "primary_source": "OSV.dev",
+    "primary_title": null,
+    "primary_url": null,
+    "cross_refs": [
+      {
+        "source": "OSV.dev",
+        "title": null,
+        "url": null
+      }
+    ],
+    "source_count": 1,
+    "items_count": 2,
+    "sources": [
+      "OSV.dev"
+    ]
+  },
+  "CVE-2023-32681": {
+    "cve_id": "CVE-2023-32681",
+    "primary_source": "OSV.dev",
+    "primary_title": null,
+    "primary_url": null,
+    "cross_refs": [
+      {
+        "source": "OSV.dev",
+        "title": null,
+        "url": null
+      }
+    ],
+    "source_count": 1,
+    "items_count": 2,
+    "sources": [
+      "OSV.dev"
+    ]
+  },
+  "CVE-2015-2296": {
+    "cve_id": "CVE-2015-2296",
+    "primary_source": "OSV.dev",
+    "primary_title": null,
+    "primary_url": null,
+    "cross_refs": [
+      {
+        "source": "OSV.dev",
+        "title": null,
+        "url": null
+      }
+    ],
+    "source_count": 1,
+    "items_count": 2,
+    "sources": [
+      "OSV.dev"
+    ]
+  },
+  "CVE-2018-18074": {
+    "cve_id": "CVE-2018-18074",
+    "primary_source": "OSV.dev",
+    "primary_title": null,
+    "primary_url": null,
+    "cross_refs": [
+      {
+        "source": "OSV.dev",
+        "title": null,
+        "url": null
+      }
+    ],
+    "source_count": 1,
+    "items_count": 2,
+    "sources": [
+      "OSV.dev"
+    ]
+  },
+  "CVE-2025-15690": {
+    "cve_id": "CVE-2025-15690",
+    "primary_source": "NVD",
+    "primary_title": "The Content Mask WordPress plugin before 1.8.5.6 does not properly sanitise and escape content submitted with a post bef",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-13144": {
+    "cve_id": "CVE-2026-13144",
+    "primary_source": "NVD",
+    "primary_title": "The WP Travel  WordPress plugin before 12.0.2 does not properly verify that the requester is authorized to modify the ta",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-13146": {
+    "cve_id": "CVE-2026-13146",
+    "primary_source": "NVD",
+    "primary_title": "The WP Travel  WordPress plugin before 12.0.2 does not properly verify that the requester owns the booking targeted by i",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-14962": {
+    "cve_id": "CVE-2026-14962",
+    "primary_source": "NVD",
+    "primary_title": "The ELEX WooCommerce Request a Quote WordPress plugin before 2.4.1 does not properly sanitise and escape a parameter bef",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-16960": {
+    "cve_id": "CVE-2026-16960",
+    "primary_source": "NVD",
+    "primary_title": "The Loops & Logic WordPress plugin before 4.3.0 does not restrict its public template-data action to the data a visitor ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-18042": {
+    "cve_id": "CVE-2026-18042",
+    "primary_source": "NVD",
+    "primary_title": "The WP Travel  WordPress plugin before 12.0.2 does not verify that the requester is authorized to act on the booking tar",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-19946": {
+    "cve_id": "CVE-2026-19946",
+    "primary_source": "NVD",
+    "primary_title": "The Awesome Support plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 6.3.9.",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-75861": {
+    "cve_id": "CVE-2026-75861",
+    "primary_source": "NVD",
+    "primary_title": "The Ultimate Gift Cards for WooCommerce WordPress plugin before 3.2.10 does not verify that the user redeeming a gift ca",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-75905": {
+    "cve_id": "CVE-2026-75905",
+    "primary_source": "NVD",
+    "primary_title": "The WP Recipe Maker plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 10.",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-76009": {
+    "cve_id": "CVE-2026-76009",
+    "primary_source": "NVD",
+    "primary_title": "The Next-Cart Store to WooCommerce Migration plugin for WordPress is vulnerable to Authentication Bypass in all versions",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-80339": {
+    "cve_id": "CVE-2026-80339",
+    "primary_source": "NVD",
+    "primary_title": "The Payment Plugins for Stripe WooCommerce WordPress plugin before 4.0.12 does not validate the order key before adding ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-80340": {
+    "cve_id": "CVE-2026-80340",
+    "primary_source": "NVD",
+    "primary_title": "The Payment Plugins for PayPal WooCommerce WordPress plugin before 2.0.26 does not validate the order key before adding ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-80341": {
+    "cve_id": "CVE-2026-80341",
+    "primary_source": "NVD",
+    "primary_title": "The Payment Plugins for PayPal WooCommerce WordPress plugin before 2.0.26 does not verify that a stored payment method b",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-81021": {
+    "cve_id": "CVE-2026-81021",
+    "primary_source": "NVD",
+    "primary_title": "The SupportCandy  WordPress plugin before 3.5.3 does not perform an authorization check on one of its support-ticket att",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-81022": {
+    "cve_id": "CVE-2026-81022",
+    "primary_source": "NVD",
+    "primary_title": "The SupportCandy  WordPress plugin before 3.5.3 does not validate a submitted per-ticket authorization code before discl",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-81741": {
+    "cve_id": "CVE-2026-81741",
+    "primary_source": "NVD",
+    "primary_title": "The Groundhogg — CRM, Newsletters, and Marketing Automation WordPress plugin before 4.7.2 does not restrict the redirect",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-82184": {
+    "cve_id": "CVE-2026-82184",
+    "primary_source": "NVD",
+    "primary_title": "The WPLP Cookie Consent  WordPress plugin before 4.4.2 does not have any authorisation or CSRF checks when storing visit",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-82185": {
+    "cve_id": "CVE-2026-82185",
+    "primary_source": "NVD",
+    "primary_title": "The WPLP Cookie Consent  WordPress plugin before 4.4.2 does not have capability or nonce checks on some of its A/B testi",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-82848": {
+    "cve_id": "CVE-2026-82848",
+    "primary_source": "NVD",
+    "primary_title": "The Masteriyo LMS  WordPress plugin before 3.4.0 does not perform any authorization check before returning a course enro",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-83541": {
+    "cve_id": "CVE-2026-83541",
+    "primary_source": "NVD",
+    "primary_title": "The Sina Extension for Elementor WordPress plugin before 3.10.4 does not properly escape a Table widget setting before o",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-83593": {
+    "cve_id": "CVE-2026-83593",
+    "primary_source": "NVD",
+    "primary_title": "The WPBot – AI ChatBot for Live Support, Lead Generation, AI Services plugin for WordPress is vulnerable to Stored Cross",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-84068": {
+    "cve_id": "CVE-2026-84068",
+    "primary_source": "NVD",
+    "primary_title": "The Quentn WP WordPress plugin before 1.2.15 does not adequately escape a request parameter before using it in an unprep",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-84113": {
+    "cve_id": "CVE-2026-84113",
+    "primary_source": "NVD",
+    "primary_title": "The Quentn WP WordPress plugin before 1.2.15 does not properly sanitise and escape a parameter before using it in an SQL",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-84222": {
+    "cve_id": "CVE-2026-84222",
+    "primary_source": "NVD",
+    "primary_title": "The Kirki  WordPress plugin before 6.3.0 does not check whether the requester is allowed to read a post before rendering",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-84908": {
+    "cve_id": "CVE-2026-84908",
+    "primary_source": "NVD",
+    "primary_title": "The WPFunnels plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 3.12.13. Thi",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85037": {
+    "cve_id": "CVE-2026-85037",
+    "primary_source": "NVD",
+    "primary_title": "The Sunshine Photo Cart  WordPress plugin before 3.7 does not validate that a client-supplied price identifier belongs t",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85132": {
+    "cve_id": "CVE-2026-85132",
+    "primary_source": "NVD",
+    "primary_title": "The WPLP Cookie Consent  WordPress plugin before 4.4.2 does not perform nonce or capability checks on one of its cookie ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85133": {
+    "cve_id": "CVE-2026-85133",
+    "primary_source": "NVD",
+    "primary_title": "The WPLP Cookie Consent  WordPress plugin before 4.4.2 does not perform nonce or capability checks on several of its set",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85418": {
+    "cve_id": "CVE-2026-85418",
+    "primary_source": "NVD",
+    "primary_title": "The Orbit Fox: Duplicate Page, Menu Icons, SVG Support, Cookie Notice, Custom Fonts & More WordPress plugin before 3.0.9",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-8615": {
+    "cve_id": "CVE-2026-8615",
+    "primary_source": "NVD",
+    "primary_title": "The Reviso Exporter for WooCommerce plugin for WordPress is vulnerable to unauthorized modification of data due to a mis",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2025-7062": {
+    "cve_id": "CVE-2025-7062",
+    "primary_source": "NVD",
+    "primary_title": "A stored cross-site scripting (XSS) vulnerability has been identified in the H5P module `h5p-nodejs-library` by Lumi Edu",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-19802": {
+    "cve_id": "CVE-2026-19802",
+    "primary_source": "NVD",
+    "primary_title": "The Checkout Custom Fields Builder for WooCommerce plugin for WordPress is vulnerable to authorization bypass in all ver",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-19855": {
+    "cve_id": "CVE-2026-19855",
+    "primary_source": "NVD",
+    "primary_title": "The CleanTalk WordPress plugin before 6.87 does not prevent unauthenticated, user-supplied comment content from being pa",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-80440": {
+    "cve_id": "CVE-2026-80440",
+    "primary_source": "NVD",
+    "primary_title": "The Hustle WordPress plugin before 7.8.14.2 does not prevent shortcodes in submitted form values from being executed whe",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-83537": {
+    "cve_id": "CVE-2026-83537",
+    "primary_source": "NVD",
+    "primary_title": "The WP Express Checkout WordPress plugin before 2.5.0 does not verify server-side that a payment was actually completed ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-85117": {
+    "cve_id": "CVE-2026-85117",
+    "primary_source": "NVD",
+    "primary_title": "The Contact Form 7 Captcha WordPress plugin before 0.1.9 runs the shortcode parser over the whole rendered Contact Form ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-87747": {
+    "cve_id": "CVE-2026-87747",
+    "primary_source": "NVD",
+    "primary_title": "The Enterprise Cloud Database developed by Ragic has an Arbitrary File Read vulnerability. Privileged remote attackers c",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-15398": {
+    "cve_id": "CVE-2026-15398",
+    "primary_source": "NVD",
+    "primary_title": "The Eventin – Event Calendar, Event Registration, Tickets & Booking (AI Powered) plugin for WordPress is vulnerable to a",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-17149": {
+    "cve_id": "CVE-2026-17149",
+    "primary_source": "NVD",
+    "primary_title": "The Points Management System For Gamification, Ranks, Badges, and Loyalty Rewards Program – myCred plugin for WordPress ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-19729": {
+    "cve_id": "CVE-2026-19729",
+    "primary_source": "NVD",
+    "primary_title": "A flaw was found in the key provider component of the keycloak-services library, which is the core engine for the Red Ha",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-19778": {
+    "cve_id": "CVE-2026-19778",
+    "primary_source": "NVD",
+    "primary_title": "The WPMR Google Feed Manager for WooCommerce – Sell on Google Merchant Center & Shopping plugin for WordPress is vulnera",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-75927": {
+    "cve_id": "CVE-2026-75927",
+    "primary_source": "NVD",
+    "primary_title": "The PublishPress Capabilities – User Role Editor, Access Permissions, User Capabilities, Admin Menus plugin for WordPres",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-79636": {
+    "cve_id": "CVE-2026-79636",
+    "primary_source": "NVD",
+    "primary_title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-80055": {
+    "cve_id": "CVE-2026-80055",
+    "primary_source": "NVD",
+    "primary_title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-80123": {
+    "cve_id": "CVE-2026-80123",
+    "primary_source": "NVD",
+    "primary_title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-80124": {
+    "cve_id": "CVE-2026-80124",
+    "primary_source": "NVD",
+    "primary_title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-80177": {
+    "cve_id": "CVE-2026-80177",
+    "primary_source": "NVD",
+    "primary_title": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2025-46808": {
+    "cve_id": "CVE-2025-46808",
+    "primary_source": "NVD",
+    "primary_title": "An Insertion of Sensitive Information into Log File vulnerability in SUSE neuvector manager exposes sensitive informatio",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-12858": {
+    "cve_id": "CVE-2026-12858",
+    "primary_source": "NVD",
+    "primary_title": "Improper Privilege Management vulnerability in ESET AV Remover (standalone) allows Privilege Escalation via especially c",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  },
+  "CVE-2026-14359": {
+    "cve_id": "CVE-2026-14359",
+    "primary_source": "NVD",
+    "primary_title": "The YITH WooCommerce Waitlist Premium plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and ",
+    "primary_url": null,
+    "cross_refs": [],
+    "source_count": 1,
+    "items_count": 1
+  }
+}

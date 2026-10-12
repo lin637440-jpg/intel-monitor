@@ -5,7 +5,7 @@ from main import COLLECTORS, collect_source
 from storage.db import DB_PATH
 from enrichment.pipeline import enrich
 from common.exceptions import NotFoundError, IntelMonitorError
-
+from enrichment.merge_cve import merge
 
 def collect_vulnerabilities() -> list[dict]:
     """
@@ -119,3 +119,6 @@ if __name__ == "__main__":
         print(f"  {r.get('id')} 评分={r.get('risk_score')} 等级={r.get('risk_level')}")
     except Exception as e:
         print(f"  {type(e).__name__}: {e}")
+    print("\n=== merge() 跨源归并 ===")
+    m = merge()
+    print(f"  归并后 CVE 数：{len(m)}")
