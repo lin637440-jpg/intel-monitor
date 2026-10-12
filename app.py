@@ -41,6 +41,22 @@ if df.empty:
     st.error("data/intel.db 为空，先跑 python main.py")
     st.stop()
 
+# ============ 顶部告警横幅 ============
+ALERTS_PATH = Path("data/alerts.json")
+if ALERTS_PATH.exists():
+    try:
+        _alerts = json.loads(ALERTS_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        _alerts = []
+    if _alerts:
+        latest = _alerts[-1]
+        st.error(
+            f"🚨 **最新告警**：{latest.get('cve')} — "
+            f"{(latest.get('title') or '')[:80]}\n\n"
+            f"CVSS {latest.get('cvss')}  |  评分 {latest.get('risk_score')} "
+            f"|  原因 {latest.get('reason')}  |  累计 {len(_alerts)} 条"
+        )
+
 # ============ 顶部指标卡 ============
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("情报总数", len(df))
@@ -120,7 +136,6 @@ if CONF_PATH.exists():
         ])
         st.dataframe(cdf, use_container_width=True)
 
-        # 加个柱状图更直观
         top10 = cwe_stats[:10]
         fig = px.bar(
             pd.DataFrame(top10), x="cwe", y="count",
@@ -157,6 +172,31 @@ else:
 
 st.divider()
 
+# ============ 采集质量监控 ============
+st.subheader("🔧 数据源健康状态")
+HEALTH_PATH = Path("data/source_health.json")
+if HEALTH_PATH.exists():
+    health = json.loads(HEALTH_PATH.read_text(encoding="utf-8"))
+    sources_health = health.get("sources", {})
+    if sources_health:
+        hdf = pd.DataFrame([
+            {
+                "源": k,
+                "状态": v.get("status", ""),
+                "运行次数": v.get("total_runs", 0),
+                "错误数": v.get("error_count", 0),
+                "成功率": v.get("success_rate", 0),
+                "入库条数": v.get("items_in_db", 0),
+                "最近同步": (v.get("last_sync_at") or "")[:19],
+            }
+            for k, v in sources_health.items()
+        ])
+        st.dataframe(hdf, use_container_width=True)
+else:
+    st.info("先跑 python -m analytics.source_health")
+
+st.divider()
+
 # ============ CVE 关联图 ============
 st.subheader("🕸️ CVE 关联图（CWE / 资产）")
 GRAPH_PATH = Path("data/graph.json")
@@ -172,14 +212,11 @@ if GRAPH_PATH.exists():
     nodes = g.get("nodes", [])
     edges = g.get("edges", [])
 
-    # 筛选控件
     only_high = st.checkbox("只看高危（CVSS ≥ 7）", value=False)
     show_cve_labels = st.checkbox("显示 CVE 标签（图会变乱）", value=False)
 
-    # 节点坐标 map
     pos = {n["id"]: (n.get("x", 0), n.get("y", 0)) for n in nodes}
 
-    # 过滤
     if only_high:
         keep_ids = {
             n["id"] for n in nodes
@@ -293,3 +330,25 @@ if chain_dir.exists():
             st.code(f.read_text(encoding="utf-8"), language="mermaid")
 else:
     st.info("暂无攻击链文件")
+
+# ============ 告警日志 ============
+st.divider()
+st.subheader("🚨 高危漏洞告警日志")
+if ALERTS_PATH.exists():
+    alerts = json.loads(ALERTS_PATH.read_text(encoding="utf-8"))
+    st.metric("累计触发告警", len(alerts))
+    if alerts:
+        adf = pd.DataFrame([
+            {
+                "时间": a.get("fired_at", "")[:19],
+                "CVE": a.get("cve"),
+                "CVSS": a.get("cvss"),
+                "评分": a.get("risk_score"),
+                "原因": a.get("reason"),
+                "标题": (a.get("title") or "")[:60],
+            }
+            for a in alerts[-30:]
+        ])
+        st.dataframe(adf, use_container_width=True)
+else:
+    st.info("先跑 python -m alerts.webhook")

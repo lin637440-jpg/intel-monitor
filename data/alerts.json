@@ -1,0 +1,52 @@
+[
+  {
+    "fired_at": "2026-10-12T07:13:54.576493+00:00",
+    "cve": "CVE-2026-104028",
+    "title": "The Anton Extensions WordPress plugin through 1.2.2 does not perform any capability check, nonce verification, or file-t",
+    "cvss": 9.8,
+    "risk_score": null,
+    "risk_level": null,
+    "url": null,
+    "reason": "cvss>=9"
+  },
+  {
+    "fired_at": "2026-10-12T07:13:54.576493+00:00",
+    "cve": "CVE-2026-108540",
+    "title": "A flaw has been found in OpenSpug Spug up to 3.4.0/4.0.1. This impacts an unknown function of the file /exec/transfer of",
+    "cvss": 9.9,
+    "risk_score": null,
+    "risk_level": null,
+    "url": null,
+    "reason": "cvss>=9"
+  },
+  {
+    "fired_at": "2026-10-12T07:13:54.576493+00:00",
+    "cve": "CVE-2026-85097",
+    "title": "The Bricksforge plugin for WordPress is vulnerable to unauthenticated arbitrary file upload in versions up to, and inclu",
+    "cvss": 9.8,
+    "risk_score": null,
+    "risk_level": null,
+    "url": null,
+    "reason": "cvss>=9"
+  },
+  {
+    "fired_at": "2026-10-12T07:13:54.576493+00:00",
+    "cve": "CVE-2026-105110",
+    "title": "OS Command Injection in the login.xgi CGI endpoint in Iskratel Innbox GPON ONT devices allows an unauthenticated remote ",
+    "cvss": 9.8,
+    "risk_score": null,
+    "risk_level": null,
+    "url": null,
+    "reason": "cvss>=9"
+  },
+  {
+    "fired_at": "2026-10-12T07:13:54.576493+00:00",
+    "cve": "CVE-2026-12260",
+    "title": "SQL injection in the NetBoard CRM demo platform; specifically, the vulnerable component is the ‘user-name’ POST paramete",
+    "cvss": 10.0,
+    "risk_score": null,
+    "risk_level": null,
+    "url": null,
+    "reason": "cvss>=9"
+  }
+]
