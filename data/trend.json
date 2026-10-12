@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-10-12T06:35:06.308294",
-  "total": 75,
-  "high_count": 0,
-  "high_ratio": 0.0,
+  "generated_at": "2026-10-12T06:42:15.658126",
+  "total": 165,
+  "skipped": 0,
+  "high_count": 26,
+  "high_ratio": 0.158,
   "series": [
     {
       "date": "2014-10-15",
@@ -96,9 +97,93 @@
       "high_count": 0
     },
     {
+      "date": "2026-09-03",
+      "source": "安全客",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-04",
+      "source": "安全客",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-07",
+      "source": "安全客",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-08",
+      "source": "安全客",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-09",
+      "source": "NVD",
+      "count": 50,
+      "avg_cvss": 5.78,
+      "high_count": 10
+    },
+    {
+      "date": "2026-09-10",
+      "source": "安全客",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-14",
+      "source": "安全客",
+      "count": 2,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-16",
+      "source": "安全客",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-18",
+      "source": "安全客",
+      "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-19",
+      "source": "安全客",
+      "count": 2,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-21",
+      "source": "安全客",
+      "count": 4,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
       "date": "2026-09-22",
       "source": "Hugging Face Blog",
       "count": 3,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-24",
+      "source": "安全客",
+      "count": 1,
       "avg_cvss": null,
       "high_count": 0
     },
@@ -113,6 +198,13 @@
       "date": "2026-09-29",
       "source": "Hugging Face Blog",
       "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-09-29",
+      "source": "安全客",
+      "count": 2,
       "avg_cvss": null,
       "high_count": 0
     },
@@ -162,6 +254,20 @@
       "date": "2026-10-08",
       "source": "Hugging Face Blog",
       "count": 1,
+      "avg_cvss": null,
+      "high_count": 0
+    },
+    {
+      "date": "2026-10-08",
+      "source": "NVD",
+      "count": 20,
+      "avg_cvss": 8.1,
+      "high_count": 16
+    },
+    {
+      "date": "2026-10-09",
+      "source": "安全客",
+      "count": 2,
       "avg_cvss": null,
       "high_count": 0
     }

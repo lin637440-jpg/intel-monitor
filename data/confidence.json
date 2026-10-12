@@ -1,884 +1,1260 @@
 {
-  "CVE-2026-85097": {
-    "cve_id": "CVE-2026-85097",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85421": {
-    "cve_id": "CVE-2026-85421",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85422": {
-    "cve_id": "CVE-2026-85422",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85423": {
-    "cve_id": "CVE-2026-85423",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85486": {
-    "cve_id": "CVE-2026-85486",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85487": {
-    "cve_id": "CVE-2026-85487",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85488": {
-    "cve_id": "CVE-2026-85488",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85489": {
-    "cve_id": "CVE-2026-85489",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85490": {
-    "cve_id": "CVE-2026-85490",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-87424": {
-    "cve_id": "CVE-2026-87424",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-87425": {
-    "cve_id": "CVE-2026-87425",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-87426": {
-    "cve_id": "CVE-2026-87426",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-87428": {
-    "cve_id": "CVE-2026-87428",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-107466": {
-    "cve_id": "CVE-2026-107466",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-93699": {
-    "cve_id": "CVE-2026-93699",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-105110": {
-    "cve_id": "CVE-2026-105110",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-12260": {
-    "cve_id": "CVE-2026-12260",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-4894": {
-    "cve_id": "CVE-2026-4894",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-66082": {
-    "cve_id": "CVE-2026-66082",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-66084": {
-    "cve_id": "CVE-2026-66084",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-107719": {
-    "cve_id": "CVE-2026-107719",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107726": {
-    "cve_id": "CVE-2026-107726",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107716": {
-    "cve_id": "CVE-2026-107716",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107717": {
-    "cve_id": "CVE-2026-107717",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-25738": {
-    "cve_id": "CVE-2026-25738",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107395": {
-    "cve_id": "CVE-2026-107395",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107397": {
-    "cve_id": "CVE-2026-107397",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107396": {
-    "cve_id": "CVE-2026-107396",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107725": {
-    "cve_id": "CVE-2026-107725",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107718": {
-    "cve_id": "CVE-2026-107718",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107399": {
-    "cve_id": "CVE-2026-107399",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107715": {
-    "cve_id": "CVE-2026-107715",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107720": {
-    "cve_id": "CVE-2026-107720",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-34950": {
-    "cve_id": "CVE-2026-34950",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107721": {
-    "cve_id": "CVE-2026-107721",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2025-30144": {
-    "cve_id": "CVE-2025-30144",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-107724": {
-    "cve_id": "CVE-2026-107724",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-44338": {
-    "cve_id": "CVE-2026-44338",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-61442": {
-    "cve_id": "CVE-2026-61442",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2026-61434": {
-    "cve_id": "CVE-2026-61434",
-    "sources": [
-      "GitHub Advisories"
-    ],
-    "source_count": 1,
-    "confidence": 0.9,
-    "items_count": 1
-  },
-  "CVE-2014-1830": {
-    "cve_id": "CVE-2014-1830",
-    "sources": [
-      "OSV.dev"
-    ],
-    "source_count": 1,
-    "confidence": 0.8,
-    "items_count": 2
-  },
-  "CVE-2024-47081": {
-    "cve_id": "CVE-2024-47081",
-    "sources": [
-      "OSV.dev"
-    ],
-    "source_count": 1,
-    "confidence": 0.8,
-    "items_count": 2
-  },
-  "CVE-2024-35195": {
-    "cve_id": "CVE-2024-35195",
-    "sources": [
-      "OSV.dev"
-    ],
-    "source_count": 1,
-    "confidence": 0.8,
-    "items_count": 2
-  },
-  "CVE-2014-1829": {
-    "cve_id": "CVE-2014-1829",
-    "sources": [
-      "OSV.dev"
-    ],
-    "source_count": 1,
-    "confidence": 0.8,
-    "items_count": 2
-  },
-  "CVE-2026-25645": {
-    "cve_id": "CVE-2026-25645",
-    "sources": [
-      "OSV.dev"
-    ],
-    "source_count": 1,
-    "confidence": 0.8,
-    "items_count": 2
-  },
-  "CVE-2023-32681": {
-    "cve_id": "CVE-2023-32681",
-    "sources": [
-      "OSV.dev"
-    ],
-    "source_count": 1,
-    "confidence": 0.8,
-    "items_count": 2
-  },
-  "CVE-2015-2296": {
-    "cve_id": "CVE-2015-2296",
-    "sources": [
-      "OSV.dev"
-    ],
-    "source_count": 1,
-    "confidence": 0.8,
-    "items_count": 2
-  },
-  "CVE-2018-18074": {
-    "cve_id": "CVE-2018-18074",
-    "sources": [
-      "OSV.dev"
-    ],
-    "source_count": 1,
-    "confidence": 0.8,
-    "items_count": 2
-  },
-  "CVE-2025-15690": {
-    "cve_id": "CVE-2025-15690",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-13144": {
-    "cve_id": "CVE-2026-13144",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-13146": {
-    "cve_id": "CVE-2026-13146",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-14962": {
-    "cve_id": "CVE-2026-14962",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-16960": {
-    "cve_id": "CVE-2026-16960",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-18042": {
-    "cve_id": "CVE-2026-18042",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-19946": {
-    "cve_id": "CVE-2026-19946",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-75861": {
-    "cve_id": "CVE-2026-75861",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-75905": {
-    "cve_id": "CVE-2026-75905",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-76009": {
-    "cve_id": "CVE-2026-76009",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-80339": {
-    "cve_id": "CVE-2026-80339",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-80340": {
-    "cve_id": "CVE-2026-80340",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-80341": {
-    "cve_id": "CVE-2026-80341",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-81021": {
-    "cve_id": "CVE-2026-81021",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-81022": {
-    "cve_id": "CVE-2026-81022",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-81741": {
-    "cve_id": "CVE-2026-81741",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-82184": {
-    "cve_id": "CVE-2026-82184",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-82185": {
-    "cve_id": "CVE-2026-82185",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-82848": {
-    "cve_id": "CVE-2026-82848",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-83541": {
-    "cve_id": "CVE-2026-83541",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-83593": {
-    "cve_id": "CVE-2026-83593",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-84068": {
-    "cve_id": "CVE-2026-84068",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-84113": {
-    "cve_id": "CVE-2026-84113",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-84222": {
-    "cve_id": "CVE-2026-84222",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-84908": {
-    "cve_id": "CVE-2026-84908",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85037": {
-    "cve_id": "CVE-2026-85037",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85132": {
-    "cve_id": "CVE-2026-85132",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85133": {
-    "cve_id": "CVE-2026-85133",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85418": {
-    "cve_id": "CVE-2026-85418",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-8615": {
-    "cve_id": "CVE-2026-8615",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2025-7062": {
-    "cve_id": "CVE-2025-7062",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-19802": {
-    "cve_id": "CVE-2026-19802",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-19855": {
-    "cve_id": "CVE-2026-19855",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-80440": {
-    "cve_id": "CVE-2026-80440",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-83537": {
-    "cve_id": "CVE-2026-83537",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-85117": {
-    "cve_id": "CVE-2026-85117",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-87747": {
-    "cve_id": "CVE-2026-87747",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-15398": {
-    "cve_id": "CVE-2026-15398",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-17149": {
-    "cve_id": "CVE-2026-17149",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-19729": {
-    "cve_id": "CVE-2026-19729",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-19778": {
-    "cve_id": "CVE-2026-19778",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-75927": {
-    "cve_id": "CVE-2026-75927",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-79636": {
-    "cve_id": "CVE-2026-79636",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-80055": {
-    "cve_id": "CVE-2026-80055",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-80123": {
-    "cve_id": "CVE-2026-80123",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-80124": {
-    "cve_id": "CVE-2026-80124",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-80177": {
-    "cve_id": "CVE-2026-80177",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2025-46808": {
-    "cve_id": "CVE-2025-46808",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-12858": {
-    "cve_id": "CVE-2026-12858",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  },
-  "CVE-2026-14359": {
-    "cve_id": "CVE-2026-14359",
-    "sources": [
-      "NVD"
-    ],
-    "source_count": 1,
-    "confidence": 1.0,
-    "items_count": 1
-  }
+  "cve_stats": {
+    "CVE-2026-85097": {
+      "cve_id": "CVE-2026-85097",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85421": {
+      "cve_id": "CVE-2026-85421",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85422": {
+      "cve_id": "CVE-2026-85422",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85423": {
+      "cve_id": "CVE-2026-85423",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85486": {
+      "cve_id": "CVE-2026-85486",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85487": {
+      "cve_id": "CVE-2026-85487",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85488": {
+      "cve_id": "CVE-2026-85488",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85489": {
+      "cve_id": "CVE-2026-85489",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85490": {
+      "cve_id": "CVE-2026-85490",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-87424": {
+      "cve_id": "CVE-2026-87424",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-87425": {
+      "cve_id": "CVE-2026-87425",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-87426": {
+      "cve_id": "CVE-2026-87426",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-87428": {
+      "cve_id": "CVE-2026-87428",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-107466": {
+      "cve_id": "CVE-2026-107466",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-93699": {
+      "cve_id": "CVE-2026-93699",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-105110": {
+      "cve_id": "CVE-2026-105110",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-12260": {
+      "cve_id": "CVE-2026-12260",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-4894": {
+      "cve_id": "CVE-2026-4894",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-66082": {
+      "cve_id": "CVE-2026-66082",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-66084": {
+      "cve_id": "CVE-2026-66084",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-107719": {
+      "cve_id": "CVE-2026-107719",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107726": {
+      "cve_id": "CVE-2026-107726",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107716": {
+      "cve_id": "CVE-2026-107716",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107717": {
+      "cve_id": "CVE-2026-107717",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-25738": {
+      "cve_id": "CVE-2026-25738",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107395": {
+      "cve_id": "CVE-2026-107395",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107397": {
+      "cve_id": "CVE-2026-107397",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107396": {
+      "cve_id": "CVE-2026-107396",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107725": {
+      "cve_id": "CVE-2026-107725",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107718": {
+      "cve_id": "CVE-2026-107718",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107399": {
+      "cve_id": "CVE-2026-107399",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107715": {
+      "cve_id": "CVE-2026-107715",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107720": {
+      "cve_id": "CVE-2026-107720",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-34950": {
+      "cve_id": "CVE-2026-34950",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107721": {
+      "cve_id": "CVE-2026-107721",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2025-30144": {
+      "cve_id": "CVE-2025-30144",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-107724": {
+      "cve_id": "CVE-2026-107724",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-44338": {
+      "cve_id": "CVE-2026-44338",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-61442": {
+      "cve_id": "CVE-2026-61442",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2026-61434": {
+      "cve_id": "CVE-2026-61434",
+      "sources": [
+        "GitHub Advisories"
+      ],
+      "source_count": 1,
+      "confidence": 0.9,
+      "items_count": 1
+    },
+    "CVE-2014-1830": {
+      "cve_id": "CVE-2014-1830",
+      "sources": [
+        "OSV.dev"
+      ],
+      "source_count": 1,
+      "confidence": 0.8,
+      "items_count": 2
+    },
+    "CVE-2024-47081": {
+      "cve_id": "CVE-2024-47081",
+      "sources": [
+        "OSV.dev"
+      ],
+      "source_count": 1,
+      "confidence": 0.8,
+      "items_count": 2
+    },
+    "CVE-2024-35195": {
+      "cve_id": "CVE-2024-35195",
+      "sources": [
+        "OSV.dev"
+      ],
+      "source_count": 1,
+      "confidence": 0.8,
+      "items_count": 2
+    },
+    "CVE-2014-1829": {
+      "cve_id": "CVE-2014-1829",
+      "sources": [
+        "OSV.dev"
+      ],
+      "source_count": 1,
+      "confidence": 0.8,
+      "items_count": 2
+    },
+    "CVE-2026-25645": {
+      "cve_id": "CVE-2026-25645",
+      "sources": [
+        "OSV.dev"
+      ],
+      "source_count": 1,
+      "confidence": 0.8,
+      "items_count": 2
+    },
+    "CVE-2023-32681": {
+      "cve_id": "CVE-2023-32681",
+      "sources": [
+        "OSV.dev"
+      ],
+      "source_count": 1,
+      "confidence": 0.8,
+      "items_count": 2
+    },
+    "CVE-2015-2296": {
+      "cve_id": "CVE-2015-2296",
+      "sources": [
+        "OSV.dev"
+      ],
+      "source_count": 1,
+      "confidence": 0.8,
+      "items_count": 2
+    },
+    "CVE-2018-18074": {
+      "cve_id": "CVE-2018-18074",
+      "sources": [
+        "OSV.dev"
+      ],
+      "source_count": 1,
+      "confidence": 0.8,
+      "items_count": 2
+    },
+    "CVE-2025-15690": {
+      "cve_id": "CVE-2025-15690",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-13144": {
+      "cve_id": "CVE-2026-13144",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-13146": {
+      "cve_id": "CVE-2026-13146",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-14962": {
+      "cve_id": "CVE-2026-14962",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-16960": {
+      "cve_id": "CVE-2026-16960",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-18042": {
+      "cve_id": "CVE-2026-18042",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-19946": {
+      "cve_id": "CVE-2026-19946",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-75861": {
+      "cve_id": "CVE-2026-75861",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-75905": {
+      "cve_id": "CVE-2026-75905",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-76009": {
+      "cve_id": "CVE-2026-76009",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-80339": {
+      "cve_id": "CVE-2026-80339",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-80340": {
+      "cve_id": "CVE-2026-80340",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-80341": {
+      "cve_id": "CVE-2026-80341",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-81021": {
+      "cve_id": "CVE-2026-81021",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-81022": {
+      "cve_id": "CVE-2026-81022",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-81741": {
+      "cve_id": "CVE-2026-81741",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-82184": {
+      "cve_id": "CVE-2026-82184",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-82185": {
+      "cve_id": "CVE-2026-82185",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-82848": {
+      "cve_id": "CVE-2026-82848",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-83541": {
+      "cve_id": "CVE-2026-83541",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-83593": {
+      "cve_id": "CVE-2026-83593",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-84068": {
+      "cve_id": "CVE-2026-84068",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-84113": {
+      "cve_id": "CVE-2026-84113",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-84222": {
+      "cve_id": "CVE-2026-84222",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-84908": {
+      "cve_id": "CVE-2026-84908",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85037": {
+      "cve_id": "CVE-2026-85037",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85132": {
+      "cve_id": "CVE-2026-85132",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85133": {
+      "cve_id": "CVE-2026-85133",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85418": {
+      "cve_id": "CVE-2026-85418",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-8615": {
+      "cve_id": "CVE-2026-8615",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2025-7062": {
+      "cve_id": "CVE-2025-7062",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-19802": {
+      "cve_id": "CVE-2026-19802",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-19855": {
+      "cve_id": "CVE-2026-19855",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-80440": {
+      "cve_id": "CVE-2026-80440",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-83537": {
+      "cve_id": "CVE-2026-83537",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-85117": {
+      "cve_id": "CVE-2026-85117",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-87747": {
+      "cve_id": "CVE-2026-87747",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-15398": {
+      "cve_id": "CVE-2026-15398",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-17149": {
+      "cve_id": "CVE-2026-17149",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-19729": {
+      "cve_id": "CVE-2026-19729",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-19778": {
+      "cve_id": "CVE-2026-19778",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-75927": {
+      "cve_id": "CVE-2026-75927",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-79636": {
+      "cve_id": "CVE-2026-79636",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-80055": {
+      "cve_id": "CVE-2026-80055",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-80123": {
+      "cve_id": "CVE-2026-80123",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-80124": {
+      "cve_id": "CVE-2026-80124",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-80177": {
+      "cve_id": "CVE-2026-80177",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2025-46808": {
+      "cve_id": "CVE-2025-46808",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-12858": {
+      "cve_id": "CVE-2026-12858",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    },
+    "CVE-2026-14359": {
+      "cve_id": "CVE-2026-14359",
+      "sources": [
+        "NVD"
+      ],
+      "source_count": 1,
+      "confidence": 1.0,
+      "items_count": 1
+    }
+  },
+  "cwe_stats": [
+    {
+      "cwe": "CWE-862",
+      "count": 13,
+      "avg_cvss": 4.86,
+      "max_cvss": 6.5,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The WP Travel  WordPress plugin before 12.0.2 does not verify that the requester is authorized to act on the booking tar",
+        "The Awesome Support plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 6.3.9.",
+        "The Ultimate Gift Cards for WooCommerce WordPress plugin before 3.2.10 does not verify that the user redeeming a gift ca"
+      ]
+    },
+    {
+      "cwe": "CWE-200",
+      "count": 7,
+      "avg_cvss": 5.61,
+      "max_cvss": 7.5,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "An unauthenticated network-based attacker can query specific internal management endpoints on Brocade ASCG versions befo",
+        "The Loops & Logic WordPress plugin before 4.3.0 does not restrict its public template-data action to the data a visitor ",
+        "The Payment Plugins for Stripe WooCommerce WordPress plugin before 4.0.12 does not validate the order key before adding "
+      ]
+    },
+    {
+      "cwe": "CWE-89",
+      "count": 6,
+      "avg_cvss": 7.38,
+      "max_cvss": 10.0,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "SQL injection in the NetBoard CRM demo platform; specifically, the vulnerable component is the ‘user-name’ POST paramete",
+        "The ELEX WooCommerce Request a Quote WordPress plugin before 2.4.1 does not properly sanitise and escape a parameter bef",
+        "The Quentn WP WordPress plugin before 1.2.15 does not adequately escape a request parameter before using it in an unprep"
+      ]
+    },
+    {
+      "cwe": "CWE-79",
+      "count": 6,
+      "avg_cvss": 6.3,
+      "max_cvss": 7.2,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The Content Mask WordPress plugin before 1.8.5.6 does not properly sanitise and escape content submitted with a post bef",
+        "The Sina Extension for Elementor WordPress plugin before 3.10.4 does not properly escape a Table widget setting before o",
+        "The WPBot – AI ChatBot for Live Support, Lead Generation, AI Services plugin for WordPress is vulnerable to Stored Cross"
+      ]
+    },
+    {
+      "cwe": "CWE-306",
+      "count": 4,
+      "avg_cvss": 8.95,
+      "max_cvss": 9.8,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "A critical security vulnerability has been identified in Brocade ASCG versions before 3.5.0. The HTTPS service fails to ",
+        "A vulnerability has been identified in the data collection service of Brocade ASCG versions before 3.5.0. An API endpoin",
+        "An authentication flaw exists in the Brocade ASCG administrative management service component. An unauthenticated networ"
+      ]
+    },
+    {
+      "cwe": "CWE-22",
+      "count": 4,
+      "avg_cvss": 6.82,
+      "max_cvss": 8.6,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "A path traversal vulnerability exists in the HTTP service component of Brocade ASCG versions before 3.5.0. An unauthenti",
+        "When Brocade ASCG before 3.5.0 processes support bundle archives ingested from remote compromised endpoints, the applica",
+        "A flaw was found in flatpak-builder. This vulnerability allows an attacker to cause information disclosure by convincing"
+      ]
+    },
+    {
+      "cwe": "CWE-863",
+      "count": 3,
+      "avg_cvss": 6.83,
+      "max_cvss": 8.1,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "An authorization bypass vulnerability in Apache DolphinScheduler allows authenticated users to perform unauthorized oper",
+        "An authorization bypass vulnerability in Apache DolphinScheduler allows authenticated users to modify task definitions i",
+        "The Payment Plugins for PayPal WooCommerce WordPress plugin before 2.0.26 does not verify that a stored payment method b"
+      ]
+    },
+    {
+      "cwe": "CWE-74",
+      "count": 3,
+      "avg_cvss": 5.93,
+      "max_cvss": 6.5,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The CleanTalk WordPress plugin before 6.87 does not prevent unauthenticated, user-supplied comment content from being pa",
+        "The Hustle WordPress plugin before 7.8.14.2 does not prevent shortcodes in submitted form values from being executed whe",
+        "The Contact Form 7 Captcha WordPress plugin before 0.1.9 runs the shortcode parser over the whole rendered Contact Form "
+      ]
+    },
+    {
+      "cwe": "CWE-269",
+      "count": 3,
+      "avg_cvss": 8.17,
+      "max_cvss": 8.8,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The PublishPress Capabilities – User Role Editor, Access Permissions, User Capabilities, Admin Menus plugin for WordPres",
+        "Improper Privilege Management vulnerability in ESET AV Remover (standalone) allows Privilege Escalation via especially c",
+        "The YITH WooCommerce Waitlist Premium plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and "
+      ]
+    },
+    {
+      "cwe": "CWE-798",
+      "count": 2,
+      "avg_cvss": 7.7,
+      "max_cvss": 8.4,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "A vulnerability in Brocade ASCG version before 3.5.0 could allow an attacker to obtain a static cryptographic key hardco",
+        "Brocade ASCG before 3.5.0 has a well-known Brocade default password embedded in a script distributed to every customer. "
+      ]
+    },
+    {
+      "cwe": "CWE-639",
+      "count": 2,
+      "avg_cvss": 4.5,
+      "max_cvss": 5.3,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The WP Travel  WordPress plugin before 12.0.2 does not properly verify that the requester owns the booking targeted by i",
+        "The Sunshine Photo Cart  WordPress plugin before 3.7 does not validate that a client-supplied price identifier belongs t"
+      ]
+    },
+    {
+      "cwe": "CWE-532",
+      "count": 2,
+      "avg_cvss": 6.15,
+      "max_cvss": 6.8,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains ",
+        "An Insertion of Sensitive Information into Log File vulnerability in SUSE neuvector manager exposes sensitive informatio"
+      ]
+    },
+    {
+      "cwe": "CWE-434",
+      "count": 1,
+      "avg_cvss": 9.8,
+      "max_cvss": 9.8,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The Bricksforge plugin for WordPress is vulnerable to unauthenticated arbitrary file upload in versions up to, and inclu"
+      ]
+    },
+    {
+      "cwe": "CWE-95",
+      "count": 1,
+      "avg_cvss": 8.6,
+      "max_cvss": 8.6,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "Brocade ASCG before 3.5.0 improperly processes user input by evaluating form data prior to validation. When an authentic"
+      ]
+    },
+    {
+      "cwe": "CWE-321",
+      "count": 1,
+      "avg_cvss": 8.6,
+      "max_cvss": 8.6,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "A vulnerability in the SupportLink API authentication component of Brocade ASCG versions prior to 3.5.0 allows an attack"
+      ]
+    },
+    {
+      "cwe": "CWE-295",
+      "count": 1,
+      "avg_cvss": 7.6,
+      "max_cvss": 7.6,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "An unauthenticated remote attacker can modify the TLS client trust store in Brocade ASCG versions before 3.5.0. By suppl"
+      ]
+    },
+    {
+      "cwe": "CWE-522",
+      "count": 1,
+      "avg_cvss": 8.4,
+      "max_cvss": 8.4,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "In Brocade ASCG before 3.5.0, a  local unauthorized user on the ASCG VM who can issue a request to the SANnav host netwo"
+      ]
+    },
+    {
+      "cwe": "CWE-88",
+      "count": 1,
+      "avg_cvss": 8.5,
+      "max_cvss": 8.5,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "Argument injection in WP Toolkit for cPanel allows local users to execute arbitrary code as other accounts on the same s"
+      ]
+    },
+    {
+      "cwe": "CWE-78",
+      "count": 1,
+      "avg_cvss": 9.8,
+      "max_cvss": 9.8,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "OS Command Injection in the login.xgi CGI endpoint in Iskratel Innbox GPON ONT devices allows an unauthenticated remote "
+      ]
+    },
+    {
+      "cwe": "CWE-290",
+      "count": 1,
+      "avg_cvss": 6.9,
+      "max_cvss": 6.9,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "A vulnerability has been identified regarding insufficient validation in the Frappe Cloud/ERPNext authentication process"
+      ]
+    },
+    {
+      "cwe": "CWE-284",
+      "count": 1,
+      "avg_cvss": 3.7,
+      "max_cvss": 3.7,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The WP Travel  WordPress plugin before 12.0.2 does not properly verify that the requester is authorized to modify the ta"
+      ]
+    },
+    {
+      "cwe": "CWE-287",
+      "count": 1,
+      "avg_cvss": 8.1,
+      "max_cvss": 8.1,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The Next-Cart Store to WooCommerce Migration plugin for WordPress is vulnerable to Authentication Bypass in all versions"
+      ]
+    },
+    {
+      "cwe": "CWE-601",
+      "count": 1,
+      "avg_cvss": 4.7,
+      "max_cvss": 4.7,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The Groundhogg — CRM, Newsletters, and Marketing Automation WordPress plugin before 4.7.2 does not restrict the redirect"
+      ]
+    },
+    {
+      "cwe": "CWE-20",
+      "count": 1,
+      "avg_cvss": 5.2,
+      "max_cvss": 5.2,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "A stored cross-site scripting (XSS) vulnerability has been identified in the H5P module `h5p-nodejs-library` by Lumi Edu"
+      ]
+    },
+    {
+      "cwe": "CWE-345",
+      "count": 1,
+      "avg_cvss": 5.3,
+      "max_cvss": 5.3,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The WP Express Checkout WordPress plugin before 2.5.0 does not verify server-side that a payment was actually completed "
+      ]
+    },
+    {
+      "cwe": "CWE-23",
+      "count": 1,
+      "avg_cvss": 4.9,
+      "max_cvss": 4.9,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "The Enterprise Cloud Database developed by Ragic has an Arbitrary File Read vulnerability. Privileged remote attackers c"
+      ]
+    },
+    {
+      "cwe": "CWE-297",
+      "count": 1,
+      "avg_cvss": 7.0,
+      "max_cvss": 7.0,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains "
+      ]
+    },
+    {
+      "cwe": "CWE-90",
+      "count": 1,
+      "avg_cvss": 4.4,
+      "max_cvss": 4.4,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains "
+      ]
+    },
+    {
+      "cwe": "CWE-918",
+      "count": 1,
+      "avg_cvss": 7.3,
+      "max_cvss": 7.3,
+      "sources": [
+        "NVD"
+      ],
+      "sample_titles": [
+        "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains "
+      ]
+    }
+  ],
+  "total_cve": 98,
+  "total_cwe": 29,
+  "multi_source_cve": 0
 }
