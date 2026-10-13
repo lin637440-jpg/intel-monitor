@@ -16,6 +16,29 @@
     {
       "timestamp": "2026-10-13T20:12:45.846535",
       "sources": {}
+    },
+    {
+      "timestamp": "2026-10-13T21:12:45.872080",
+      "sources": {
+        "安全客": {
+          "count": 20,
+          "avg_delay_hours": 408.11,
+          "max_delay_hours": 804.03,
+          "min_delay_hours": 18.45
+        },
+        "Seebug Paper": {
+          "count": 1,
+          "avg_delay_hours": 28.26,
+          "max_delay_hours": 28.26,
+          "min_delay_hours": 28.26
+        },
+        "Hacker News": {
+          "count": 9,
+          "avg_delay_hours": 12.43,
+          "max_delay_hours": 28.46,
+          "min_delay_hours": 1.07
+        }
+      }
     }
   ]
 }
