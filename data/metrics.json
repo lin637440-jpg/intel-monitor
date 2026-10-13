@@ -1,42 +1,5 @@
 {
-  "generated_at": "2026-10-12T05:41:12.239895+00:00",
-  "window_days": 7,
-  "sources": {
-    "NVD": {
-      "count": 70,
-      "avg_delay_hours": 591.57,
-      "max_delay_hours": 791.4,
-      "min_delay_hours": 92.41
-    },
-    "GitHub Advisories": {
-      "count": 20,
-      "avg_delay_hours": 79.58,
-      "max_delay_hours": 79.67,
-      "min_delay_hours": 79.51
-    },
-    "Hugging Face Blog": {
-      "count": 14,
-      "avg_delay_hours": 273.96,
-      "max_delay_hours": 485.69,
-      "min_delay_hours": 101.69
-    },
-    "安全客": {
-      "count": 20,
-      "avg_delay_hours": 548.22,
-      "max_delay_hours": 932.35,
-      "min_delay_hours": 65.37
-    },
-    "ArXiv": {
-      "count": 25,
-      "avg_delay_hours": 84.86,
-      "max_delay_hours": 86.38,
-      "min_delay_hours": 83.69
-    },
-    "OSV.dev": {
-      "count": 16,
-      "avg_delay_hours": 42118.76,
-      "max_delay_hours": 105110.77,
-      "min_delay_hours": 2317.64
-    }
-  }
+  "generated_at": "2026-10-13T08:12:35.740259+00:00",
+  "window_days": 1,
+  "sources": {}
 }

@@ -1,0 +1,248 @@
+{
+  "sample_size": 20,
+  "avg_accuracy": 1.0,
+  "pass_threshold": 0.95,
+  "passed": true,
+  "details": [
+    {
+      "id": "CVE-2026-108540",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-93699",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-85423",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-81741",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-80340",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-75905",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-4894",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-107466",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-81154",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-14359",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-87426",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-104681",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-83537",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-85486",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-75861",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-76009",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-80123",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-104684",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-103694",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    },
+    {
+      "id": "CVE-2026-18042",
+      "source": "NVD",
+      "checks": {
+        "cvss_valid": true,
+        "poc_reasonable": true,
+        "paper_reasonable": true,
+        "asset_valid": true,
+        "chain_valid": true
+      },
+      "rate": 1.0
+    }
+  ]
+}
