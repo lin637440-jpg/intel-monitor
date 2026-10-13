@@ -122,6 +122,42 @@ if __name__ == "__main__":
     print("\n=== merge() 跨源归并 ===")
     m = merge()
     print(f"  归并后 CVE 数：{len(m)}")
+def _pick_url(item):
+    """智能提取 URL，兼容 9 个源的字段差异"""
+    # 1. 直接 url
+    if item.get("url"):
+        return str(item["url"])
+    # 2. html_url（GitHub）
+    if item.get("html_url"):
+        return str(item["html_url"])
+    # 3. link（RSS）
+    if item.get("link"):
+        return str(item["link"])
+    # 4. id 是 URL（ArXiv）
+    id_val = item.get("id") or ""
+    if isinstance(id_val, str) and id_val.startswith("http"):
+        return id_val
+    # 5. references 列表（NVD / OSV）
+    refs = item.get("references") or []
+    if isinstance(refs, list) and refs:
+        first = refs[0]
+        if isinstance(first, dict):
+            u = first.get("url") or first.get("href") or ""
+            if u:
+                return str(u)
+        elif isinstance(first, str):
+            return first
+    # 6. NVD 特殊：用官方 CVE 页
+    cve = item.get("id") or item.get("cve_id") or ""
+    if isinstance(cve, str) and cve.startswith("CVE-"):
+        return f"https://nvd.nist.gov/vuln/detail/{cve}"
+    # 7. GHSA 特殊：用 GitHub 公告页
+    ghsa = item.get("ghsa_id") or ""
+    if isinstance(ghsa, str) and ghsa.startswith("GHSA-"):
+        return f"https://github.com/advisories/{ghsa}"
+    return ""
+
+
 def to_chroma_record(item):
     """把 A 的 record 转成 B 要的 Chroma 格式"""
     title = item.get("title") or ""
@@ -150,12 +186,10 @@ def to_chroma_record(item):
             "risk_score": item.get("risk_score") or 0.0,
             "risk_level": item.get("risk_level") or "",
             "cwe": ",".join(item.get("cwe") or []),
-            "url": item.get("url") or item.get("html_url") or "",
+            "url": _pick_url(item),
             "published": item.get("published") or "",
         },
     }
-
-
 def export_for_chroma(path="data/chroma_records.json"):
     """导出全部 items 为 Chroma 格式，给 B 用"""
     import json as _json
