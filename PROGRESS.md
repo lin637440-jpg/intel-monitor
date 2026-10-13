@@ -1,70 +1,33 @@
-\# 情报监测与富化模块 — 进度记录
+# 项目进度
 
+## 已完成
 
+- [x] 环境搭建：Python 3.11.9 + venv
+- [x] 9 个数据源采集器
+- [x] SQLite 存储与去重
+- [x] 5 维富化（论文、CVSS、POC、资产、攻击链）
+- [x] 3 个创新（评分卡、攻击链可视化、语义搜索）
+- [x] 定时任务 APScheduler
+- [x] 延迟统计 metrics.py
+- [x] CWE 主题分布
+- [x] CVE 关联图
+- [x] 采集质量监控
+- [x] 本地告警
+- [x] Streamlit 仪表板（10 模块）
+- [x] FastAPI 路由
+- [x] 单元测试（6 个通过）
+- [x] 技术报告 + 接口文档
+- [x] push 到 GitHub + tag v1.0-初赛
 
-\## 项目路径
+## 数据统计
 
-C:\\Users\\33050\\intel-monitor
+- 数据源：9 个
+- 情报总数：319 条
+- CWE 类型：29 种
+- 高危告警：5 条
+- 关联图节点：194 个
 
+## 待办
 
-
-\## 环境
-
-\- Windows 10/11
-
-\- Python 3.9（venv）
-
-\- Git 2.56（装于 D:\\Git）
-
-\- 依赖：requests、beautifulsoup4、lxml、python-dotenv
-
-
-
-\## Day1 已完成（2026-10-08）
-
-\- \[x] 项目结构：collectors / config / storage / dedup / enrichment / scheduler / scripts / data / logs
-
-\- \[x] `.env` + `.gitignore`，`.env` 未提交
-
-\- \[x] NVD 采集器：collectors/cve\_collector.py，50 条 -> data/cve\_latest.json
-
-\- \[x] GitHub Advisories 采集器：collectors/github\_advisories\_collector.py，20 条 -> data/github\_advisories.json
-
-\- \[x] Token 验证：scripts/check\_github\_token.py，core limit = 5000
-
-\- \[x] README.md
-
-\- \[x] Git 提交：
-
-&#x20; - fdc8542 Day1: NVD collector + GitHub advisories collector
-
-&#x20; - 97318ff Day1: add README
-
-
-
-\## 遇到的坑
-
-\- GitHub 域名解析失败：改 DNS 为 223.5.5.5 / 119.29.29.29，`ipconfig /flushdns` 后恢复
-
-\- NVD 无 Key 也能访问，但限流 5次/30秒，有 Key 50次/30秒
-
-
-
-\## 待完成
-
-\- \[ ] Hugging Face 博客采集器
-
-\- \[ ] 奇安信威胁情报采集器
-
-\- \[ ] 第 5 个差异化数据源（ArXiv / Reddit）
-
-\- \[ ] Redis 去重
-
-\- \[ ] APScheduler 定时
-
-\- \[ ] 5 维富化（论文、CVSS、POC、资产、攻击链）
-
-\- \[ ] 创新点
-
-\- \[ ] 文档 + 视频
-
+- [ ] 与 B（RAG）联调
+- [ ] 与总控（LangGraph）联调
