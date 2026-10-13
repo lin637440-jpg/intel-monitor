@@ -1,0 +1,29 @@
+{
+  "total": 319,
+  "coverage": {
+    "with_cvss": {
+      "count": 90,
+      "ratio": 0.282
+    },
+    "with_poc": {
+      "count": 0,
+      "ratio": 0.0
+    },
+    "with_paper": {
+      "count": 0,
+      "ratio": 0.0
+    },
+    "with_asset": {
+      "count": 0,
+      "ratio": 0.0
+    },
+    "with_chain": {
+      "count": 0,
+      "ratio": 0.0
+    },
+    "with_risk_score": {
+      "count": 0,
+      "ratio": 0.0
+    }
+  }
+}

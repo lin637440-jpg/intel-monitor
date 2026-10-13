@@ -1,10 +1,14 @@
 import json
 import random
 import sqlite3
+import sys
 from pathlib import Path
 
-DB_PATH = Path("data/intel.db")
-REPORT_PATH = Path("data/accuracy_report.json")
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+DB_PATH = ROOT / "data" / "intel.db"
+REPORT_PATH = ROOT / "data" / "accuracy_report.json"
 SAMPLE_SIZE = 20
 
 
@@ -16,7 +20,6 @@ def load_samples():
     ).fetchall()]
     conn.close()
 
-    # 过滤出有富化字段的
     enriched = []
     for r in rows:
         try:
@@ -32,7 +35,6 @@ def load_samples():
 
 
 def auto_check(item):
-    """自动检查每项的字段完整性"""
     checks = {
         "cvss_valid": False,
         "poc_reasonable": False,
@@ -41,22 +43,19 @@ def auto_check(item):
         "chain_valid": False,
     }
 
-    # CVSS 检查：baseScore 在 0-10 之间
     cvss = item.get("cvss") or {}
     if isinstance(cvss, dict):
         score = cvss.get("baseScore")
         if score is not None and 0 <= score <= 10:
             checks["cvss_valid"] = True
 
-    # POC 检查：URL 是 github.com 或 exploit-db
     pocs = item.get("pocs") or []
     if pocs:
         valid = sum(1 for p in pocs if "github.com" in (p.get("url") or ""))
         checks["poc_reasonable"] = valid > 0
     else:
-        checks["poc_reasonable"] = True  # 无 POC 也算合格
+        checks["poc_reasonable"] = True
 
-    # 论文检查：score 在合理范围
     papers = item.get("related_papers") or []
     if papers:
         valid = sum(1 for p in papers if 0.3 <= p.get("score", 0) <= 1.0)
@@ -64,17 +63,16 @@ def auto_check(item):
     else:
         checks["paper_reasonable"] = True
 
-    # 资产检查：框架名在已知列表
     assets = item.get("assets") or {}
     frameworks = assets.get("frameworks", [])
     known = ["PyTorch", "TensorFlow", "Transformers", "LangChain",
-             "vLLM", "Hugging Face", "OpenAI", "GPT", "LLaMA"]
+             "vLLM", "Hugging Face", "OpenAI", "GPT", "LLaMA",
+             "Mistral", "Qwen", "Gemma", "Phi", "DeepSeek"]
     if frameworks:
         checks["asset_valid"] = all(f in known for f in frameworks)
     else:
         checks["asset_valid"] = True
 
-    # 攻击链检查：chains 非空且 steps 有内容
     chain = item.get("attack_chain") or {}
     chains = chain.get("chains", [])
     if chains:
@@ -98,7 +96,7 @@ def run():
         total = len(checks)
         rate = passed / total
 
-        print(f"[{i}] {item.get('id', 'N/A')} - {item.get('title', '')[:60]}")
+        print(f"[{i}] {item.get('id', 'N/A')} - {(item.get('title') or '')[:60]}")
         print(f"     CVSS={checks['cvss_valid']} POC={checks['poc_reasonable']} "
               f"论文={checks['paper_reasonable']} 资产={checks['asset_valid']} "
               f"攻击链={checks['chain_valid']}")
@@ -128,7 +126,7 @@ def run():
     print(f"\n{'='*50}")
     print(f"平均准确率：{avg_rate:.1%}")
     print(f"是否达标（≥95%）：{'是' if avg_rate >= 0.95 else '否'}")
-    print(f"报告已保存：{REPORT_PATH}")
+    print(f"报告：{REPORT_PATH}")
 
 
 if __name__ == "__main__":
