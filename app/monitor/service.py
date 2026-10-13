@@ -122,3 +122,67 @@ if __name__ == "__main__":
     print("\n=== merge() 跨源归并 ===")
     m = merge()
     print(f"  归并后 CVE 数：{len(m)}")
+def to_chroma_record(item):
+    """把 A 的 record 转成 B 要的 Chroma 格式"""
+    title = item.get("title") or ""
+    desc = item.get("description") or ""
+
+    assets = item.get("assets", {}).get("frameworks", [])
+    chains = item.get("attack_chain", {}).get("chains", [])
+    chain_names = ", ".join(c["name"] for c in chains)
+
+    document = f"{title}\n\n{desc}"
+    if assets:
+        document += f"\n\n资产: {', '.join(assets)}"
+    if chain_names:
+        document += f"\n\n攻击链: {chain_names}"
+
+    cvss_obj = item.get("cvss") or {}
+    cvss_score = cvss_obj.get("baseScore") if isinstance(cvss_obj, dict) else None
+
+    return {
+        "id": item.get("uid"),
+        "document": document,
+        "metadata": {
+            "source": item.get("source") or "",
+            "cve_id": item.get("id") or item.get("cve_id") or "",
+            "cvss": cvss_score if cvss_score is not None else 0.0,
+            "risk_score": item.get("risk_score") or 0.0,
+            "risk_level": item.get("risk_level") or "",
+            "cwe": ",".join(item.get("cwe") or []),
+            "url": item.get("url") or item.get("html_url") or "",
+            "published": item.get("published") or "",
+        },
+    }
+
+
+def export_for_chroma(path="data/chroma_records.json"):
+    """导出全部 items 为 Chroma 格式，给 B 用"""
+    import json as _json
+    import sqlite3 as _sqlite
+    from storage.db import DB_PATH
+    from pathlib import Path as _Path
+
+    if not DB_PATH.exists():
+        print("intel.db 不存在")
+        return []
+
+    conn = _sqlite.connect(DB_PATH)
+    conn.row_factory = _sqlite.Row
+    rows = [dict(r) for r in conn.execute("SELECT * FROM items").fetchall()]
+    conn.close()
+
+    out = []
+    for r in rows:
+        try:
+            raw = _json.loads(r.get("raw_json") or "{}")
+            raw.update({k: v for k, v in r.items() if k != "raw_json"})
+        except Exception:
+            raw = r
+        out.append(to_chroma_record(raw))
+
+    _Path(path).write_text(
+        _json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print(f"导出 {len(out)} 条 -> {path}")
+    return out
