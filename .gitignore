@@ -3,3 +3,7 @@ __pycache__/
 .env
 logs/
 *.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
