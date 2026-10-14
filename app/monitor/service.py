@@ -157,7 +157,19 @@ def _pick_url(item):
         return f"https://github.com/advisories/{ghsa}"
     return ""
 
-
+def _cvss_severity(score):
+    """CVSS 官方严重性分级（v3.1 标准）"""
+    if score is None:
+        return "UNKNOWN"
+    if score >= 9.0:
+        return "CRITICAL"
+    if score >= 7.0:
+        return "HIGH"
+    if score >= 4.0:
+        return "MEDIUM"
+    if score > 0:
+        return "LOW"
+    return "NONE"
 def to_chroma_record(item):
     """把 A 的 record 转成 B 要的 Chroma 格式"""
     title = item.get("title") or ""
@@ -183,8 +195,9 @@ def to_chroma_record(item):
             "source": item.get("source") or "",
             "cve_id": item.get("id") or item.get("cve_id") or "",
             "cvss": cvss_score if cvss_score is not None else 0.0,
-            "risk_score": item.get("risk_score") or 0.0,
-            "risk_level": item.get("risk_level") or "",
+            "cvss_severity": _cvss_severity(cvss_score),      # 新增：CVSS 官方等级
+            "risk_score": item.get("risk_score") or 0.0,      # 自定义综合分
+            "risk_level": item.get("risk_level") or "",       # 自定义等级
             "cwe": ",".join(item.get("cwe") or []),
             "url": _pick_url(item),
             "published": item.get("published") or "",
