@@ -1,8 +1,9 @@
 import json
 import sqlite3
+import os
 from pathlib import Path
 
-DB_PATH = Path("data/intel.db")
+DB_PATH = Path(os.getenv("INTEL_DB_PATH", "data/intel.db"))
 
 
 def init_db():
