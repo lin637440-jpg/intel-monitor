@@ -1,7 +1,7 @@
 import json
 import sqlite3
 
-from main import COLLECTORS, collect_source
+from app.monitor.collectors_registry import COLLECTORS, collect_source
 from storage.db import DB_PATH
 from enrichment.pipeline import enrich
 from common.exceptions import NotFoundError, IntelMonitorError
@@ -203,15 +203,21 @@ def to_chroma_record(item):
             "published": item.get("published") or "",
         },
     }
-def export_for_chroma(path="data/chroma_records.json"):
+def export_for_chroma(path=None):
     """导出全部 items 为 Chroma 格式，给 B 用"""
     import json as _json
     import sqlite3 as _sqlite
     from storage.db import DB_PATH
     from pathlib import Path as _Path
 
+    # 默认输出到 DB 同目录
+    if path is None:
+        path = DB_PATH.parent / "chroma_records.json"
+    else:
+        path = _Path(path)
+
     if not DB_PATH.exists():
-        print("intel.db 不存在")
+        print(f"intel.db 不存在：{DB_PATH}")
         return []
 
     conn = _sqlite.connect(DB_PATH)
@@ -228,7 +234,7 @@ def export_for_chroma(path="data/chroma_records.json"):
             raw = r
         out.append(to_chroma_record(raw))
 
-    _Path(path).write_text(
+    path.write_text(
         _json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     print(f"导出 {len(out)} 条 -> {path}")

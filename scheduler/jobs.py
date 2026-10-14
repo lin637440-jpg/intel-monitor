@@ -1,7 +1,7 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 
-from main import collect_source
+from app.monitor.collectors_registry import collect_source
 from metrics import compute_metrics
 
 OTHER_SOURCES = ["GitHub Advisories", "Hugging Face Blog", "安全客", "ArXiv", "OSV.dev"]

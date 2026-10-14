@@ -1,9 +1,21 @@
 import json
-import sqlite3
 import os
+import sqlite3
 from pathlib import Path
 
-DB_PATH = Path(os.getenv("INTEL_DB_PATH", "data/intel.db"))
+# 1. 环境变量优先
+_env_path = os.getenv("INTEL_DB_PATH")
+if _env_path:
+    DB_PATH = Path(_env_path)
+else:
+    # 2. 从包安装位置查找（pip install -e 时即项目根目录）
+    _pkg_root = Path(__file__).resolve().parent.parent
+    _candidate = _pkg_root / "data" / "intel.db"
+    if _candidate.exists():
+        DB_PATH = _candidate
+    else:
+        # 3. 退回相对路径
+        DB_PATH = Path("data/intel.db")
 
 
 def init_db():
@@ -26,7 +38,6 @@ def init_db():
 
 
 def insert_items(items):
-    """items: list[dict]，每个必须有 uid 和 source"""
     conn = init_db()
     cur = conn.cursor()
     inserted = 0
