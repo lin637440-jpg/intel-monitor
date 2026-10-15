@@ -13,11 +13,14 @@ def job_nvd():
     compute_metrics()
 
 
+from analytics.brief_generator import generate_brief
+
 def job_others():
     print("\n=== [定时] 其他源 ===")
     for src in OTHER_SOURCES:
         collect_source(src)
     compute_metrics()
+    generate_brief()   # 新增
 
 
 def main():
