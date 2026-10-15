@@ -1,16 +1,18 @@
 {
-  "total_framework_mentions": 31,
-  "frameworks": 11,
+  "total_framework_mentions": 55,
+  "frameworks": 15,
   "ranking": [
     {
       "framework": "Phi",
-      "count": 8,
-      "avg_cvss": 7.9,
-      "max_cvss": 8.6,
+      "count": 19,
+      "avg_cvss": 6.75,
+      "max_cvss": 8.0,
+      "no_cvss": 15,
       "with_poc": 0,
       "poc_ratio": 0.0,
       "chains": [
         "供应链攻击",
+        "数据投毒",
         "越权访问"
       ],
       "sample_cves": [
@@ -20,13 +22,49 @@
         "CVE-2026-66084",
         "GH:GHSA-2m6q-8v3h-jqww"
       ],
-      "risk_score": 22.34
+      "risk_score": 29.42
+    },
+    {
+      "framework": "Ray",
+      "count": 3,
+      "avg_cvss": 8.0,
+      "max_cvss": 8.0,
+      "no_cvss": 2,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [
+        "越权访问"
+      ],
+      "sample_cves": [
+        "GH:GHSA-5hjw-83fp-phq9",
+        "SB:https://paper.seebug.org/3522",
+        "EDB:https://www.exploit-db.com/exploits/52687"
+      ],
+      "risk_score": 13.86
+    },
+    {
+      "framework": "FastAPI",
+      "count": 1,
+      "avg_cvss": 8.0,
+      "max_cvss": 8.0,
+      "no_cvss": 0,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [
+        "供应链攻击",
+        "越权访问"
+      ],
+      "sample_cves": [
+        "GH:GHSA-c78w-2q4r-68r7"
+      ],
+      "risk_score": 8.0
     },
     {
       "framework": "JAX",
       "count": 8,
-      "avg_cvss": 6.75,
-      "max_cvss": 9.8,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "no_cvss": 8,
       "with_poc": 1,
       "poc_ratio": 0.12,
       "chains": [
@@ -39,39 +77,6 @@
         "CVE-2026-85133",
         "CVE-2026-8615"
       ],
-      "risk_score": 19.09
-    },
-    {
-      "framework": "Ray",
-      "count": 3,
-      "avg_cvss": 0,
-      "max_cvss": 0.0,
-      "with_poc": 0,
-      "poc_ratio": 0.0,
-      "chains": [
-        "越权访问"
-      ],
-      "sample_cves": [
-        "GH:GHSA-5hjw-83fp-phq9",
-        "SB:https://paper.seebug.org/3522",
-        "EDB:https://www.exploit-db.com/exploits/52687"
-      ],
-      "risk_score": 0.0
-    },
-    {
-      "framework": "FastAPI",
-      "count": 1,
-      "avg_cvss": 0,
-      "max_cvss": 0.0,
-      "with_poc": 0,
-      "poc_ratio": 0.0,
-      "chains": [
-        "供应链攻击",
-        "越权访问"
-      ],
-      "sample_cves": [
-        "GH:GHSA-c78w-2q4r-68r7"
-      ],
       "risk_score": 0.0
     },
     {
@@ -79,6 +84,7 @@
       "count": 1,
       "avg_cvss": 0,
       "max_cvss": 0.0,
+      "no_cvss": 1,
       "with_poc": 0,
       "poc_ratio": 0.0,
       "chains": [],
@@ -92,6 +98,7 @@
       "count": 1,
       "avg_cvss": 0,
       "max_cvss": 0.0,
+      "no_cvss": 1,
       "with_poc": 0,
       "poc_ratio": 0.0,
       "chains": [],
@@ -102,27 +109,35 @@
     },
     {
       "framework": "LLaMA",
-      "count": 1,
+      "count": 2,
       "avg_cvss": 0,
       "max_cvss": 0.0,
+      "no_cvss": 2,
       "with_poc": 0,
       "poc_ratio": 0.0,
-      "chains": [],
+      "chains": [
+        "模型盗取"
+      ],
       "sample_cves": [
-        "HF:transformers-llama-cpp-quants"
+        "HF:transformers-llama-cpp-quants",
+        "http://arxiv.org/abs/2610.12137v1"
       ],
       "risk_score": 0.0
     },
     {
       "framework": "Hugging Face",
-      "count": 1,
+      "count": 2,
       "avg_cvss": 0,
       "max_cvss": 0.0,
+      "no_cvss": 2,
       "with_poc": 0,
       "poc_ratio": 0.0,
-      "chains": [],
+      "chains": [
+        "越权访问"
+      ],
       "sample_cves": [
-        "HF:omlx"
+        "HF:omlx",
+        "http://arxiv.org/abs/2610.12463v1"
       ],
       "risk_score": 0.0
     },
@@ -131,9 +146,12 @@
       "count": 2,
       "avg_cvss": 0,
       "max_cvss": 0.0,
+      "no_cvss": 2,
       "with_poc": 0,
       "poc_ratio": 0.0,
-      "chains": [],
+      "chains": [
+        "越权访问"
+      ],
       "sample_cves": [
         "http://arxiv.org/abs/2610.12463v1",
         "AQ:3000 美元、3 个人、72 小时：AI 把 OpenAI 的论坛打穿了"
@@ -145,9 +163,12 @@
       "count": 3,
       "avg_cvss": 0,
       "max_cvss": 0.0,
+      "no_cvss": 3,
       "with_poc": 0,
       "poc_ratio": 0.0,
-      "chains": [],
+      "chains": [
+        "越权访问"
+      ],
       "sample_cves": [
         "http://arxiv.org/abs/2610.12463v1",
         "HN:https://www.reuters.com/legal/litigation/anthropic-opens-its-most-powerful-ai-models-more-security-teams-2026-10-06/",
@@ -157,15 +178,91 @@
     },
     {
       "framework": "Claude",
-      "count": 2,
+      "count": 5,
       "avg_cvss": 0,
       "max_cvss": 0.0,
+      "no_cvss": 5,
       "with_poc": 0,
       "poc_ratio": 0.0,
-      "chains": [],
+      "chains": [
+        "提示词注入"
+      ],
       "sample_cves": [
+        "http://arxiv.org/abs/2610.12426v1",
+        "http://arxiv.org/abs/2610.12415v1",
+        "http://arxiv.org/abs/2610.12341v1",
         "AQ:AI第一次\"报假案\"：Claude向费城警方提交虚假凶杀线索，两个月后才被发现",
         "AQ:AI已经开始自动打你了：Anthropic捅破窗户纸，黑客用Claude实现\"检测即重生\""
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "GPT",
+      "count": 3,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "no_cvss": 3,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [
+        "提示词注入"
+      ],
+      "sample_cves": [
+        "http://arxiv.org/abs/2610.12426v1",
+        "http://arxiv.org/abs/2610.12415v1",
+        "http://arxiv.org/abs/2610.12233v1"
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "Qwen",
+      "count": 3,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "no_cvss": 3,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [
+        "提示词注入",
+        "模型盗取"
+      ],
+      "sample_cves": [
+        "http://arxiv.org/abs/2610.12415v1",
+        "http://arxiv.org/abs/2610.12235v1",
+        "http://arxiv.org/abs/2610.12137v1"
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "PyTorch",
+      "count": 1,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "no_cvss": 1,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [
+        "数据投毒"
+      ],
+      "sample_cves": [
+        "http://arxiv.org/abs/2610.13928v1"
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "HuggingFace",
+      "count": 1,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "no_cvss": 1,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [
+        "供应链攻击",
+        "提示词注入"
+      ],
+      "sample_cves": [
+        "http://arxiv.org/abs/2610.13627v1"
       ],
       "risk_score": 0.0
     }

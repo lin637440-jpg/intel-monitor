@@ -1,69 +1,57 @@
 """
-自动情报简报：每日生成 Markdown
+自动情报简报：生成最新 N 条情报的 Markdown 简报
 """
 import json
 import sqlite3
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 
 DB_PATH = Path("data/intel.db")
 BRIEF_DIR = Path("data/briefs")
 
 
-def generate_brief(date=None):
-    if date is None:
-        date = datetime.now().date()
-
+def generate_brief(top_n=20):
     BRIEF_DIR.mkdir(parents=True, exist_ok=True)
+    today_str = datetime.now().date().isoformat()
 
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     rows = [dict(r) for r in conn.execute("SELECT * FROM items").fetchall()]
     conn.close()
 
-    # 今日新增（按 created_at）
-    today_str = date.isoformat()
-    today_items = []
-    for r in rows:
-        ca = r.get("created_at") or ""
+    # 取最新 N 条（按 created_at 降序）
+    rows_sorted = sorted(rows, key=lambda r: r.get("created_at") or "", reverse=True)
+    top_items = []
+    for r in rows_sorted[:top_n]:
         try:
-            raw_check = json.loads(r.get("raw_json") or "{}")
-            pub = raw_check.get("published") or ""
+            raw = json.loads(r.get("raw_json") or "{}")
+            raw["_source"] = r["source"]
+            raw["_created_at"] = r.get("created_at")
+            top_items.append(raw)
         except Exception:
-            pub = ""
-        if ca.startswith(today_str) or pub.startswith(today_str):
-            try:
-                raw = json.loads(r.get("raw_json") or "{}")
-                raw["_source"] = r["source"]
-                today_items.append(raw)
-            except Exception:
-                pass
+            pass
 
     # 统计
-    high_risk = [it for it in today_items
-                 if (it.get("risk_score") or 0) >= 80]
-    with_poc = [it for it in today_items if it.get("pocs")]
+    high_risk = [it for it in top_items if (it.get("risk_score") or 0) >= 60]
+    with_poc = [it for it in top_items if it.get("pocs")]
 
-    # 热点：攻击链
+    # 热点攻击链
     chain_count = {}
-    for it in today_items:
+    for it in top_items:
         for c in (it.get("attack_chain") or {}).get("chains", []):
             chain_count[c["name"]] = chain_count.get(c["name"], 0) + 1
-
     top_chains = sorted(chain_count.items(), key=lambda x: -x[1])[:3]
 
-    # 重点关注：按 risk_score 排序前 5
-    focus = sorted(today_items,
-                   key=lambda x: -(x.get("risk_score") or 0))[:5]
+    # 重点
+    focus = sorted(top_items, key=lambda x: -(x.get("risk_score") or 0))[:5]
 
-    # 生成 Markdown
     lines = [
-        f"# AI 安全情报日报 — {today_str}",
+        f"# AI 安全情报简报 — {today_str}",
         "",
-        f"## 概览",
-        f"- 今日新增：**{len(today_items)}** 条",
-        f"- 高危（risk ≥ 80）：**{len(high_risk)}** 条",
-        f"- 有 POC：**{len(with_poc)}** 条",
+        "## 概览",
+        f"- 收录最新情报：**{len(top_items)}** 条",
+        f"- 中高危（risk ≥ 60）：**{len(high_risk)}** 条",
+        f"- 有公开 POC：**{len(with_poc)}** 条",
         "",
     ]
 
@@ -88,8 +76,10 @@ def generate_brief(date=None):
             lines.append(f"- 标题：{title}")
             if cvss:
                 lines.append(f"- CVSS：{cvss}")
-            if score:
+            if score is not None and score >= 0:
                 lines.append(f"- 综合评分：{score} ({level})")
+            elif level == "UNKNOWN":
+                lines.append(f"- 综合评分：无法评估")
             if chains:
                 lines.append(f"- 关联攻击链：{', '.join(chains)}")
             if url:
@@ -113,9 +103,10 @@ def generate_brief(date=None):
     out.write_text(content, encoding="utf-8")
 
     print(f"简报：{out}")
-    print(f"今日新增 {len(today_items)} 条，高危 {len(high_risk)} 条")
+    print(f"收录 {len(top_items)} 条，中高危 {len(high_risk)} 条")
+    print(f"文件大小：{out.stat().st_size} 字节")
     return str(out)
 
 
 if __name__ == "__main__":
-    generate_brief()
+    generate_brief(top_n=20)
