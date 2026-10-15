@@ -87,11 +87,11 @@ def run():
     )
 
     print(f"涉及 {len(ranking)} 个框架，共 {total} 次提及\n")
-    print(f"{'框架':<20} {'漏洞数':<8} {'平均CVSS':<10} {'POC':<6} {'链':<6}")
+    print(f"{'框架':<18} {'漏洞':<6} {'平均CVSS':<10} {'无CVSS':<8} {'POC':<6} {'链':<5}")
     print("-" * 60)
     for r in ranking[:15]:
-        print(f"{r['framework']:<20} {r['count']:<8} {r['avg_cvss']:<10} "
-              f"{r['with_poc']:<6} {len(r['chains']):<6}")
+        print(f"{r['framework']:<18} {r['count']:<6} {r['avg_cvss']:<10} "
+              f"{r['no_cvss']:<8} {r['with_poc']:<6} {len(r['chains']):<5}")
     print(f"\n报告：{REPORT_PATH}")
 
 
