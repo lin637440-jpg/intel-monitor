@@ -30,7 +30,7 @@ def parse_dt(s):
     return None
 
 
-def run(days=7):
+def run(days=30):
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     rows = [dict(r) for r in conn.execute("SELECT * FROM items").fetchall()]

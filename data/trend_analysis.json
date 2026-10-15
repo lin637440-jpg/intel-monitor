@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T19:04:12.694191",
-  "days": 7,
+  "generated_at": "2026-10-15T19:37:47.956375",
+  "days": 30,
   "daily": {
     "2014-10-15": {
       "count": 2,
@@ -104,7 +104,7 @@
     },
     "2026-09-09": {
       "count": 51,
-      "high": 10
+      "high": 0
     },
     "2026-09-10": {
       "count": 1,
@@ -184,11 +184,11 @@
     },
     "2026-10-08": {
       "count": 73,
-      "high": 16
+      "high": 9
     },
     "2026-10-09": {
       "count": 50,
-      "high": 0
+      "high": 5
     },
     "2026-10-10": {
       "count": 7,
@@ -196,7 +196,7 @@
     },
     "2026-10-11": {
       "count": 26,
-      "high": 9
+      "high": 0
     },
     "2026-10-12": {
       "count": 8,
@@ -213,35 +213,81 @@
   "surges": [
     {
       "framework": "Phi",
-      "total": 8,
+      "total": 19,
+      "recent": 19,
+      "ratio": 1.0
+    },
+    {
+      "framework": "Claude",
+      "total": 5,
       "recent": 4,
-      "ratio": 0.5
+      "ratio": 0.8
+    },
+    {
+      "framework": "Ray",
+      "total": 3,
+      "recent": 3,
+      "ratio": 1.0
+    },
+    {
+      "framework": "GPT",
+      "total": 3,
+      "recent": 3,
+      "ratio": 1.0
+    },
+    {
+      "framework": "Qwen",
+      "total": 3,
+      "recent": 3,
+      "ratio": 1.0
+    },
+    {
+      "framework": "Anthropic",
+      "total": 3,
+      "recent": 2,
+      "ratio": 0.67
     }
   ],
   "by_framework": {
+    "Phi": {
+      "count": 19,
+      "recent": 19
+    },
     "JAX": {
       "count": 8,
-      "recent": 2
+      "recent": 3
     },
-    "Phi": {
-      "count": 8,
+    "Claude": {
+      "count": 5,
       "recent": 4
     },
     "Ray": {
       "count": 3,
-      "recent": 1
+      "recent": 3
     },
     "Anthropic": {
       "count": 3,
-      "recent": 1
+      "recent": 2
+    },
+    "GPT": {
+      "count": 3,
+      "recent": 3
+    },
+    "Qwen": {
+      "count": 3,
+      "recent": 3
+    },
+    "LLaMA": {
+      "count": 2,
+      "recent": 2
+    },
+    "Hugging Face": {
+      "count": 2,
+      "recent": 2
     },
     "OpenAI": {
       "count": 2,
-      "recent": 0
-    },
-    "Claude": {
-      "count": 2,
-      "recent": 1
+      "recent": 2
     },
     "FastAPI": {
       "count": 1,
@@ -249,19 +295,19 @@
     },
     "Transformers": {
       "count": 1,
-      "recent": 0
+      "recent": 1
     },
     "llama.cpp": {
       "count": 1,
-      "recent": 0
+      "recent": 1
     },
-    "LLaMA": {
+    "PyTorch": {
       "count": 1,
-      "recent": 0
+      "recent": 1
     },
-    "Hugging Face": {
+    "HuggingFace": {
       "count": 1,
-      "recent": 0
+      "recent": 1
     }
   }
 }

@@ -66,6 +66,7 @@ def run():
             "count": s["count"],
             "avg_cvss": avg_cvss,
             "max_cvss": round(s["cvss_max"], 2),
+            "no_cvss": s["count"] - s["cvss_n"],
             "with_poc": s["with_poc"],
             "poc_ratio": round(s["with_poc"] / s["count"], 2) if s["count"] else 0,
             "chains": sorted(s["chains"]),

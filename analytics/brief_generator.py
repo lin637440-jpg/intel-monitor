@@ -26,7 +26,12 @@ def generate_brief(date=None):
     today_items = []
     for r in rows:
         ca = r.get("created_at") or ""
-        if ca.startswith(today_str):
+        try:
+            raw_check = json.loads(r.get("raw_json") or "{}")
+            pub = raw_check.get("published") or ""
+        except Exception:
+            pub = ""
+        if ca.startswith(today_str) or pub.startswith(today_str):
             try:
                 raw = json.loads(r.get("raw_json") or "{}")
                 raw["_source"] = r["source"]
