@@ -5,7 +5,9 @@ setup(
     version="1.0.0",
     description="AI Security Intelligence - Monitor & Enrichment Module",
     author="A",
-    packages=find_packages(exclude=["tests", "tests.*", "venv", "venv.*"]),
+    packages=find_packages(
+        exclude=["venv", "venv.*", "tests", "tests.*"]
+    ),
     install_requires=[
         "requests",
         "beautifulsoup4",
