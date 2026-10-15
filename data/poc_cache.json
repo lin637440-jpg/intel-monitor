@@ -85,5 +85,25 @@
   "CVE-2026-81154": [],
   "CVE-2026-81155": [],
   "CVE-2026-81156": [],
-  "CVE-2026-81420": []
+  "CVE-2026-81420": [],
+  "CVE-2021-44228": [
+    {
+      "name": "kozmer/log4j-shell-poc",
+      "url": "https://github.com/kozmer/log4j-shell-poc",
+      "stars": 1847,
+      "description": "A Proof-Of-Concept for the CVE-2021-44228 vulnerability. "
+    },
+    {
+      "name": "Puliczek/CVE-2021-44228-PoC-log4j-bypass-words",
+      "url": "https://github.com/Puliczek/CVE-2021-44228-PoC-log4j-bypass-words",
+      "stars": 951,
+      "description": "🐱‍💻 ✂️ 🤬 CVE-2021-44228 - LOG4J Java exploit - WAF bypass tricks"
+    },
+    {
+      "name": "Puliczek/awesome-list-of-secrets-in-environment-variables",
+      "url": "https://github.com/Puliczek/awesome-list-of-secrets-in-environment-variables",
+      "stars": 913,
+      "description": "🦄🔒 Awesome list of secrets in environment variables 🖥️"
+    }
+  ]
 }

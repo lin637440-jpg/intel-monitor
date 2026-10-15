@@ -269,3 +269,25 @@ def get_related(cve_id: str, depth: int = 2) -> dict:
         return {"error": f"未找到 {cve_id_clean}", "nodes": [], "edges": []}
 
     return get_neighbors(row[0], depth=depth)
+def get_enrichment_trace(cve_id: str) -> dict:
+    """查询指定 CVE 的富化轨迹"""
+    import json
+    import sqlite3
+    from storage.db import DB_PATH
+
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+    cur.execute("SELECT raw_json FROM items WHERE uid LIKE ? LIMIT 1",
+                (f"%{cve_id}%",))
+    row = cur.fetchone()
+    conn.close()
+
+    if not row:
+        return {"error": f"未找到 {cve_id}"}
+
+    try:
+        raw = json.loads(row["raw_json"] or "{}")
+        return raw.get("enrichment_trace") or {"error": "无轨迹记录"}
+    except Exception as e:
+        return {"error": str(e)}
