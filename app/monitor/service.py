@@ -239,3 +239,33 @@ def export_for_chroma(path=None):
     )
     print(f"导出 {len(out)} 条 -> {path}")
     return out
+def get_related(cve_id: str, depth: int = 2) -> dict:
+    """
+    查询关联图谱
+    返回该 CVE 的 N 跳邻居（框架 / CWE / 论文 / POC / 攻击链）
+    """
+    from storage.graph_db import get_neighbors, init_graph_tables
+
+    init_graph_tables()
+
+    # 找 CVE 实体
+    import re
+    cve_id_clean = cve_id.upper().strip()
+    if not re.match(r"CVE-\d{4}-\d{4,7}", cve_id_clean):
+        return {"error": "无效 CVE 编号", "nodes": [], "edges": []}
+
+    import sqlite3
+    from pathlib import Path
+    from storage.db import DB_PATH
+
+    conn = sqlite3.connect(DB_PATH)
+    row = conn.execute(
+        "SELECT eid FROM entities WHERE type = 'cve' AND name = ?",
+        (cve_id_clean,),
+    ).fetchone()
+    conn.close()
+
+    if not row:
+        return {"error": f"未找到 {cve_id_clean}", "nodes": [], "edges": []}
+
+    return get_neighbors(row[0], depth=depth)
