@@ -1,0 +1,147 @@
+{
+  "n_clusters": 8,
+  "total": 320,
+  "clusters": [
+    {
+      "cluster_id": 7,
+      "size": 50,
+      "sample_titles": [
+        "The Bricksforge plugin for WordPress is vulnerable to unauthenticated arbitrary ",
+        "The Content Mask WordPress plugin before 1.8.5.6 does not properly sanitise and ",
+        "The WP Travel  WordPress plugin before 12.0.2 does not properly verify that the ",
+        "The WP Travel  WordPress plugin before 12.0.2 does not properly verify that the ",
+        "The Loops & Logic WordPress plugin before 4.3.0 does not restrict its public tem"
+      ],
+      "keywords": [
+        "The",
+        "The",
+        "The",
+        "The",
+        "The"
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "size": 31,
+      "sample_titles": [
+        "A critical security vulnerability has been identified in Brocade ASCG versions b",
+        "A vulnerability in Brocade ASCG version before 3.5.0 could allow an attacker to ",
+        "A vulnerability has been identified in the data collection service of Brocade AS",
+        "Brocade ASCG before 3.5.0 improperly processes user input by evaluating form dat",
+        "A path traversal vulnerability exists in the HTTP service component of Brocade A"
+      ],
+      "keywords": [
+        "A",
+        "A",
+        "A",
+        "Brocade",
+        "A"
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "size": 52,
+      "sample_titles": [
+        "A flaw was found in flatpak-builder. This vulnerability allows an attacker to ca",
+        "An authorization bypass vulnerability in Apache DolphinScheduler allows authenti",
+        "An authorization bypass vulnerability in Apache DolphinScheduler allows authenti",
+        "",
+        ""
+      ],
+      "keywords": [
+        "A",
+        "An",
+        "An"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "size": 49,
+      "sample_titles": [
+        "Argument injection in WP Toolkit for cPanel allows local users to execute arbitr",
+        "OS Command Injection in the login.xgi CGI endpoint in Iskratel Innbox GPON ONT d",
+        "",
+        "Transformers now runs llama.cpp quants",
+        "The WPBot – AI ChatBot for Live Support, Lead Generation, AI Services plugin for"
+      ],
+      "keywords": [
+        "Argument",
+        "OS",
+        "Transformers",
+        "The"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "size": 17,
+      "sample_titles": [
+        "SQL injection in the NetBoard CRM demo platform; specifically, the vulnerable co",
+        "The Agent Said It Was Done. The Database Disagreed.",
+        "The ELEX WooCommerce Request a Quote WordPress plugin before 2.4.1 does not prop",
+        "The Quentn WP WordPress plugin before 1.2.15 does not adequately escape a reques",
+        "The Quentn WP WordPress plugin before 1.2.15 does not properly sanitise and esca"
+      ],
+      "keywords": [
+        "SQL",
+        "The",
+        "The",
+        "The",
+        "The"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "size": 54,
+      "sample_titles": [
+        "The model that didn't exist, so you made it yourself",
+        "Multimodal open d1 decision models for the edge",
+        "Introducing Falcon ASR",
+        "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+        "Open-sourcing AstaBrief, the fast report-generation model in Asta"
+      ],
+      "keywords": [
+        "The",
+        "Multimodal",
+        "Introducing",
+        "One",
+        "Open-sourcing"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "size": 38,
+      "sample_titles": [
+        "TWINGUARD-LITE：面向生成式患者数字孪生的基于规则的状态准入网关",
+        "多源 LLM 智能体输入中分段级投毒的检测与定位",
+        "面向安全漏洞的自动化程序修复智能体的对抗性测试",
+        "大模型中转站研究与测评报告（2026）",
+        "当世界说谎：面向下游控制的潜在世界模型后门攻击"
+      ],
+      "keywords": [
+        "TWINGUARD-LITE：",
+        "多源",
+        "面向安全漏洞的自动化程序修复智",
+        "大模型中转站研究与测评报告（2",
+        "当世界说谎：面向下游控制的潜在"
+      ]
+    },
+    {
+      "cluster_id": 0,
+      "size": 29,
+      "sample_titles": [
+        "Air Canada's woeful security at cargo warehouse",
+        "Only a Small % of Retirees Receive Social Security's Maximum Benefit",
+        "AWS AgentCore security undone by prompt requesting credentials",
+        "I build an open-source runtime security layer for AI agents – Let's break it",
+        "Anthropic opens its most powerful AI models to more security teams"
+      ],
+      "keywords": [
+        "Air",
+        "Only",
+        "AWS",
+        "I",
+        "Anthropic"
+      ]
+    }
+  ]
+}

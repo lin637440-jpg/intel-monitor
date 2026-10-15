@@ -1,0 +1,173 @@
+{
+  "total_framework_mentions": 31,
+  "frameworks": 11,
+  "ranking": [
+    {
+      "framework": "Phi",
+      "count": 8,
+      "avg_cvss": 7.9,
+      "max_cvss": 8.6,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [
+        "供应链攻击",
+        "越权访问"
+      ],
+      "sample_cves": [
+        "CVE-2026-85422",
+        "CVE-2026-87424",
+        "CVE-2026-66082",
+        "CVE-2026-66084",
+        "GH:GHSA-2m6q-8v3h-jqww"
+      ],
+      "risk_score": 22.34
+    },
+    {
+      "framework": "JAX",
+      "count": 8,
+      "avg_cvss": 6.75,
+      "max_cvss": 9.8,
+      "with_poc": 1,
+      "poc_ratio": 0.12,
+      "chains": [
+        "越权访问"
+      ],
+      "sample_cves": [
+        "CVE-2026-85097",
+        "CVE-2026-84908",
+        "CVE-2026-85132",
+        "CVE-2026-85133",
+        "CVE-2026-8615"
+      ],
+      "risk_score": 19.09
+    },
+    {
+      "framework": "Ray",
+      "count": 3,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [
+        "越权访问"
+      ],
+      "sample_cves": [
+        "GH:GHSA-5hjw-83fp-phq9",
+        "SB:https://paper.seebug.org/3522",
+        "EDB:https://www.exploit-db.com/exploits/52687"
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "FastAPI",
+      "count": 1,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [
+        "供应链攻击",
+        "越权访问"
+      ],
+      "sample_cves": [
+        "GH:GHSA-c78w-2q4r-68r7"
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "Transformers",
+      "count": 1,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [],
+      "sample_cves": [
+        "HF:transformers-llama-cpp-quants"
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "llama.cpp",
+      "count": 1,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [],
+      "sample_cves": [
+        "HF:transformers-llama-cpp-quants"
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "LLaMA",
+      "count": 1,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [],
+      "sample_cves": [
+        "HF:transformers-llama-cpp-quants"
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "Hugging Face",
+      "count": 1,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [],
+      "sample_cves": [
+        "HF:omlx"
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "OpenAI",
+      "count": 2,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [],
+      "sample_cves": [
+        "http://arxiv.org/abs/2610.12463v1",
+        "AQ:3000 美元、3 个人、72 小时：AI 把 OpenAI 的论坛打穿了"
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "Anthropic",
+      "count": 3,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [],
+      "sample_cves": [
+        "http://arxiv.org/abs/2610.12463v1",
+        "HN:https://www.reuters.com/legal/litigation/anthropic-opens-its-most-powerful-ai-models-more-security-teams-2026-10-06/",
+        "AQ:AI已经开始自动打你了：Anthropic捅破窗户纸，黑客用Claude实现\"检测即重生\""
+      ],
+      "risk_score": 0.0
+    },
+    {
+      "framework": "Claude",
+      "count": 2,
+      "avg_cvss": 0,
+      "max_cvss": 0.0,
+      "with_poc": 0,
+      "poc_ratio": 0.0,
+      "chains": [],
+      "sample_cves": [
+        "AQ:AI第一次\"报假案\"：Claude向费城警方提交虚假凶杀线索，两个月后才被发现",
+        "AQ:AI已经开始自动打你了：Anthropic捅破窗户纸，黑客用Claude实现\"检测即重生\""
+      ],
+      "risk_score": 0.0
+    }
+  ]
+}
