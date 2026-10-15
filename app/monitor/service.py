@@ -1,16 +1,22 @@
+"""
+A 模块对外接口
+给 B（RAG）和总控（LangGraph）调用
+"""
 import json
 import sqlite3
 
 from app.monitor.collectors_registry import COLLECTORS, collect_source
 from storage.db import DB_PATH
 from enrichment.pipeline import enrich
-from common.exceptions import NotFoundError, IntelMonitorError
+from app.monitor.semantic_search import semantic_search
 from enrichment.merge_cve import merge
+from common.exceptions import NotFoundError, IntelMonitorError
 
-def collect_vulnerabilities() -> list[dict]:
-    """
-    执行采集、去重、富化和存储，返回本次新增的情报记录。
-    """
+
+# ==================== 核心接口 ====================
+
+def collect_vulnerabilities() -> list:
+    """执行采集、去重、富化和存储，返回本次新增的情报记录。"""
     new_items = []
     for source in COLLECTORS:
         try:
@@ -28,17 +34,26 @@ def collect_vulnerabilities() -> list[dict]:
     return new_items
 
 
-def search_vulnerabilities(keyword: str) -> list[dict]:
-    """按关键词查询已有情报。"""
+def search_vulnerabilities(keyword: str, use_semantic: bool = True) -> list:
+    """
+    按关键词查询已有情报。
+    use_semantic=True 用语义搜索，否则 SQL LIKE。
+    """
     if not keyword:
         return []
+
+    if use_semantic:
+        try:
+            return semantic_search(keyword, top_k=20)
+        except Exception as e:
+            print(f"语义搜索失败，回退 SQL：{e}")
+
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     cur = conn.cursor()
     like = f"%{keyword}%"
     cur.execute(
-        "SELECT * FROM items "
-        "WHERE title LIKE ? OR description LIKE ? "
+        "SELECT * FROM items WHERE title LIKE ? OR description LIKE ? "
         "ORDER BY created_at DESC LIMIT 100",
         (like, like),
     )
@@ -84,6 +99,175 @@ def enrich_vulnerability(cve_id: str) -> dict:
         raise IntelMonitorError(f"富化失败：{e}") from e
 
 
+# ==================== Chroma 导出 ====================
+
+def _pick_url(item):
+    """智能提取 URL，兼容 9 个源的字段差异"""
+    if item.get("url"):
+        return str(item["url"])
+    if item.get("html_url"):
+        return str(item["html_url"])
+    if item.get("link"):
+        return str(item["link"])
+    id_val = item.get("id") or ""
+    if isinstance(id_val, str) and id_val.startswith("http"):
+        return id_val
+    refs = item.get("references") or []
+    if isinstance(refs, list) and refs:
+        first = refs[0]
+        if isinstance(first, dict):
+            u = first.get("url") or first.get("href") or ""
+            if u:
+                return str(u)
+        elif isinstance(first, str):
+            return first
+    cve = item.get("id") or item.get("cve_id") or ""
+    if isinstance(cve, str) and cve.startswith("CVE-"):
+        return f"https://nvd.nist.gov/vuln/detail/{cve}"
+    ghsa = item.get("ghsa_id") or ""
+    if isinstance(ghsa, str) and ghsa.startswith("GHSA-"):
+        return f"https://github.com/advisories/{ghsa}"
+    return ""
+
+
+def _cvss_severity(score):
+    """CVSS 官方严重性分级（v3.1 标准）"""
+    if score is None:
+        return "UNKNOWN"
+    if score >= 9.0:
+        return "CRITICAL"
+    if score >= 7.0:
+        return "HIGH"
+    if score >= 4.0:
+        return "MEDIUM"
+    if score > 0:
+        return "LOW"
+    return "NONE"
+
+
+def to_chroma_record(item):
+    """把 A 的 record 转成 B 要的 Chroma 格式"""
+    title = item.get("title") or ""
+    desc = item.get("description") or ""
+
+    assets = item.get("assets", {}).get("frameworks", [])
+    chains = item.get("attack_chain", {}).get("chains", [])
+    chain_names = ", ".join(c["name"] for c in chains)
+
+    document = f"{title}\n\n{desc}"
+    if assets:
+        document += f"\n\n资产: {', '.join(assets)}"
+    if chain_names:
+        document += f"\n\n攻击链: {chain_names}"
+
+    cvss_obj = item.get("cvss") or {}
+    cvss_score = cvss_obj.get("baseScore") if isinstance(cvss_obj, dict) else None
+
+    risk_score = item.get("risk_score")
+    risk_level = item.get("risk_level")
+
+    return {
+        "id": item.get("uid"),
+        "document": document,
+        "metadata": {
+            "source": item.get("source") or "",
+            "cve_id": item.get("id") or item.get("cve_id") or "",
+            "cvss": cvss_score if cvss_score is not None else 0.0,
+            "cvss_severity": _cvss_severity(cvss_score),
+            "risk_score": risk_score if risk_score is not None else -1.0,
+            "risk_level": risk_level if risk_level else "UNKNOWN",
+            "cwe": ",".join(item.get("cwe") or []),
+            "url": _pick_url(item),
+            "published": item.get("published") or "",
+        },
+    }
+
+
+def export_for_chroma(path=None):
+    """导出全部 items 为 Chroma 格式，给 B 用"""
+    from pathlib import Path as _Path
+
+    if path is None:
+        path = DB_PATH.parent / "chroma_records.json"
+    else:
+        path = _Path(path)
+
+    if not DB_PATH.exists():
+        print(f"intel.db 不存在：{DB_PATH}")
+        return []
+
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    rows = [dict(r) for r in conn.execute("SELECT * FROM items").fetchall()]
+    conn.close()
+
+    out = []
+    for r in rows:
+        try:
+            raw = json.loads(r.get("raw_json") or "{}")
+            raw.update({k: v for k, v in r.items() if k != "raw_json"})
+        except Exception:
+            raw = r
+        out.append(to_chroma_record(raw))
+
+    path.write_text(
+        json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print(f"导出 {len(out)} 条 -> {path}")
+    return out
+
+
+# ==================== 关联图谱 & 轨迹 ====================
+
+def get_related(cve_id: str, depth: int = 2) -> dict:
+    """
+    查询关联图谱
+    返回该 CVE 的 N 跳邻居（框架 / CWE / 论文 / POC / 攻击链）
+    """
+    import re
+    from storage.graph_db import get_neighbors, init_graph_tables
+
+    init_graph_tables()
+
+    cve_id_clean = cve_id.upper().strip()
+    if not re.match(r"CVE-\d{4}-\d{4,7}", cve_id_clean):
+        return {"error": "无效 CVE 编号", "nodes": [], "edges": []}
+
+    conn = sqlite3.connect(DB_PATH)
+    row = conn.execute(
+        "SELECT eid FROM entities WHERE type = 'cve' AND name = ?",
+        (cve_id_clean,),
+    ).fetchone()
+    conn.close()
+
+    if not row:
+        return {"error": f"未找到 {cve_id_clean}", "nodes": [], "edges": []}
+
+    return get_neighbors(row[0], depth=depth)
+
+
+def get_enrichment_trace(cve_id: str) -> dict:
+    """查询指定 CVE 的富化轨迹"""
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+    cur.execute("SELECT raw_json FROM items WHERE uid LIKE ? LIMIT 1",
+                (f"%{cve_id}%",))
+    row = cur.fetchone()
+    conn.close()
+
+    if not row:
+        return {"error": f"未找到 {cve_id}"}
+
+    try:
+        raw = json.loads(row["raw_json"] or "{}")
+        return raw.get("enrichment_trace") or {"error": "无轨迹记录"}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+# ==================== 内部辅助 ====================
+
 def _fetch_recent(source, limit=20):
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
@@ -106,6 +290,8 @@ def _fetch_recent(source, limit=20):
     return out
 
 
+# ==================== 测试入口 ====================
+
 if __name__ == "__main__":
     print("=== search_vulnerabilities('WordPress') ===")
     r = search_vulnerabilities("WordPress")
@@ -119,175 +305,7 @@ if __name__ == "__main__":
         print(f"  {r.get('id')} 评分={r.get('risk_score')} 等级={r.get('risk_level')}")
     except Exception as e:
         print(f"  {type(e).__name__}: {e}")
-    print("\n=== merge() 跨源归并 ===")
-    m = merge()
-    print(f"  归并后 CVE 数：{len(m)}")
-def _pick_url(item):
-    """智能提取 URL，兼容 9 个源的字段差异"""
-    # 1. 直接 url
-    if item.get("url"):
-        return str(item["url"])
-    # 2. html_url（GitHub）
-    if item.get("html_url"):
-        return str(item["html_url"])
-    # 3. link（RSS）
-    if item.get("link"):
-        return str(item["link"])
-    # 4. id 是 URL（ArXiv）
-    id_val = item.get("id") or ""
-    if isinstance(id_val, str) and id_val.startswith("http"):
-        return id_val
-    # 5. references 列表（NVD / OSV）
-    refs = item.get("references") or []
-    if isinstance(refs, list) and refs:
-        first = refs[0]
-        if isinstance(first, dict):
-            u = first.get("url") or first.get("href") or ""
-            if u:
-                return str(u)
-        elif isinstance(first, str):
-            return first
-    # 6. NVD 特殊：用官方 CVE 页
-    cve = item.get("id") or item.get("cve_id") or ""
-    if isinstance(cve, str) and cve.startswith("CVE-"):
-        return f"https://nvd.nist.gov/vuln/detail/{cve}"
-    # 7. GHSA 特殊：用 GitHub 公告页
-    ghsa = item.get("ghsa_id") or ""
-    if isinstance(ghsa, str) and ghsa.startswith("GHSA-"):
-        return f"https://github.com/advisories/{ghsa}"
-    return ""
 
-def _cvss_severity(score):
-    """CVSS 官方严重性分级（v3.1 标准）"""
-    if score is None:
-        return "UNKNOWN"
-    if score >= 9.0:
-        return "CRITICAL"
-    if score >= 7.0:
-        return "HIGH"
-    if score >= 4.0:
-        return "MEDIUM"
-    if score > 0:
-        return "LOW"
-    return "NONE"
-def to_chroma_record(item):
-    """把 A 的 record 转成 B 要的 Chroma 格式"""
-    title = item.get("title") or ""
-    desc = item.get("description") or ""
-
-    assets = item.get("assets", {}).get("frameworks", [])
-    chains = item.get("attack_chain", {}).get("chains", [])
-    chain_names = ", ".join(c["name"] for c in chains)
-
-    document = f"{title}\n\n{desc}"
-    if assets:
-        document += f"\n\n资产: {', '.join(assets)}"
-    if chain_names:
-        document += f"\n\n攻击链: {chain_names}"
-
-    cvss_obj = item.get("cvss") or {}
-    cvss_score = cvss_obj.get("baseScore") if isinstance(cvss_obj, dict) else None
-
-    return {
-        "id": item.get("uid"),
-        "document": document,
-        "metadata": {
-            "source": item.get("source") or "",
-            "cve_id": item.get("id") or item.get("cve_id") or "",
-            "cvss": cvss_score if cvss_score is not None else 0.0,
-            "cvss_severity": _cvss_severity(cvss_score),      # 新增：CVSS 官方等级
-            "risk_score": item.get("risk_score") or 0.0,      # 自定义综合分
-            "risk_level": item.get("risk_level") or "",       # 自定义等级
-            "cwe": ",".join(item.get("cwe") or []),
-            "url": _pick_url(item),
-            "published": item.get("published") or "",
-        },
-    }
-def export_for_chroma(path=None):
-    """导出全部 items 为 Chroma 格式，给 B 用"""
-    import json as _json
-    import sqlite3 as _sqlite
-    from storage.db import DB_PATH
-    from pathlib import Path as _Path
-
-    # 默认输出到 DB 同目录
-    if path is None:
-        path = DB_PATH.parent / "chroma_records.json"
-    else:
-        path = _Path(path)
-
-    if not DB_PATH.exists():
-        print(f"intel.db 不存在：{DB_PATH}")
-        return []
-
-    conn = _sqlite.connect(DB_PATH)
-    conn.row_factory = _sqlite.Row
-    rows = [dict(r) for r in conn.execute("SELECT * FROM items").fetchall()]
-    conn.close()
-
-    out = []
-    for r in rows:
-        try:
-            raw = _json.loads(r.get("raw_json") or "{}")
-            raw.update({k: v for k, v in r.items() if k != "raw_json"})
-        except Exception:
-            raw = r
-        out.append(to_chroma_record(raw))
-
-    path.write_text(
-        _json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-    print(f"导出 {len(out)} 条 -> {path}")
-    return out
-def get_related(cve_id: str, depth: int = 2) -> dict:
-    """
-    查询关联图谱
-    返回该 CVE 的 N 跳邻居（框架 / CWE / 论文 / POC / 攻击链）
-    """
-    from storage.graph_db import get_neighbors, init_graph_tables
-
-    init_graph_tables()
-
-    # 找 CVE 实体
-    import re
-    cve_id_clean = cve_id.upper().strip()
-    if not re.match(r"CVE-\d{4}-\d{4,7}", cve_id_clean):
-        return {"error": "无效 CVE 编号", "nodes": [], "edges": []}
-
-    import sqlite3
-    from pathlib import Path
-    from storage.db import DB_PATH
-
-    conn = sqlite3.connect(DB_PATH)
-    row = conn.execute(
-        "SELECT eid FROM entities WHERE type = 'cve' AND name = ?",
-        (cve_id_clean,),
-    ).fetchone()
-    conn.close()
-
-    if not row:
-        return {"error": f"未找到 {cve_id_clean}", "nodes": [], "edges": []}
-
-    return get_neighbors(row[0], depth=depth)
-def get_enrichment_trace(cve_id: str) -> dict:
-    """查询指定 CVE 的富化轨迹"""
-    import json
-    import sqlite3
-    from storage.db import DB_PATH
-
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    cur = conn.cursor()
-    cur.execute("SELECT raw_json FROM items WHERE uid LIKE ? LIMIT 1",
-                (f"%{cve_id}%",))
-    row = cur.fetchone()
-    conn.close()
-
-    if not row:
-        return {"error": f"未找到 {cve_id}"}
-
-    try:
-        raw = json.loads(row["raw_json"] or "{}")
-        return raw.get("enrichment_trace") or {"error": "无轨迹记录"}
-    except Exception as e:
-        return {"error": str(e)}
+    print("\n=== export_for_chroma() ===")
+    records = export_for_chroma()
+    print(f"  导出 {len(records)} 条")

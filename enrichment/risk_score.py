@@ -2,6 +2,10 @@ def compute_risk_score(item):
     """
     情报评分卡，0-100 分。
     公式：0.4 * cvss_norm + 0.2 * has_poc + 0.2 * asset_match + 0.2 * freshness
+
+    返回：
+      - risk_score = -1.0 + risk_level = UNKNOWN：无法评估
+      - risk_score >= 0 + risk_level = CRITICAL/HIGH/MEDIUM/LOW：正常评分
     """
     score = 0.0
     detail = {}
@@ -16,6 +20,7 @@ def compute_risk_score(item):
     cvss_norm = min(max((base or 0) / 10.0, 0), 1)
     score += 0.4 * cvss_norm
     detail["cvss_norm"] = round(cvss_norm, 3)
+    detail["cvss_base"] = base
 
     # 2. 是否有 POC
     pocs = item.get("pocs") or []
@@ -37,6 +42,21 @@ def compute_risk_score(item):
     detail["freshness"] = round(freshness, 3)
 
     total = round(score * 100, 1)
+
+    # 判断是否能有效评估
+    can_evaluate = (
+        base is not None
+        or has_poc > 0
+        or asset_match > 0
+        or freshness > 0
+    )
+
+    if not can_evaluate:
+        return {
+            "risk_score": -1.0,
+            "risk_level": "UNKNOWN",
+            "risk_detail": detail,
+        }
 
     if total >= 80:
         level = "CRITICAL"
@@ -68,11 +88,13 @@ def _freshness(published):
         "%Y-%m-%dT%H:%M:%S.%fZ",
         "%Y-%m-%dT%H:%M:%S",
         "%a, %d %b %Y %H:%M:%S %z",
+        "%a, %d %b %Y %H:%M:%S",
+        "%Y-%m-%d %H:%M:%S",
     ]
     dt = None
     for fmt in formats:
         try:
-            dt = datetime.strptime(published, fmt)
+            dt = datetime.strptime(str(published).strip(), fmt)
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
             break
@@ -91,12 +113,18 @@ def _freshness(published):
 
 
 if __name__ == "__main__":
+    # 正常评分
     sample = {
         "id": "CVE-2026-0001",
-        "published": "2026-10-11T00:00:00Z",
+        "published": "2026-10-14T00:00:00Z",
         "cvss": {"baseScore": 9.8},
         "pocs": [{"name": "x/y"}],
         "assets": {"frameworks": ["PyTorch"]},
     }
     r = compute_risk_score(sample)
-    print(r)
+    print("正常样本：", r)
+
+    # 无信息
+    empty = {"id": "GHSA-xxxx", "published": None}
+    r2 = compute_risk_score(empty)
+    print("空信息样本：", r2)
